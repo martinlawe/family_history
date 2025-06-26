@@ -97,15 +97,15 @@ img {
 }
 
 .gallery img {
-  width: 150px;
-  margin: 10px;
+  width: 250px;
+  margin: 50px 80px;
   cursor: pointer;
   border: 2px solid #ccc;
   transition: transform 0.2s;
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.90);
   border-color: #666;
 }
 
