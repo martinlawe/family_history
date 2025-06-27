@@ -196,4 +196,6 @@ a:hover {
 .footnote-comment {
 	display: flex;
   justify-content: space-between;
+  border: 1px solid red;
+  background-color: #eee;  
 }
