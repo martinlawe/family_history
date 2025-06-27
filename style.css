@@ -193,4 +193,7 @@ a:hover {
   font-style: italic;
   color: #555;
 }
-
+.footnote-comment {
+	display: flex;
+  justify-content: space-between;
+}
