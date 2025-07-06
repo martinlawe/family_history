@@ -1,50 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Browns Family History</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>The Brown's Family History</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <h1>The Browns Line</h1>
-	<div style="display: flex; justify-content: space-between; gap: 40px;">
-<div class="family-tree" id="tree-left">
-  <h2>Brown Family Tree</h2>
-  <div class="tree">
-    <ul>
-      <li>
-        <div>William Brown (1786 - )</div>
-        <ul>
-          <li>
-            <div><a href="Brown,_Isaac_(M).html">Isaac Brown (1817 - 1895)</a></div>
-            <ul>
-              <li>
-                <div><a href="Brown,_John_(M).html">John Brown (1860 - (1918)</a></div>
+  <h1>The Brown's Line</h1>
+  <div class="tree-container">
+    <div style="display: flex; justify-content: space-between; gap: 40px;">
+      <div class="family-tree" id="tree-left">
+        <h2>Brown Family Tree</h2>
+        <div class="tree">
+          <ul>
+            <li>
+              <button class="button-link" disabled>William Brown (1786 - )</button>
+              <ul>
+                <li>
+                  <div><a href="Brown,_Isaac_(M).html" class="tree-btn">Isaac Brown (1817 - 1895)</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="Brown,_John_(M).html" class="tree-btn">John Brown (1860 - 1918)</a></div>
+                      <ul>
+                        <li>
+                          <div><a href="Brown,_Rachel_Louisa_(F).html" class="tree-btn">Rachel Brown (1897 - 1967)</a></div>
+                          <ul>
+                            <li>
+                              <div><a href="Vickers,_Alice_(F).html" class="tree-btn">Alice Vickers (1925 - 2016)</a></div>
+                              <ul><li>
+							  <div><a href="Albert_W_J_Vickers.html" class="tree-btn">Albert Vickers (1920 - 1994)</a></div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="family-tree" id="tree-right">
+        <div class="tree-column">
+          <div class="nested-trees">
+
+            <div class="tree-subcolumn">
+              <h2>Beard family-tree</h2>
+              <div class="tree">
                 <ul>
                   <li>
-                    <div><a href="Brown,_Rachel_Louisa_(F).html">Rachel Brown (1897 - 1967)</a></div>
+                    <div><a href="Vickers,_Henry_(M).html" class="tree-btn">Henry Vickers (1840)</a></div>
                     <ul>
                       <li>
-                        <div><a href="Vickers,_Alice_(F).html">Alice Vickers (1925 - 2016)</a></div>
-                        <div><a href="Albert_W_J_Vickers.html">Albert Vickers (1920 - 1994)</a></div>
-						<ul>
+                        <button class="button-link" disabled>Alice Eliza Vickers</button>
+                        <ul>
+                          <li>
+                            <button class="button-link" disabled>Alice Maud Beard</button>
+                          </li>
                         </ul>
                       </li>
                     </ul>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-<p>This page is still under construction as further research is carried out on this branch of the family,</p>
+              </div>
+            </div>
 
-<p><a href='javascript:history.back()'>Go Back</a>
+            <div class="tree-subcolumn">
+              <h2>Dobson family-tree</h2>
+              <div class="tree">
+                <ul>
+                  <li>
+                    <button class="button-link" disabled>James Dobson</button>
+                    <ul>
+                      <li>
+                        <button class="button-link" disabled>William Dobson</button>
+                        <ul>
+                          <li>
+                            <button class="button-link" disabled>Arthur Dobson</button>
+							  <ul>
+							  <li>
+							    <button class="button-link" disabled>Alice Dobson</button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div> <!-- .nested-trees -->
+        </div> <!-- .tree-column -->
+      </div> <!-- .family-tree (right) -->
+
+    </div> <!-- flex container -->
+  </div> <!-- tree-container -->
+
+  <p>This page is still under construction as further research is carried out on this branch of the family.</p>
+
+  <a href="javascript:history.back()" class="btn">Go Back</a>
 </body>
 </html>

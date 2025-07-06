@@ -5,7 +5,8 @@
     <title>Lawrence Family History</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> <!-- Add Archer/ Fowler tree to the tree container. will need to change it to three trees not two. -->
+<!-- Change links to buttons, where Appropriate -->
   <div class="container">
     <center><h1>Lawrence Family History</h1></center>
 	<p>
@@ -16,19 +17,21 @@
     <div class="tree">
       <ul>
         <li>
-          <div><a href="Simon_Emmons.html">Simon Emmons (1792)</a></div>
+          <div><a href="Simon_Emmons.html" class="tree-btn">Simon Emmons (1792)</a></div>
           <ul>
             <li>
-              <div><a href="Emmons,_Myra_(F).html">Myra Emmons (1824)</a></div>
+              <div><a href="Emmons,_Myra_(F).html" class="tree-btn">Myra Emmons (1824)</a></div>
               <ul>
                 <li>
-                  <div><a href="Lawrence,_Walter.html">Walter Lawrence(1856)</a></div>
+                  <div><a href="Lawrence,_Walter.html" class="tree-btn">Walter Lawrence(1856)</a></div>
                   <ul>
                     <li>
                       <div>
-                        <a href="Evelyn_Lawrence.html">Evelyn (1919)</a>
-                        <span class="disabled">Margaret (1922)</span>
-                        <a href="Leslie_lawrence.html">Leslie (1925)</a>
+						<div class="button-row tree">
+						  <a href="Evelyn_Lawrence.html" class="tree-btn">Evelyn (1919)</a>
+						  <button class="button-link" disabled>Margaret (1922)</button>
+						  <a href="Leslie_lawrence.html" class="tree-btn">Leslie (1925)</a>
+						</div>
                       </div>
                     </li>
                   </ul>
@@ -47,22 +50,24 @@
     <div class="tree">
       <ul>
         <li>
-          <div><a href="Laurence,_John.html">John Laurence</a></div>
+          <div><a href="Laurence,_John.html" class="tree-btn">John Laurence</a></div>
           <ul>
             <li>
-              <div><a href="Laurence,_William.html">William Laurence (1790)</a></div>
+              <div><a href="Laurence,_William.html" class="tree-btn">William Laurence (1790)</a></div>
               <ul>
 				<li>
-					<div><a href="Laurence,_Thomas.html">Thomas Laurence (1817)</a></div>
+					<div><a href="Laurence,_Thomas.html" class="tree-btn">Thomas Laurence (1817)</a></div>
 					<ul>
 						<li>
-							<div><a href="Lawrence,_Walter.html">Walter Lawrence (1856)</a></div>
+							<div><a href="Lawrence,_Walter.html" class="tree-btn">Walter Lawrence (1856)</a></div>
 							<ul>
 								<li>
 									<div>
-										<a href="Evelyn_Lawrence.html">Evelyn 1919)</a> 
-										<span class="disabled">Margaret (1922)</Span> 
-										<a href="Leslie_lawrence.html">Leslie (1925)</a>
+										<div class="button-row tree">
+										  <a href="Evelyn_Lawrence.html" class="tree-btn">Evelyn (1919)</a>
+										  <button class="button-link" disabled>Margaret (1922)</button>
+										  <a href="Leslie_lawrence.html" class="tree-btn">Leslie (1925)</a>
+										</div>
 								</li>
 							</ul>
 						</div>
@@ -94,7 +99,7 @@ where he died two years later in 1840. </p>
 <p> Walter and Emily had three children together: <a href="Evelyn_Lawrence.html">Evelyn</a> (b.1919), <span class="disabled">Margaret</span> (b.1922), and <a href="Leslie_Lawrence.html">Leslie</a> (b.1925). During Emily’s pregnancy with Leslie, she discovered Walter’s previous marriage and family in America. According to family accounts, the revelation caused a major confrontation, with reports of raised voices, objects thrown, and even the police being informed. </p> 
 <p> Emily left Walter shortly afterwards and returned to Windsor to live with her mother. Evelyn later recalled travelling into Windsor Central Station in the spring of 1925 and looking out at fields of buttercups on Bath Island. The family lived briefly in Kepple Row before settling, for a short period, at No. 4 Alma Cottages, where Leslie was born. </p> <p> In 1926, Walter returned to the United States, this time permanently. He rejoined his original family and appears in the 1930 U.S. Census living once again with Ellen and Walter Jr. </p>
 	
-    <p><a href="javascript:history.back()">Go Back</a></p>
+  <a href="javascript:history.back()" class="btn">Go Back</a>
 	</div>
 </body>
 </html>

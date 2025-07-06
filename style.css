@@ -1,13 +1,23 @@
-body {
+:root {
+  --soft-cream: #fdf6f0;				/* Old Lace */     
+  --warm-brown: #3b2f2f;				/* Masala */
+  --accent-blue: #4a90e2;				/* Havelock Blue */
+  --accent-blue-dark: #357ab8;			/* Boston Blue */
+  --disabled-grey: #999;				/* Medium Grey */
+  --disabled-text: #ccc;				/* Light Grey */
+}
+/* Head and Body */
+
+body {								/* general note - colours are from   chir.ag - website to convert Hex colours to a readable colour name */
   font-family: Georgia, serif;
-  background-color: #fdf6f0;  /* Soft cream */
-  color: #3b2f2f;             /* Warm dark brown */
+  background-color: #fdf6f0;  /* Old Lace*/
+  color: #3b2f2f;             /* Masala */
   line-height: 1.6;
   margin: 40px;
 }
 
 h1, h2, h3 {
-  color: #2c3e50;
+  color: #2c3e50;  /* Pickled Bluewood */
 }
 
 ul {
@@ -20,16 +30,104 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+.center {
+  text-align: center;
+}
+
+
+.text-center {							/*  Not sure where this class is used. Could duplicate .center */
+  text-align: center;
+}
+
+.section-title {
+	text-decoration: underline;
+}
+
+.ancestor-card {
+  background-color: #fcebd0;  /* Double Pearl Lusta */
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(100, 70, 40, 0.15);  /* Slight brown shadow */
+}
+
+.lifespan {
+  font-size: 1.1em;
+  color: #555;
+}
+
+a {
+  color: #0066cc;				/*   Science Blue  */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: #fdf6f0;  /* Old Lace*/
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+.back-link {
+  margin-top: 30px;
+}
+
+.note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #555;
+}
+
+.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+/*Images */
+
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.center {
-  text-align: center;
+.gallery img {
+  width: 250px;
+  margin: 50px 80px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.2s;
 }
 
+.gallery img:hover {
+  transform: scale(1.90);			/* increases the image by 90% when cursor hoves */
+  border-color: #666;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Trees */
 .tree ul {
   list-style-type: none;
   padding-left: 10px; /* Reduced from 20px */
@@ -75,90 +173,69 @@ img {
   padding-top: 0;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.section-title {
-	text-decoration: underline;
-}
-
-.ancestor-card {
-  background-color: #fcebd0;  /* Pale parchment tone */
+.family-tree {
+  width: 48%;
+  border: 1px solid #ccc;
   padding: 20px;
-  margin-bottom: 30px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(100, 70, 40, 0.15);  /* Slight brown shadow */
+  background-color: #fff8f2;   /*   Seashell peach   */
 }
 
-.lifespan {
-  font-size: 1.1em;
-  color: #555;
+.tree-container {
+  display: flex;
+  gap: 40px;
+  justify-content: start;
+  align-items: flex-start;
 }
 
-.gallery img {
-  width: 250px;
-  margin: 50px 80px;
-  cursor: pointer;
-  border: 2px solid #ccc;
-  transition: transform 0.2s;
+.tree-column {
+  flex: 1 1 50%;
+  min-width: 300px;
 }
 
-.gallery img:hover {
-  transform: scale(1.90);
-  border-color: #666;
-}
-
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  background-color: #fdf6f0;  /* Was invalid: “background: Soft Cream” */
-  padding: 30px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-/* Lightbox style */
-#lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+/* Nested trees inside right column */
+.nested-trees {
+  display: flex;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  box-shadow: 0 0 10px #fff;
+.tree-subcolumn {
+  flex: 1 1 50%;
+  min-width: 250px;
+}
+.tree .tree-btn {
+  display: inline-flex;           /* inline-flex for better alignment */
+  justify-content: center;        /* center text horizontally */
+  align-items: center;            /* center text vertically */
+  padding: 3px 8px;
+  font-size: 0.85em;
+  background-color: #4a90e2;	  /* Havelock Blue  */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+
+  flex: 1 1 auto;                 /* allow buttons to grow and shrink */
+  min-width: 0;                  /* allows shrinking below content width */
+  white-space: nowrap;           /* prevent multi-line text */
 }
 
-.back-link {
-  margin-top: 30px;
+.tree .tree-btn:hover {
+  background-color: #357ab8;      /*  Boston Blue */
 }
 
-.note {
-  margin-top: 30px;
-  font-style: italic;
-  color: #555;
-}
-
-.disabled {
-  color: #999;
+.tree-btn:disabled,
+.tree-btn[disabled] {
+  background-color: #999;
+  color: #ccc;
   cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none; /* extra to prevent any interaction */
 }
 
+/* Footnotes */
 .footnotes {
   font-size: 0.9em;
   color: #555;
@@ -169,20 +246,12 @@ a:hover {
   text-decoration: none;
 }
 
-.family-tree {
-  width: 48%;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: #fff8f2;
-}
-
 .inline-footnote {
   display: inline-block;
   margin-left: 6px;
   font-style: italic;
   font-size: 0.9em;
-  background-color: #fff3db;
+  background-color: #fff3db;		/*   Egg Sour  */
   padding: 4px 8px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -196,4 +265,53 @@ a:hover {
 .footnote-comment {
 	display: flex;
   justify-content: space-between;
+}
+
+/* General button style for outside-tree buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 1em;
+  background-color: #4a90e2;    /*  Havelock Blue  */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #357ab8;      /*  Boston Blue   */
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: #2c3e50;      /*  Pickled Bluewood  */
+  color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #357ab8;      /*  Boston Blue  */  /* was #2c3e50 */
+  color: #ccc;					  /*  light Grey */
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.button-link:hover {
+  background-color: #1a242f;    /*  Mirage  */
 }
