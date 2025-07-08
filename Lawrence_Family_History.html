@@ -6,86 +6,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> <!-- Add Archer/ Fowler tree to the tree container. will need to change it to three trees not two. -->
-<!-- Change links to buttons, where Appropriate -->
-  <div class="container">
-    <center><h1>Lawrence Family History</h1></center>
-	<p>
-	<div style="display: flex; justify-content: space-between; gap: 40px;">
-  <!-- Left Tree -->
-  <div class="family-tree" id="tree-left">
-    <h2>The Emmons Line</h2>
-    <div class="tree">
-      <ul>
-        <li>
-          <div><a href="Simon_Emmons.html" class="tree-btn">Simon Emmons (1792)</a></div>
-          <ul>
-            <li>
-              <div><a href="Emmons,_Myra_(F).html" class="tree-btn">Myra Emmons (1824)</a></div>
-              <ul>
-                <li>
-                  <div><a href="Lawrence,_Walter.html" class="tree-btn">Walter Lawrence(1856)</a></div>
-                  <ul>
-                    <li>
-                      <div>
-						<div class="button-row tree">
-						  <a href="Evelyn_Lawrence.html" class="tree-btn">Evelyn (1919)</a>
-						  <button class="button-link" disabled>Margaret (1922)</button>
-						  <a href="Leslie_lawrence.html" class="tree-btn">Leslie (1925)</a>
-						</div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+<div style = "display:flex; width: 100%">
+<!-- container No. 1 -->
+<div style="position: relative; width: 50%; height: 300px;  float: left; box-sizing: border-box;">
+<h3>The Emmons Line</h3>
+  <!-- Button: fixed width 200px, height 30px -->
+  <a href="Simon_Emmons.html" class="container-buttons" style = "top: 40px; left: calc(50% - 100px);">
+    Simon Emmons (1792)</a>
+  <a href="Emmons,_Myra_(F).html" class="container-buttons" style = "top: 90px; left: calc(50% - 100px);">
+    Myra Emmons (1824)</a>
+  <a href="Lawrence,_Walter.html" class="container-buttons" style = "top: 140px; left: calc(50% - 100px);">
+    Walter Lawrence(1856)</a>
+	<a href="Evelyn_Lawrence.html" class="container-buttons" style = "top: 190px; left: calc(20% - 100px);">
+    Evelyn (1919)</a>
+	<button class="container-buttons" style = "top: 190px; left: calc(50% - 100px);" disabled>
+    Margaret (1922)</button>
+	<a href="Leslie_lawrence.html" class="container-buttons" style = "top: 190px; left: calc(80% - 100px);">
+    Leslie (1925)</a>
+ <!-- Vertical line aligned with button's right edge -->
+  <div class = "container-lines-vertical" style ="top: 70px; left: calc(50% - 0px); height: 20px;">
   </div>
-
-  <!-- Right Tree -->
-  <div class="family-tree" id="tree-right">
-    <h2>The Lawrence / Laurence Line</h2>
-    <div class="tree">
-      <ul>
-        <li>
-          <div><a href="Laurence,_John.html" class="tree-btn">John Laurence</a></div>
-          <ul>
-            <li>
-              <div><a href="Laurence,_William.html" class="tree-btn">William Laurence (1790)</a></div>
-              <ul>
-				<li>
-					<div><a href="Laurence,_Thomas.html" class="tree-btn">Thomas Laurence (1817)</a></div>
-					<ul>
-						<li>
-							<div><a href="Lawrence,_Walter.html" class="tree-btn">Walter Lawrence (1856)</a></div>
-							<ul>
-								<li>
-									<div>
-										<div class="button-row tree">
-										  <a href="Evelyn_Lawrence.html" class="tree-btn">Evelyn (1919)</a>
-										  <button class="button-link" disabled>Margaret (1922)</button>
-										  <a href="Leslie_lawrence.html" class="tree-btn">Leslie (1925)</a>
-										</div>
-								</li>
-							</ul>
-						</div>
-					  </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+  <div class = "container-lines-vertical" style ="top: 120px; left: calc(50% - 0px); height: 20px;">
+  </div>
+  <div class = "container-lines-vertical" style ="top: 170px; left: calc(50% - 0px); height: 20px;">
+  </div>
+  <div class = "container-lines-vertical" style ="top: 180px; left: calc(20% + 0px); height: 10px;">
+  </div> 
+  <div class = "container-lines-vertical" style ="top: 180px; left: calc(80% + 0px); height: 10px;">
+  </div>  
+  <!-- Horizontal line starting at button left edge and extending 100px right -->
+  <div style="position: absolute; top: 180px; 
+              left: 20%;
+              width: 50%; height: 2px; background-color: black;">
+  </div> 
+    <div style="position: absolute; top: 180px; 
+              left: 50%;
+              width: 30%; height: 2px; background-color: black;">
+  </div> 
+</div>
+<!-- container No. 2 -->
+<div style="position: relative; width: 50%; height: 300px;  float: left; box-sizing: border-box;">
+<h3>The Lawrence/Laurence Line</h3>
+  <a href="Laurence,_John.html" class="container-buttons" style = "top: 40px; left: calc(50% - 100px);">
+  John Laurence</a>
+  <a href="Laurence,_William.html" class="container-buttons" style = "top: 90px; left: calc(50% - 100px);">
+  William Laurence (1790)</a>
+	<a href="Laurence,_Thomas.html" class="container-buttons" style = "top: 140px; left: calc(50% - 100px);">
+  Thomas Laurence (1817)</a>
+	<a href="Lawrence,_Walter.html" class="container-buttons" style = "top: 190px; left: calc(50% - 100px);">
+  Walter Lawrence (1856)</a>
+	<a href="Evelyn_Lawrence.html" class="container-buttons" style = "top: 240px; left: calc(20% - 100px);">
+  Evelyn (1919)</a>
+	<button class="container-buttons" style = "top: 240px; left: calc(50% - 100px);" disabled>
+  Margaret (1922)</button>
+	<a href="Leslie_lawrence.html" class="container-buttons" style = "top: 240px; left: calc(80% - 100px);">
+  Leslie (1925)</a>
+ <!-- Vertical line aligned with button's right edge -->
+  <div class = "container-lines-vertical" style ="top: 70px; left: calc(50% - 0px); height: 20px;">
+  </div>
+  <div class = "container-lines-vertical" style ="top: 120px; left: calc(50% - 0px); height: 20px;">
+  </div>
+  <div class = "container-lines-vertical" style ="top: 170px; left: calc(50% - 0px); height: 20px;">
+  </div>
+   <div class = "container-lines-vertical" style ="top: 220px; left: calc(50% - 0px); height: 20px;">
+  </div> 
+  <div class = "container-lines-vertical" style ="top: 230px; left: calc(20% + 0px); height: 10px;">
+  </div> 
+  <div class = "container-lines-vertical" style ="top: 230px; left: calc(80% + 0px); height: 10px;">
+  </div>  
+  <!-- Horizontal line starting at button left edge and extending 100px right -->
+  <div style="position: absolute; top: 230px; 
+              left: 20%;
+              width: 50%; height: 2px; background-color: black;">
+  </div> 
+    <div style="position: absolute; top: 230px; 
+              left: 50%;
+              width: 30%; height: 2px; background-color: black;">
   </div>
 </div>
-	
-	
-	
+</div>
+
+
+
+
+
+
 <p> This family story begins with <a href="Laurence,_John_(M).html">John Laurence</a>, who was born in the mid-1700s—possibly in St Albans, although Watford is also closely associated with the family's early roots. John married Elizabeth (surname unknown), and together they had a son, <a href="Laurence,_William_(M).html">William Laurence</a>, born in 1790. </p> 
 <p> William married Charlotte Knowles in 1806, and their son <a href="Laurence,_Thomas_(M).html">Thomas Laurence</a> was born in Watford in 1817. In 1844, Thomas married <a href="Emmons,_Myra_(F).html">Myra Emmons</a>, who was born in Whatfield, Suffolk. Her father, <a href="Simon_Emmons.html">Simon Emmons</a>, was born in 1792. </p> <p> <a href="suffolk_history_1830_to_1839.html">In the early 1800s</a>, 
 life in rural England was harsh. Work was scarce, wages were low, and poor harvests made even basic sustenance difficult. In 1838, Simon Emmons was caught stealing seed and grain from a local storehouse—likely an act of desperation. At the time, Britain regularly transported convicted criminals to penal colonies. Simon was sentenced to seven years' transportation to Van Diemen's Land (modern-day Tasmania), 

@@ -31,30 +31,63 @@
 
   <h2>🧭 How to Use This Site</h2>
   <ul>
-    <li>Click a family group button below to view that branch of the family tree.</li>
+    <li>Click a family group below to view that branch of the family tree.</li>
     <li>Pages include links (in blue) to individual profiles, each offering further detail—birthplaces, spouses, children, occupations, and relevant historical context.</li>
     <li>Not all histories are complete. Sections marked in grey are still in progress and will be updated as more information becomes available.</li>
     <li>You can return to this homepage at any time using your browser's Back button or by bookmarking the site’s main index page.</li>
   </ul>
 
   <h2>🔗 Family Lines</h2>
-
-  <div style = "display:Flex; width: 100%"></div>
-  <div style="position: relative; width: 100%; height: 120px;  float: left; box-sizing: border-box;">
   <div>
-      <!-- Button: fixed width 200px, height 30px -->
-    <a href="Lawrence_Family_History.html"  class = "container-buttons" style="top: 20px; left: 30px; width: 300px;">The Lawrence Family History</a>
-    <a href="Vickers_Early_Family_History.html" class = "container-buttons" style="top: 20px; left: 360px; width: 300px;">The Vickers / D'oyly Family History</a>
-	  <a href="The Vickers Family History.html" class = "container-buttons" style="top: 20px; left: 690px; width: 300px;">The Vickers / Brocas Family History</a>
-    <a href="Browns family history.html" class = "container-buttons" style="top: 20px; left: 1020px; width: 300px;">The Brown Family History</a>
+    <a href="Lawrence_Family_History.html" class="btn">The Lawrence Family History</a>
+    <a href="Vickers_Early_Family_History.html" class = "btn">The Vickers / D'oyly Family History</a>
+	<a href="The Vickers Family History.html" class = "btn">The Vickers / Brocas Family History</a>
+    <a href="Browns family history.html" class="btn">The Brown Family History</a>
+    <div class="button-row">
+	  <button class="button-link" disabled>The Lawless Family History</button>
+	  <button class="button-link" disabled>The O'Keeffe Family History</button>
+	  <button class="button-link" disabled>The Archer Family History</button>
+	  <button class="button-link" disabled>The Kennedy Family History</button>
+	</div>
+  </div>
+	<div style="display: flex; align-items: center; justify-content: center: gap: 10px;">
+		<button class="button-link" disabled> The Lawless Family History</button>
+		<div style="width: 2px; height: 30px; background-color:black;"></div>
+		<button class="button-link" disabled>The O'Keeffe Family History</button>
+	</div>	
+
+
+<!--- This section is me just playing with different settings and should be deleted before anything goes live -->
+
   
-	  <button class="container-buttons" style="top: 70px; left: 30px; width: 300px;" disabled>The Lawless Family History</button>
-	  <button class="container-buttons" style="top: 70px; left: 360px; width: 300px;" disabled>The O'Keeffe Family History</button>
-	  <button class="container-buttons" style="top: 70px; left: 690px; width: 300px;" disabled>The Archer Family History</button>
-	  <button class="container-buttons" style="top: 70px; left: 1020px; width: 300px;" disabled>The Kennedy Family History</button>
-	
-  </div>
-  </div>
+<div style="position: relative; width: 900px; height: 500px; border: 1px solid gray;">
+
+  <!-- First button -->
+  <a href="Lawrence_Family_History.html"
+     style="width: 300px; height: 30px; text-align: center; position: absolute; top: 60px; left: 300px;
+            line-height: 30px; padding: 0; box-sizing: border-box; background-color: lightgray; display: inline-block;">
+     The Lawrence Family History
+  </a>
+
+  <!-- Second button -->
+  <a href="Vickers_Early_Family_History.html"
+     style="width: 300px; height: 30px; text-align: center; position: absolute; top: 135px; left: 100px;
+            line-height: 30px; padding: 0; box-sizing: border-box; background-color: lightgray; display: inline-block;">
+     The Vickers / D'oyly Family History
+  </a>
+
+  <!-- First vertical line -->
+  <div style="position: absolute; top: 90px; left: 450px; width: 2px; height: 20px; background-color: black;"></div>
+
+  <!-- Second vertical line -->
+  <div style="position: absolute; top: 110px; left: 150px; width: 2px; height: 25px; background-color: black;"></div>
+
+  <!-- Horizontal line connecting the vertical lines -->
+  <div style="position: absolute; top: 110px; left: 150px; width: 300px; height: 2px; background-color: red;"></div>
+
+</div>
+
+
 
 <h2>Historical Information</h2>
 <div>
@@ -66,7 +99,7 @@
 
 <p class="note"><strong>Privacy Notice:</strong> For privacy reasons, the website does not include details of living individuals.</p>
 <footer class="footnote-comment">
-<span><em>Created and updated by - Martin Lawrence - 2025</span><span>Version - 1.37 - Last updated: 08/07/2025</em></span>
+<span><em>Created and updated by - Martin Lawrence - 2025</span><span>Version - 1.36 - Last updated: 06/07/2025</em></span>
 <footer>
 <!--
 |---------------------------------------------------------------------------------------------------------------------|
@@ -79,9 +112,7 @@ Version     Date                         Description of change                  
 1.25     | 27-06-25 |  URL released to David and Alison. This Table added, but the Version was not updated.                                     | 	 Pushed to Git 27-06-25
 1.30     | 28-06-25 |  Photos added to Bert and Peggies files also Leslie and Evelyn's files. Service Years Writing updated				        |    Pushed to Git
 1.35     | 29-06-25 |  family trees added to Brown Family Sheet. Links replaced by buttons.																			    |    Not Pushed to Git.
-1.36     | 06-07-25 |  Addition pages added for the historical periods between 1040 and 1800. Links added to some pages.
-1.37     | 08-06-25 |  Further simplification of pages made. Tree views amended, and lines drawn. Button creations improved.
-
+1.36     | 06-07-25 |  Addition pages added for the historical periods between 1040 and 1800. Links added to some pGes.
 Update this file, with changes, as required. Update, also the page Footer to include date and version.
 This table will not be displayed on web page. 
 Message in commit to Git to include Version and Date. Description of change could also be included.

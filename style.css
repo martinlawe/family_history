@@ -19,6 +19,13 @@ body {								/* general note - colours are from   chir.ag - website to convert 
 h1, h2, h3 {
   color: #2c3e50;  /* Pickled Bluewood */
 }
+ 
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;  
+}
 
 ul {
   margin-bottom: 1em;
@@ -315,3 +322,31 @@ img {
 .button-link:hover {
   background-color: #1a242f;    /*  Mirage  */
 }
+
+.container-buttons{             /*  use when creating tree lists, this is better than tree btn */
+Width: 200px;
+height: 30px;	
+text-align: center;
+position: absolute;
+line-height: 30px;
+padding: 0;
+border-radius: 6px;
+box-sizing:border-box;
+display: inline-block;
+background-color: #4a90e2;
+color: white ;
+}
+
+.container-buttons:disabled,
+.container-buttons[disabled] {
+Background-color: #357ab8;
+color: #ccc ;
+}
+
+
+
+.container-lines-vertical{       /* have not created a class for Horizontal lines as these are not used often  */
+position: absolute;
+width: 2px;
+background-color: black;
+}	
