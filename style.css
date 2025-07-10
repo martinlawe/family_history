@@ -19,7 +19,13 @@ body {								/* general note - colours are from   chir.ag - website to convert 
 h1, h2, h3 {
   color: #2c3e50;  /* Pickled Bluewood */
 }
- 
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
 h3 {
   font-size: 20px;
   line-height: 24px;
