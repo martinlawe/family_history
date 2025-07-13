@@ -1,0 +1,49 @@
+<!DOCTYPE html><!--This template is aimed at keeping all pages the same for all individuals. Sections can be copy/pasted as required, but the sequence should be maintained-->
+<html lang='en'>
+<head>
+<!--Heading shows page title in Browser Tab-->
+<meta charset='UTF-8'>
+<meta name="robots" content="noindex, nofollow"><!--probably not necessary, but keeps Robot's away-->
+<title>Family History – [enter name]</title><!--Enter name of person this page is about-->
+<link rel="stylesheet" href="style.css"><!--References the style sheet for this project-->
+</head>
+<body>
+  <div class="ancestor-card">
+    <h1>[enter name]</h1><!-- Enter name of person this page is about, this will be displayed at top od page-->
+    <p class="lifespan">[enter dates]</p><!--enter dates if known, otherwise leave blank-->
+
+	  <h2>Photo Gallery</h2><!--Enter details of photos to be displayed for this person.-->
+	  <div class="gallery"><!--Include this section in each person page, even if no photos available, this maintains consistency throughout project-->
+		<img src=[enter location of thumbnail photo] alt=[enter alternative name, if photo not displayed] onclick="openLightbox([enter location of photo]])"><!--repeat for as many photos as required-->
+	  </div> 
+  </div>
+  <div><!--In this section include the periods in which the person lived. -->
+		Lived during the <a href ="industrial_and_revolutionary_age.html">Industrial and Revolutionary Age</a> the 
+		<a href="world_war_period.html">World War Period</a> and the 
+		<a href="contemporary_period.html">contemporary Period</a>
+	</div>
+      <div class="section"><!--give brief overview of the individual-->
+      <h2>Overview</h2>
+      <p></p>
+      </div>
+
+    <div class="section"><!--enter names and dates-->
+      <h2>Marriage and Children</h2>
+      <p><strong>Married:</strong>[enter details, name date and location is known]</p>
+      <p><strong>Known children:</strong>[enter name/s and year dates if known]</p>
+
+    <div class="section">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="event"><strong>[enter year]:</strong>[enter location]</div>
+        <div class="event"><strong>[enter year]:</strong>[enter event]</div><!--repeat as necessary-->
+      </div>
+    </div>
+<!--main body of text describing the life of the individual this may be left blank-->  
+</div>
+<p><a href="javascript:history.back()">Go Back</a></p>
+</body>
+</html>  
+  
+  
+  

@@ -14,10 +14,15 @@ body {								/* general note - colours are from   chir.ag - website to convert 
   color: #3b2f2f;             /* Masala */
   line-height: 1.6;
   margin: 40px;
+  margin-top: 15px;
 }
 
 h1, h2, h3 {
   color: #2c3e50;  /* Pickled Bluewood */
+}
+
+h1 {
+  font-size: 30px;
 }
 
 h2 {
@@ -43,16 +48,16 @@ hr {
   border-top: 1px solid #ccc;
 }
 
-.center {
+.center {                 /*Not sure this is actually used */
   text-align: center;
 }
 
 
-.text-center {							/*  Not sure where this class is used. Could duplicate .center */
+.text-center {							/* Used in Evelyns writings  and Windsor_past_present*/
   text-align: center;
 }
 
-.section-title {
+.section-title {             /* used in Evelyns Early Years and Evelyns writings - part 1 */
 	text-decoration: underline;
 }
 
@@ -93,7 +98,7 @@ a:hover {
 }
 
 .note {
-  margin-top: 30px;
+  margin-top: 20px;
   font-style: italic;
   color: #555;
 }
@@ -140,134 +145,11 @@ img {
   box-shadow: 0 0 10px #fff;
 }
 
-/* Trees */
-.tree ul {
-  list-style-type: none;
-  padding-left: 10px; /* Reduced from 20px */
-  padding-top: 10px;  /* Reduced from 20px */
-  margin-bottom: 0;   /*Eliminate extra bottom space */
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.tree li {
-  list-style-type: none;
-  text-align: center;
-  margin: 5px 10px;  /* changed from 5px 20px */
-  position: relative;
-  padding: 10px 5px 0 5px;  /* changed from 20px 5px 0 5px */
-}
-
-.tree li::before,
-.tree li::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  border-top: 1px solid #000;
-  width: 50%;
-  height: 20px;
-}
-
-.tree li::before {
-  left: -50%;
-}
-
-.tree li::after {
-  right: -50%;
-}
-
-.tree li:only-child::before,
-.tree li:only-child::after {
-  display: none;
-}
-
-.tree li:only-child {
-  padding-top: 0;
-}
-
-.family-tree {
-  width: 48%;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: #fff8f2;   /*   Seashell peach   */
-}
-
-.tree-container {
-  display: flex;
-  gap: 40px;
-  justify-content: start;
-  align-items: flex-start;
-}
-
-.tree-column {
-  flex: 1 1 50%;
-  min-width: 300px;
-}
-
-/* Nested trees inside right column */
-.nested-trees {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.tree-subcolumn {
-  flex: 1 1 50%;
-  min-width: 250px;
-}
-.tree .tree-btn {
-  display: inline-flex;           /* inline-flex for better alignment */
-  justify-content: center;        /* center text horizontally */
-  align-items: center;            /* center text vertically */
-  padding: 3px 8px;
-  font-size: 0.85em;
-  background-color: #4a90e2;	  /* Havelock Blue  */
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-
-  flex: 1 1 auto;                 /* allow buttons to grow and shrink */
-  min-width: 0;                  /* allows shrinking below content width */
-  white-space: nowrap;           /* prevent multi-line text */
-}
-
-.tree .tree-btn:hover {
-  background-color: #357ab8;      /*  Boston Blue */
-}
-
-.tree-btn:disabled,
-.tree-btn[disabled] {
-  background-color: #999;
-  color: #ccc;
-  cursor: not-allowed;
-  opacity: 0.6;
-  pointer-events: none; /* extra to prevent any interaction */
-}
-
 /* Footnotes */
 .footnotes {
   font-size: 0.9em;
   color: #555;
   margin-top: 40px;
-}
-
-.footnotes a {
-  text-decoration: none;
-}
-
-.inline-footnote {
-  display: inline-block;
-  margin-left: 6px;
-  font-style: italic;
-  font-size: 0.9em;
-  background-color: #fff3db;		/*   Egg Sour  */
-  padding: 4px 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
 }
 
 .footnote-content {
@@ -276,7 +158,7 @@ img {
   color: #555;
 }
 .footnote-comment {
-	display: flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -307,11 +189,6 @@ img {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
 
 .button-link {
   display: inline-block;
@@ -330,29 +207,183 @@ img {
 }
 
 .container-buttons{             /*  use when creating tree lists, this is better than tree btn */
-Width: 200px;
-height: 30px;	
-text-align: center;
-position: absolute;
-line-height: 30px;
-padding: 0;
-border-radius: 6px;
-box-sizing:border-box;
-display: inline-block;
-background-color: #4a90e2;
-color: white ;
+  width: 200px;
+  height: 30px;	
+  text-align: center;
+  position: absolute;
+  line-height: 30px;
+  padding: 0;
+  border-radius: 6px;
+  box-sizing:border-box;
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
 }
 
 .container-buttons:disabled,
 .container-buttons[disabled] {
-Background-color: #357ab8;
-color: #ccc ;
+  Background-color: #357ab8;
+  color: #ccc;
+}
+
+.container-lines-vertical{       /* have not created a class for Horizontal lines as these are not used often  */
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  background-color: black;
+}	
+
+.container-lines-horizontal{
+  position: absolute;
+  height: 2px;
+  background-color: black;
 }
 
 
+/*     Classes below are not currently used within the family_history project         */
 
-.container-lines-vertical{       /* have not created a class for Horizontal lines as these are not used often  */
-position: absolute;
-width: 2px;
-background-color: black;
-}	
+.stack-button {                         /* Does not appear to be Used */
+  display: block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px; /* spacing between buttons */
+  text-align: center;
+  background-color: #4a90e2;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.first-in-stack {                         /* Does not appear to be Used */
+  margin-top: 40px;
+}
+
+.button-row {                         /* Does not appear to be Used */
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footnotes a {                         /* Does not appear to be Used */
+  text-decoration: none;
+}
+
+.inline-footnote {                         /* Does not appear to be Used */
+  display: inline-block;
+  margin-left: 6px;
+  font-style: italic;
+  font-size: 0.9em;
+  background-color: #fff3db;		/*   Egg Sour  */
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.tree .tree-btn {                         /* Does not appear to be Used */
+  display: inline-flex;           /* inline-flex for better alignment */
+  justify-content: center;        /* center text horizontally */
+  align-items: center;            /* center text vertically */
+  padding: 3px 8px;
+  font-size: 0.85em;
+  background-color: #4a90e2;	  /* Havelock Blue  */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  
+  flex: 1 1 auto;                 /* allow buttons to grow and shrink */
+  min-width: 0;                  /* allows shrinking below content width */
+  white-space: nowrap;           /* prevent multi-line text */
+}
+
+.tree .tree-btn:hover {                         /* Does not appear to be Used */
+  background-color: #357ab8;      /*  Boston Blue */
+}
+
+.tree-btn:disabled,
+.tree-btn[disabled] {                         /* Does not appear to be Used */
+  background-color: #999;
+  color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none; /* extra to prevent any interaction */
+}
+
+.tree-column {                         /* Does not appear to be Used */
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+/* Nested trees inside right column */
+.nested-trees {                         /* Does not appear to be Used */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tree-subcolumn {                         /* Does not appear to be Used */
+  flex: 1 1 50%;
+  min-width: 250px;
+  
+  /* Trees */
+  .tree ul {                                     /* does not appear to be used */
+    list-style-type: none;
+    padding-left: 10px; /* Reduced from 20px */
+    padding-top: 10px;  /* Reduced from 20px */
+    margin-bottom: 0;   /*Eliminate extra bottom space */
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tree li {                                  /* Does not appear to be used */
+    list-style-type: none;
+    text-align: center;
+    margin: 5px 10px;  /* changed from 5px 20px */
+    position: relative;
+    padding: 10px 5px 0 5px;  /* changed from 20px 5px 0 5px */
+  }
+  
+  .tree li::before,
+  .tree li::after {                         /* Does not appear to be Used */
+    content: '';
+    position: absolute;
+    top: 0;
+    border-top: 1px solid #000;
+    width: 50%;
+    height: 20px;
+  }
+  
+  .tree li::before {                         /* Does not appear to be Used */
+    left: -50%;
+  }
+  
+  .tree li::after {                         /* Does not appear to be Used */
+    right: -50%;
+  }
+  
+  .tree li:only-child::before,
+  .tree li:only-child::after {                         /* Does not appear to be Used */
+    display: none;
+  }
+  
+  .tree li:only-child {                         /* Does not appear to be Used */
+    padding-top: 0;
+  }
+  
+  .family-tree {                         /* Does not appear to be Used */
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff8f2;   /*   Seashell peach   */
+  }
+  
+  .tree-container {                         /* Does not appear to be Used */
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
