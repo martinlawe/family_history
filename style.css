@@ -26,7 +26,7 @@ header {
 }
 
 .nav-wrapper {
-  background-color: #e6e6e6;  /* Light band for nav */
+  background-color: #e6e6e6; /* Light band for nav */
   padding: 1em 0;
 }
 
@@ -110,6 +110,19 @@ hr {
   margin: 2em 0;
   border: none;
   border-top: 1px solid #ccc;
+}
+
+.question {
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0.3em;
+  color: #333;
+}
+
+.answer {
+  margin-bottom: 0.2em;
+  line-height: 1.6;
+  color: #444;
 }
 
 .center {
