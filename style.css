@@ -5,6 +5,8 @@
   --accent-blue-dark: #357ab8; /* Boston Blue */
   --disabled-grey: #999; /* Medium Grey */
   --disabled-text: #ccc; /* Light Grey */
+  --nav-bg: #003366;
+  --nav-link-color: #003366;
 }
 /* Head and Body */
 
@@ -12,13 +14,19 @@ body {
   font-family: Georgia, serif;
   background-color: #f9f9f9;
   color: #333;
-  line-height: 1.2;
+  line-height: 1.3;
   margin: 0;
   margin-top: 15px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
-  background: #003366;
+  background: var(--nav-bg);
   color: white;
   padding: 1em;
   font-size: 1.5em;
@@ -41,7 +49,7 @@ nav {
 
 nav a {
   margin-right: 1em;
-  color: #003366;
+  color: var(--nav-link-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -53,7 +61,7 @@ nav a:hover {
 footer {
   margin-left: 0;
   margin-right: 0;
-  background: #003366;
+  background: var(--nav-bg);
   color: white;
   text-align: center;
   padding: 1em;
