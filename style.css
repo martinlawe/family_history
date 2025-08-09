@@ -120,6 +120,11 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+.main-container {
+  min-height: 100vh;
+  overflow: auto;
+}
+
 .question {
   font-weight: bold;
   margin-top: 2em;

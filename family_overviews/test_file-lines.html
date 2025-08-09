@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SVG Multi-Bend Test</title>
+    <style>
+      body {
+        margin: 0;
+        position: relative;
+        height: 100vh;
+      }
+      button {
+        position: absolute;
+        padding: 10px 20px;
+      }
+      #c03 {
+        top: 100px;
+        left: 200px;
+      }
+      #c04 {
+        top: 300px;
+        left: 400px;
+      }
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="c03">C03</button>
+    <button id="c04">C04</button>
+
+    <svg id="treeLines"></svg>
+
+    <script>
+      function connectSideToSide(svg, startEl, startSide, endEl, endSide) {
+        const startRect = startEl.getBoundingClientRect();
+        const endRect = endEl.getBoundingClientRect();
+        const svgRect = svg.getBoundingClientRect();
+
+        let startX, startY, endX, endY;
+
+        if (startSide === "left") {
+          startX = startRect.left - svgRect.left;
+          startY = startRect.top + startRect.height / 2 - svgRect.top;
+        } else if (startSide === "right") {
+          startX = startRect.right - svgRect.left;
+          startY = startRect.top + startRect.height / 2 - svgRect.top;
+        } else if (startSide === "top") {
+          startX = startRect.left + startRect.width / 2 - svgRect.left;
+          startY = startRect.top - svgRect.top;
+        } else {
+          // bottom
+          startX = startRect.left + startRect.width / 2 - svgRect.left;
+          startY = startRect.bottom - svgRect.top;
+        }
+
+        if (endSide === "left") {
+          endX = endRect.left - svgRect.left;
+          endY = endRect.top + endRect.height / 2 - svgRect.top;
+        } else if (endSide === "right") {
+          endX = endRect.right - svgRect.left;
+          endY = endRect.top + endRect.height / 2 - svgRect.top;
+        } else if (endSide === "top") {
+          endX = endRect.left + endRect.width / 2 - svgRect.left;
+          endY = endRect.top - svgRect.top;
+        } else {
+          // bottom
+          endX = endRect.left + endRect.width / 2 - svgRect.left;
+          endY = endRect.bottom - svgRect.top;
+        }
+
+        const path = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "path"
+        );
+
+        // Multi-bend: go sideways a bit, drop down, then over to the target
+        const mid1X = startX - 10; // 10px out to the left
+        const mid1Y = startY;
+        const mid2X = mid1X;
+        const mid2Y = endY - 100; // drop before reaching target
+        const mid3X = endX;
+        const mid3Y = mid2Y;
+
+        const d = `M ${startX} ${startY} 
+               L ${mid1X} ${mid1Y}
+               L ${mid2X} ${mid2Y}
+               L ${mid3X} ${mid3Y}
+               L ${endX} ${endY}`;
+
+        path.setAttribute("d", d);
+        path.setAttribute("stroke", "black");
+        path.setAttribute("stroke-width", "2");
+        path.setAttribute("fill", "none");
+
+        svg.appendChild(path);
+      }
+
+      window.onload = function () {
+        const svg = document.getElementById("treeLines");
+        connectSideToSide(
+          svg,
+          document.getElementById("c03"),
+          "left",
+          document.getElementById("c04"),
+          "top"
+        );
+      };
+    </script>
+  </body>
+</html>
