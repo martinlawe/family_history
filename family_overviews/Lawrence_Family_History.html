@@ -1,331 +1,358 @@
-<head <!DOCTYPE html>
-  <!--Updated with new routings 13/07/2025-->
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="robots" content="noindex, nofollow" />
-      <title>Lawrence Family History</title>
-      <link rel="stylesheet" href="../style.css" />
-    </head>
-    <body>
-      <header>Family History</header>
-      <div class="nav-wrapper">
-        <nav>
-          <a href="../index.html">Home</a>
-          <a href="Vickers_Early_Family_History.html">Vickers Family History</a>
-          <a href="Browns family history.html">Brown's Family History</a>
-          <a href="O'keeffe_Family_History.html">O'keeffe family history</a>
-        </nav>
-      </div>
-      <main style="margin: 40px">
-        <!-- Add Archer/ Fowler tree to the tree container. will need to change it to three trees not two. 040825 - still to be completed -->
-        <div style="display: flex; width: 100%">
-          <!-- container No. 1 -->
-          <div
-            style="
-              position: relative;
-              width: 50%;
-              height: 300px;
-              float: left;
-              box-sizing: border-box;
-            "
-          >
-            <h3>The Emmons Line</h3>
-            <!-- Button: fixed width 200px, height 30px -->
-            <a
-              href="../people/Simon_Emmons.html"
-              class="container-buttons"
-              style="top: 40px; left: calc(50% - 100px)"
-            >
-              Simon Emmons (1792)</a
-            >
-            <a
-              href="../people/Myra_Emmons.html"
-              class="container-buttons"
-              style="top: 90px; left: calc(50% - 100px)"
-            >
-              Myra Emmons (1824)</a
-            >
-            <a
-              href="../people/Walter_Lawrence.html"
-              class="container-buttons"
-              style="top: 140px; left: calc(50% - 100px)"
-            >
-              Walter Lawrence(1856)</a
-            >
-            <a
-              href="../people/Evelyn_Lawrence.html"
-              class="container-buttons"
-              style="top: 190px; left: calc(20% - 100px)"
-            >
-              Evelyn (1919)</a
-            >
-            <button
-              class="container-buttons"
-              style="top: 190px; left: calc(50% - 100px)"
-              disabled
-            >
-              Margaret (1922)
-            </button>
-            <a
-              href="../people/Leslie_lawrence.html"
-              class="container-buttons"
-              style="top: 190px; left: calc(80% - 100px)"
-            >
-              Leslie (1925)</a
-            >
-            <!-- Vertical line aligned with button's right edge -->
-            <div
-              class="container-lines-vertical"
-              style="top: 70px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 120px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 170px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 180px; left: calc(20% + 0px); height: 10px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 180px; left: calc(80% + 0px); height: 10px"
-            ></div>
-            <!-- Horizontal line starting at button left edge and extending 100px right -->
-            <div
-              style="
-                position: absolute;
-                top: 180px;
-                left: 20%;
-                width: 50%;
-                height: 2px;
-                background-color: black;
-              "
-            ></div>
-            <div
-              style="
-                position: absolute;
-                top: 180px;
-                left: 50%;
-                width: 30%;
-                height: 2px;
-                background-color: black;
-              "
-            ></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport,robots"
+      content="width=device-width, initial-scale=1.0, noindex, nofollow"
+    />
+    <title>Lawrence family history</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log" style="display: none">
+      23/08/25 - New file created using the latest script for line creation.
+    </div>
+    <!--End of the Change Log-->
+    <header>Family History</header>
+    <div class="nav-wrapper">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="Vickers_Early_Family_History.html">Vickers Family History</a>
+        <a href="Browns family history.html">Brown's Family History</a>
+        <a href="O'keeffe_Family_History.html">O'keeffe family history</a>
+      </nav>
+    </div>
+    <main>
+      <div class="trees-wrapper">
+        <!-- Tree 1 -->
+        <div class="trees-container" id="tree1">
+          <svg id="lines-tree1"></svg>
+          <div class="generation">
+            <div class="row" id="row1-tree1">
+              <a href="../people/Simon_Emmons.html" class="button-link" id="p1">
+                Simon Emmons (1792 - 1840)
+              </a>
+            </div>
           </div>
-          <!-- container No. 2 -->
-          <div
-            style="
-              position: relative;
-              width: 50%;
-              height: 300px;
-              float: left;
-              box-sizing: border-box;
-            "
-          >
-            <h3>The Lawrence/Laurence Line</h3>
-            <a
-              href="../people/John_Laurence.html"
-              class="container-buttons"
-              style="top: 40px; left: calc(50% - 100px)"
-            >
-              John Laurence</a
-            >
-            <a
-              href="../people/William_Laurence.html"
-              class="container-buttons"
-              style="top: 90px; left: calc(50% - 100px)"
-            >
-              William Laurence (1790)</a
-            >
-            <a
-              href="../people/Thomas_Laurence.html"
-              class="container-buttons"
-              style="top: 140px; left: calc(50% - 100px)"
-            >
-              Thomas Laurence (1817)</a
-            >
-            <a
-              href="../people/Walter_Lawrence.html"
-              class="container-buttons"
-              style="top: 190px; left: calc(50% - 100px)"
-            >
-              Walter Lawrence (1856)</a
-            >
-            <a
-              href="../people/Evelyn_Lawrence.html"
-              class="container-buttons"
-              style="top: 240px; left: calc(20% - 100px)"
-            >
-              Evelyn (1919)</a
-            >
-            <button
-              class="container-buttons"
-              style="top: 240px; left: calc(50% - 100px)"
-              disabled
-            >
-              Margaret (1922)
-            </button>
-            <a
-              href="../people/Leslie_lawrence.html"
-              class="container-buttons"
-              style="top: 240px; left: calc(80% - 100px)"
-            >
-              Leslie (1925)</a
-            >
-            <!-- Vertical line aligned with button's right edge -->
-            <div
-              class="container-lines-vertical"
-              style="top: 70px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 120px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 170px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 220px; left: calc(50% - 0px); height: 20px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 230px; left: calc(20% + 0px); height: 10px"
-            ></div>
-            <div
-              class="container-lines-vertical"
-              style="top: 230px; left: calc(80% + 0px); height: 10px"
-            ></div>
-            <!-- Horizontal line starting at button left edge and extending 100px right -->
-            <div
-              style="
-                position: absolute;
-                top: 230px;
-                left: 20%;
-                width: 50%;
-                height: 2px;
-                background-color: black;
-              "
-            ></div>
-            <div
-              style="
-                position: absolute;
-                top: 230px;
-                left: 50%;
-                width: 30%;
-                height: 2px;
-                background-color: black;
-              "
-            ></div>
+          <div class="generation">
+            <div class="row" id="row2-tree1">
+              <a href="../people/Myra_Emmons.html" class="button-link" id="p2"
+                >Myra Emmons (1824 - 1905)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree1">
+              <a
+                href="../people/Walter_Lawrence.html"
+                class="button-link"
+                id="p3"
+                >Walter Lawrence (1856 - 1932)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree1">
+              <a
+                href="../people/Evelyn_Lawrence.html"
+                class="button-link"
+                id="p4"
+                >Evelyn Lawrence (1919 - 2023)</a
+              >
+              <a href="../people/.html" class="button-link" id="p5"
+                >Margaret Lawrence (1922 - 2010)</a
+              >
+              <a
+                href="../people/Leslie_lawrence.html"
+                class="button-link"
+                id="p6"
+                >Leslie Lawrence (1925 - 1986)</a
+              >
+            </div>
           </div>
         </div>
-        <p>
-          This family story begins with
-          <a href="../people/John_Laurence.html">John Laurence</a>, who was born
-          in the mid-1700s—possibly in St Albans, although Watford is also
-          closely associated with the family's early roots. John married
-          Elizabeth (surname unknown), and together they had a son,
-          <a href="../people/William_Laurence.html">William Laurence</a>, born
-          in 1790.
-        </p>
-        <p>
-          William married Charlotte Knowles in 1806, and their son
-          <a href="../people/Thomas_Laurence.html">Thomas Laurence</a> was born
-          in Watford in 1817. In 1844, Thomas married
-          <a href="../people/Myra_Emmons.html">Myra Emmons</a>, who was born in
-          Whatfield, Suffolk. Her father,
-          <a href="../people/Simon_Emmons.html">Simon Emmons</a>, was born in
-          1792.
-        </p>
-        <p>
-          <a href="../commentary/suffolk_history_1830_to_1839.html"
-            >In the early 1800s</a
-          >, life in rural England was harsh. Work was scarce, wages were low,
-          and poor harvests made even basic sustenance difficult. In 1838, Simon
-          Emmons was caught stealing seed and grain from a local
-          storehouse—likely an act of desperation. At the time, Britain
-          regularly transported convicted criminals to penal colonies. Simon was
-          sentenced to seven years' transportation to Van Diemen's Land
-          (modern-day Tasmania), where he died two years later in 1840.
-        </p>
-        <p>
-          Following her father’s conviction and death, Myra appears to have
-          moved to Watford—possibly to live with extended family or to seek
-          work.
-        </p>
-        <p>
-          In March 1856,
-          <a href="../people/Walter_Lawrence.html">Walter Lawrence</a> was born
-          to Thomas and Myra. He was the sixth of ten children, with three older
-          brothers and five younger sisters.
-        </p>
-        <p>
-          In 1879, Walter—then working as a painter and decorator—married
-          <a href="../people/Ellen_Evans.html">Ellen Evans</a> in Watford. They
-          had two children: <span class="disabled">Mary</span> (b.1882)
-          and <span class="disabled">Gertrude</span> (b.1883).
-        </p>
-        <p>
-          In 1883, the family emigrated to America, settling in Woodtick, a
-          rural area in Hartford County, Connecticut. During this time, many
-          British skilled workers emigrated to the United States in search of
-          better prospects. The American economy was expanding, and tradesmen
-          like Walter often found more reliable employment across the Atlantic.
-          While in the U.S.,
-          <span class="disabled">Walter Lawrence Jr.</span> was born in 1888.
-        </p>
-        <p>
-          According to census records, by 1910 Gertrude had returned to live
-          with her parents in Connecticut, bringing her son
-          <span class="disabled">Kenneth</span> with her. Around this time,
-          Walter Sr. made the unexpected decision to return to England—alone.
-          The reasons for his return remain unclear, but it seems to have been a
-          permanent separation from his first family.
-        </p>
-        <p>
-          Circa 1916, back in Watford, Walter met and eventually
-          <strong>married</strong>
-          <a href="../people/Emily_Archer.html">Emily Archer</a>. His wife and
-          children remained in America, this was a case of bigamy—a criminal
-          offence at the time. Socially and legally, this would have carried
-          serious implications.
-        </p>
-        <p>
-          Walter and Emily had three children together:
-          <a href="../people/Evelyn_Lawrence.html">Evelyn</a> (b.1919),
-          <span class="disabled">Margaret</span> (b.1922), and
-          <a href="../people/Leslie_Lawrence.html">Leslie</a> (b.1925). During
-          Emily’s pregnancy with Leslie, she discovered Walter’s previous
-          marriage and family in America. According to family accounts, the
-          revelation caused a major confrontation, with reports of raised
-          voices, objects thrown, and even the police being informed.
-        </p>
-        <p>
-          Emily left Walter shortly afterwards and returned to Windsor to live
-          with her mother. Evelyn later recalled travelling into Windsor Central
-          Station in the spring of 1925 and looking out at fields of buttercups
-          on Bath Island. The family lived briefly in Kepple Row before
-          settling, for a short period, at No. 4 Alma Cottages, where Leslie was
-          born.
-        </p>
-        <p>
-          In 1926, Walter returned to the United States, this time permanently.
-          He rejoined his original family and appears in the 1930 U.S. Census
-          living once again with Ellen and Walter Jr.
-        </p>
-      </main>
+        <div class="trees-container" id="tree2">
+          <svg id="lines-tree2"></svg>
+          <div class="generation">
+            <div class="row" id="row1-tree2">
+              <a href="../people/John_Laurence.html" class="button-link" id="p7"
+                >John Laurence</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row2-tree2">
+              <a
+                href="../people/William_Laurence.html"
+                class="button-link"
+                id="p8"
+                >William Laurence (1790 - )</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree2">
+              <a
+                href="../people/Thomas_Laurence.html"
+                class="button-link"
+                id="p9"
+                >Thomas Laurence (1821 - 1884)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree2">
+              <a
+                href="../people/Walter_Lawrence.html"
+                class="button-link"
+                id="p10"
+                >Walter Lawrence (1856 - 1932)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row5-tree2">
+              <a
+                href="../people/Evelyn_Lawrence.html"
+                class="button-link"
+                id="p11"
+                >Evlyne Lawrence (1919 - 2023)</a
+              >
+              <a href="../people/.html" class="button-link" id="p12"
+                >Margaret Lawrence (1922 - 2010)</a
+              >
+              <a
+                href="../people/Leslie_lawrence.html"
+                class="button-link"
+                id="p13"
+                >Leslie Lawrence (1925 - 1986)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        This family story begins with
+        <a href="../people/John_Laurence.html">John Laurence</a>, who was born
+        in the mid-1700s—possibly in St Albans, although Watford is also closely
+        associated with the family's early roots. John married Elizabeth
+        (surname unknown), and together they had a son,
+        <a href="../people/William_Laurence.html">William Laurence</a>, born in
+        1790.
+      </p>
+      <p>
+        William married Charlotte Knowles in 1806, and their son
+        <a href="../people/Thomas_Laurence.html">Thomas Laurence</a> was born in
+        Watford in 1817. In 1844, Thomas married
+        <a href="../people/Myra_Emmons.html">Myra Emmons</a>, who was born in
+        Whatfield, Suffolk. Her father,
+        <a href="../people/Simon_Emmons.html">Simon Emmons</a>, was born in
+        1792.
+      </p>
+      <p>
+        <a href="../commentary/suffolk_history_1830_to_1839.html"
+          >In the early 1800s</a
+        >, life in rural England was harsh. Work was scarce, wages were low, and
+        poor harvests made even basic sustenance difficult. In 1838, Simon
+        Emmons was caught stealing seed and grain from a local storehouse—likely
+        an act of desperation. At the time, Britain regularly transported
+        convicted criminals to penal colonies. Simon was sentenced to seven
+        years' transportation to Van Diemen's Land (modern-day Tasmania), where
+        he died two years later in 1840.
+      </p>
+      <p>
+        Following her father’s conviction and death, Myra appears to have moved
+        to Watford—possibly to live with extended family or to seek work.
+      </p>
+      <p>
+        In March 1856,
+        <a href="../people/Walter_Lawrence.html">Walter Lawrence</a> was born to
+        Thomas and Myra. He was the sixth of ten children, with three older
+        brothers and five younger sisters.
+      </p>
+      <p>
+        In 1879, Walter—then working as a painter and decorator—married
+        <a href="../people/Ellen_Evans.html">Ellen Evans</a> in Watford. They
+        had two children:
+        <a href="../people/Mary_Ann_Florence_Lawrence.html">Mary</a> (b.1882)
+        and
+        <a href="../people/Gertrude_Lillian_Lawrence.html">Gertrude</a>
+        (b.1883).
+      </p>
+      <p>
+        In 1883, the family emigrated to America, settling in Woodtick, a rural
+        area in Hartford County, Connecticut. During this time, many British
+        skilled workers emigrated to the United States in search of better
+        prospects. The American economy was expanding, and tradesmen like Walter
+        often found more reliable employment across the Atlantic. While in the
+        U.S.,
+        <a href="../people/Walter_S._Lawrence.html">Walter Lawrence Jr.</a> was
+        born in 1888.
+      </p>
+      <p>
+        According to census records, by 1910 Gertrude had returned to live with
+        her parents in Connecticut, bringing her son
+        <a href="../people/Kenneth_G._Benoit.html">Kenneth</a> with her. Around
+        this time, Walter Sr. made the unexpected decision to return to
+        England—alone. The reasons for his return remain unclear, but it seems
+        to have been a permanent separation from his first family.
+      </p>
+      <p>
+        Circa 1916, back in Watford, Walter met and eventually
+        <strong>married</strong>
+        <a href="../people/Emily_Archer.html">Emily Archer</a>. His wife and
+        children remained in America, this was a case of bigamy—a criminal
+        offence at the time. Socially and legally, this would have carried
+        serious implications.
+      </p>
+      <p>
+        Walter and Emily had three children together:
+        <a href="../people/Evelyn_Lawrence.html">Evelyn</a> (b.1919),
+        <a href="../people/Margaret_Lawrence.html">Margaret</a> (b.1922), and
+        <a href="../people/Leslie_Lawrence.html">Leslie</a> (b.1925). During
+        Emily’s pregnancy with Leslie, she discovered Walter’s previous marriage
+        and family in America. According to family accounts, the revelation
+        caused a major confrontation, with reports of raised voices, objects
+        thrown, and even the police being informed.
+      </p>
+      <p>
+        Emily left Walter shortly afterwards and returned to Windsor to live
+        with her mother. Evelyn later recalled travelling into Windsor Central
+        Station in the spring of 1925 and looking out at fields of buttercups on
+        Bath Island. The family lived briefly in Kepple Row before settling, for
+        a short period, at No. 4 Alma Cottages, where Leslie was born.
+      </p>
+      <p>
+        In 1926, Walter returned to the United States, this time permanently. He
+        rejoined his original family and appears in the 1930 U.S. Census living
+        once again with Ellen and Walter Jr.
+      </p>
+    </main>
+    <footer>
+      <span
+        ><em>&copy; 2025 Martin Lawrence | Family History Project</em>
+      </span>
+    </footer>
+    <script>
+      const connections = [
+        // Vertical connections within column 1
+        { container: "tree1", from: "p1", to: "p2", type: "vertical" },
+        { container: "tree1", from: "p2", to: "p3", type: "vertical" },
+        { container: "tree2", from: "p7", to: "p8", type: "vertical" },
+        { container: "tree2", from: "p8", to: "p9", type: "vertical" },
+        { container: "tree2", from: "p9", to: "p10", type: "vertical" },
+        {
+          container: "tree2",
+          from: "p10",
+          to: ["p11", "p12", "p13"],
+          type: "dogleg",
+        },
 
-      <footer>
-        <span
-          ><em>&copy; 2025 Martin Lawrence | Family History Project </em>
-        </span>
-      </footer>
-    </body>
-  </html>
-</head>
+        //dogleg tree1
+        {
+          container: "tree1",
+          from: "p3",
+          to: ["p4", "p5", "p6"],
+          type: "dogleg",
+        },
+
+        // Dogleg from last of column 1 to first of column 2
+        // { from: "p6", to: "p7", type: "dogleg" },
+        //Dogleg from last of column 2 to first of column 3
+        // { from: "p12", to: "p13", type: "dogleg" },
+      ];
+      function makePath(d) {
+        const path = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "path"
+        );
+        path.setAttribute("d", d);
+        path.setAttribute("stroke", "black");
+        path.setAttribute("stroke-width", "2");
+        path.setAttribute("fill", "none");
+        return path;
+      }
+
+      function drawVerticalLine(svg, fromEl, toEl) {
+        const fromRect = fromEl.getBoundingClientRect();
+        const toRect = toEl.getBoundingClientRect();
+        const box = svg.parentElement.getBoundingClientRect();
+
+        const x1 = fromRect.left + fromRect.width / 2 - box.left;
+        const y1 = fromRect.bottom - box.top;
+        const x2 = toRect.left + toRect.width / 2 - box.left;
+        const y2 = toRect.top - box.top;
+
+        svg.appendChild(makePath(`M${x1},${y1} L${x2},${y2}`));
+      }
+
+      function drawDogleg(svg, fromEl, toEls) {
+        const fromRect = fromEl.getBoundingClientRect();
+        const box = svg.parentElement.getBoundingClientRect();
+
+        const startX = fromRect.left + fromRect.width / 2 - box.left;
+        const startY = fromRect.bottom - box.top;
+
+        const toRects = toEls.map((el) => el.getBoundingClientRect());
+
+        // run the bus just below parent, small gap
+        const midY = startY + 10;
+
+        const leftX = toRects[0].left + toRects[0].width / 2 - box.left;
+        const rightX =
+          toRects[toRects.length - 1].left +
+          toRects[toRects.length - 1].width / 2 -
+          box.left;
+
+        // vertical from parent
+        svg.appendChild(makePath(`M${startX},${startY} L${startX},${midY}`));
+
+        // horizontal bus
+        svg.appendChild(makePath(`M${leftX},${midY} L${rightX},${midY}`));
+
+        // drops into children
+        toEls.forEach((childEl) => {
+          const cRect = childEl.getBoundingClientRect();
+          const childX = cRect.left + cRect.width / 2 - box.left;
+          const childY = cRect.top - box.top;
+          svg.appendChild(makePath(`M${childX},${midY} L${childX},${childY}`));
+        });
+      }
+
+      function drawAllConnections() {
+        // clear each SVG once
+        const uniqueContainers = [
+          ...new Set(connections.map((c) => c.container)),
+        ];
+        uniqueContainers.forEach((container) => {
+          const svg = document.getElementById(`lines-${container}`);
+          if (svg) svg.innerHTML = "";
+        });
+
+        // draw everything
+        connections.forEach((c) => {
+          const svg = document.getElementById(`lines-${c.container}`);
+          if (!svg) return;
+
+          const fromEl = document.getElementById(c.from);
+          if (!fromEl) return;
+
+          if (c.type === "vertical") {
+            const toEl = document.getElementById(c.to);
+            if (toEl) drawVerticalLine(svg, fromEl, toEl);
+          } else if (c.type === "dogleg") {
+            const toEls = c.to
+              .map((id) => document.getElementById(id))
+              .filter((el) => el);
+            if (toEls.length) drawDogleg(svg, fromEl, toEls);
+          }
+        });
+      }
+
+      window.addEventListener("load", drawAllConnections);
+      window.addEventListener("resize", drawAllConnections);
+    </script>
+  </body>
+</html>

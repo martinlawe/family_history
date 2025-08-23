@@ -14,10 +14,10 @@
         <a href="commentary/Windsor_past_present.html"
           >Windsor Past and Present</a
         >
-        <a href="family_overviews/Lawrence_Family_History.html"
+        <a href="family_overviews/Lawrence_family_history.html"
           >Lawrence Family History</a
         >
-        <a href="family_overviews/Vickers_Early_Family_History.html"
+        <a href="family_overviews/Vickers_family_history.html"
           >Vickers Family History</a
         >
         <a href="family_overviews/O'keeffe_Family_History.html"
@@ -65,44 +65,49 @@
     </main>
     <footer>
       <span class="footer-left"><em>&copy; 2025 - Martin Lawrence</em></span>
-      <span class="footer-right"
-        ><em>Version - 1.50 - Last updated: 05/08/2025</em></span
-      >
+      <em><span class="footer-right" id="version-info"></span></em>
     </footer>
-    <!-----------------------------------------------------------------------------------|
-Change Records for this project.
 
-Version     Date                         Description of change                                                                                       Git comment
-1.00     | 25-06-25 |  Initial version, Project pushed to Git Hub Repository - repo set as Private.                                                        |
-1.10     | 25-06-25 |  files updated and checked for correct loading.                                                                                      |
-1.20     | 26-06-25 |  GIT Hub Repo set as Public, web page checked, and files updated to correct issues.                                                  |             
-1.25     | 26-06-25 |  files updated with various Photographs, added person files, URL released to Chris and Barry.                                        |
-1.25     | 27-06-25 |  URL released to David and Alison. This Table added, but the Version was not updated.                                                |    Pushed to Git 27-06-25
-1.30     | 28-06-25 |  Photos added to Bert and Peggies files also Leslie and Evelyn's files. Service Years Writing updated				                         |    Pushed to Git
-1.35     | 29-06-25 |  family trees added to Brown Family Sheet. Links replaced by buttons.																			                           |    Pushed to Git.
-1.36     | 06-07-25 |  Addition pages added for the historical periods between 1040 and 1800. Links added to some pages.                                   |    Pushed to Git. 
-1.37     | 08-07-25 |  Further simplification of pages made. Tree views amended, and lines drawn. Button creations improved.                               |    Pushed to Git
-1.40     | 10-07-25 |  Further improvements made to the Index file, and others. This is a major increment, as Additional Family Histories have been added. |    Pushed to Git/
-1.41     | 16/07/25 |  routing updated to take consideration of new 
-filing structure and layout design                                                       |   Pushed to git
-1.42     | 23/07/25 |  Title and Header tags reformated                                  |   Pushed to git
-1.43     | 26/07/25 |  Various files updated and new files added to the repository       |   Pushed to git
-1.44     | 26/07/25 |  Various people files renamed to the new format.                   |   Pushed to git
-1.50     | 05/08/25 |  New page added showing the UK and US Lawrence lines               |   Pushed to git
+    <!-- Hidden changelog -->
+    <script type="text/template" id="changelog">
+      Version     Date                         Description of change                                                                                       Git comment
+      1.00     | 25-06-25 | Initial version, Project pushed to Git Hub Repository - repo set as Private.                                                        |
+      1.10     | 25-06-25 | Files updated and checked for correct loading.                                                                                      |
+      1.20     | 26-06-25 | GIT Hub Repo set as Public, web page checked, and files updated to correct issues.                                                  |
+      1.25     | 26-06-25 | Files updated with various Photographs, added person files, URL released to Chris and Barry.                                        |
+      1.25     | 27-06-25 | URL released to David and Alison. This Table added, but the Version was not updated.                                                |    Pushed to Git 27-06-25
+      1.30     | 28-06-25 | Photos added to Bert and Peggies files also Leslie and Evelyn's files. Service Years Writing updated				                         |    Pushed to Git
+      1.35     | 29-06-25 | Family trees added to Brown Family Sheet. Links replaced by buttons.																			                           |    Pushed to Git.
+      1.36     | 06-07-25 | Addition pages added for the historical periods between 1040 and 1800. Links added to some pages.                                   |    Pushed to Git.
+      1.37     | 08-07-25 | Further simplification of pages made. Tree views amended, and lines drawn. Button creations improved.                               |    Pushed to Git
+      1.40     | 10-07-25 | Further improvements made to the Index file, and others. This is a major increment, as Additional Family Histories have been added. |    Pushed to Git/
+      1.41     | 16-07-25 | Routing updated to take consideration of new filing structure and layout design                                                     |    Pushed to git
+      1.42     | 23-07-25 | Title and Header tags reformatted                                  |    Pushed to git
+      1.43     | 26-07-25 | Various files updated and new files added to the repository       |    Pushed to git
+      1.44     | 26-07-25 | Various people files renamed to the new format.                   |    Pushed to git
+      1.50     | 05-08-25 | New page added showing the UK and US Lawrence lines               |    Pushed to git
+      1.51     | 23-08-25 | Revised the line creations, created the Brocas Page and the D'oyly page                                                              |   Pushed to git
+    </script>
 
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const changelog = document.getElementById("changelog").textContent;
+        const regex = /(\d+\.\d+)\s*\|\s*(\d{2}-\d{2}-\d{2})/g;
+        let match,
+          lastMatch = null;
 
-Update this file, with changes, as required. Update, also the page Footer to include date and version.
-This table will not be displayed on web page. 
-Message in commit to Git to include Version and Date. Description of change could also be included.
--->
+        while ((match = regex.exec(changelog)) !== null) {
+          lastMatch = match; // keep updating, last one wins (latest entry)
+        }
 
-    <!-- General notes - things to do next - Reshuffle css file to a more logical sequence
-Check button colours, and get things common- Check each tree uses buttons, not links when rendered- 
-Once everything is looking consistent, and working Publish to Git.
-Look to use Jekyll for templating, hopefully to reduce file sizes.
-Add more people files to the project, removing disabled links and buttons.
-Create additional Family History pages.
-Look to add more photos to relevant person files.
--->
+        if (lastMatch) {
+          const [_, version, date] = lastMatch;
+          const versionSpan = document.getElementById("version-info");
+          if (versionSpan) {
+            versionSpan.textContent = `Revision: ${version} | Date: ${date}`;
+          }
+        }
+      });
+    </script>
   </body>
 </html>
