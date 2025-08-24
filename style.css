@@ -437,7 +437,6 @@ img {
 .button-link:hover {
   background: #357ab8;
 }
-
 .column {
   display: flex;
   flex-direction: column;
