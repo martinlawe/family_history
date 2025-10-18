@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Updated with new routings 13/07/2025-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dobson Family history part of the Vickers, Brocas, D’Oyly, and Lawrence families."
+    />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f9f9f9" />
+    <title>Dobson - Family History</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .construction {
+        font-size: 6rem; /* make icon large */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log" style="display: none">
+      23/08/25 - New file created using the latest script for line creation.
+      Tree still to be created
+    </div>
+    <!--End of the Change Log-->
+    <header>Family History</header>
+    <main>
+      <div class="main-grid">
+        <div class="column">
+          <button class="parent">
+            <a href="../index.html">Home</a>
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Vickers_family_history.html"
+              >Vickers Family History</a
+            >
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Brown_family_history.html"
+              >Brown Family History</a
+            >
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../people/Under_Construction.html">Beard Family History</a>
+          </button>
+        </div>
+      </div>
+      <div class="construction">
+        🚧<br />
+        <p>Page Under Construction</p>
+      </div>
+    </main>
+    <footer>
+      <span
+        ><em>&copy; 2025 Martin Lawrence | Family History Project</em>
+      </span>
+    </footer>
+    <script>
+      const connections = [
+        // Vertical connections within column 1
+        { container: "tree1", from: "p1", to: "p2", type: "vertical" },
+        { container: "tree1", from: "p2", to: "p3", type: "vertical" },
+      ];
+    </script>
+    <script src="../lines.js"></script>
+  </body>
+</html>

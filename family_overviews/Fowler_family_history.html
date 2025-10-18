@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--Updated with new routings 13/07/2025-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fowler Family history part of the Vickers, Brocas, D’Oyly, and Lawrence families."
+    />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f9f9f9" />
+    <title>Fowler - Family History</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log" style="display: none">
+      23/08/25 - New file created using the latest script for line creation.
+      09/10/25 - Tree created, and text added, there is still much to be done on
+      this tree.
+    </div>
+    <!--End of the Change Log-->
+    <header>Family History</header>
+    <main>
+      <div class="main-grid">
+        <div class="column">
+          <button class="parent">
+            <a href="../index.html">Home</a>
+          </button>
+        </div>
+      </div>
+      <div class="tree-container" id="tree-container">
+        <svg id="tree-lines"></svg>
+        <!-- start of column  1 -->
+        <div class="column" id="column1">
+          <button id="p1">
+            <a href="../people/Under_Construction.html">
+              William Munday (1731 -1804)
+            </a>
+          </button>
+          <button id="p2">
+            <a href="../people/Under_Construction.html">
+              William Munday (1750 -1836)
+            </a>
+          </button>
+          <button id="p3">
+            <a href="../people/Under_Construction.html">
+              Hannah Munday (1787 - )
+            </a>
+          </button>
+          <button id="p4">
+            <a href="../people/Under_Construction.html">
+              Joseph Fowler (1808 -1880)
+            </a>
+          </button>
+          <button id="p5">
+            <a href="../people/Under_Construction.html">
+              Edward Fowler (1843 - 1911)
+            </a>
+          </button>
+          <button id="p6">
+            <a href="../people/Under_Construction.html">
+              Matilda Fowler (1868 - 1944)
+            </a>
+          </button>
+        </div>
+      </div>
+      <p>
+        The above is the current tree, stretching back to William Munday 1731,
+        it is believed that his mother was Sausanna Sirat, but as of October
+        2025, we cannot confirm this. William Munday married Elizabeth Allen in
+        1755, their son Wiliam Munday 1758 married Susanna Cook in 1778, and
+        their daughter Hannah Munday 1787 married William Fowler 1805. Their son
+        Joseph Fowler 1808 married Eliza Sinfield in 1830 and their Edward
+        Fowler 1843 married Emma Spiers in 1848.
+      </p>
+      <p>
+        At this point we start to get close to known relatives, So, Edward and
+        Emma had a daughter Matilda, born in 1868, The story from this point is
+        somewhat complex, so I will not being going into that here, at this
+        point in time. Matilda had two daughters Minnie and Emily, in 1888 and
+        1890 respectivley, she then Married Thomas Archer, and had a number of
+        children with him, Thomas adopted both earlier daughters.
+      </p>
+    </main>
+    <footer>
+      <span
+        ><em>&copy; 2025 Martin Lawrence | Family History Project</em>
+      </span>
+    </footer>
+    <script>
+      const connections = [
+        // Vertical connections within column 1
+        { container: "tree1", from: "p1", to: "p2", type: "vertical" },
+        { container: "tree1", from: "p2", to: "p3", type: "vertical" },
+        { container: "tree1", from: "p3", to: "p4", type: "vertical" },
+        { container: "tree1", from: "p4", to: "p5", type: "vertical" },
+        { container: "tree1", from: "p5", to: "p6", type: "vertical" },
+      ];
+    </script>
+    <script src="../lines.js"></script>
+  </body>
+</html>

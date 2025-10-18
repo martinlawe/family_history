@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>The Brown's Family History</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- start of change log for this file-->
+    <div id="hidden-log" style="display: none">
+      21/08/2025 - file format changed - tree structure updated in line with
+      other history files. Also tree completed to include the whole of the Brown
+      family.
+    </div>
+    <!--End of Change Log -->
+    <header>Family History</header>
+    <main>
+      <div class="main-grid">
+        <div class="column">
+          <button class="parent">
+            <a href="../index.html">Home</a>
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Vickers_family_history.html"
+              >Vickers Family History</a
+            >
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Dobson_family_history.html"
+              >Dobson Family History</a
+            >
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../people/Under_Construction.html"
+              >Weston Family History</a
+            >
+          </button>
+        </div>
+      </div>
+      <!--Start of the tree section-->
+      <div class="trees-wrapper">
+        <div class="trees-container" id="tree1">
+          <svg id="lines-tree1"></svg>
+          <div class="generation">
+            <div class="row" id="row1-tree1">
+              <button id="p1">
+                <a href="../people/Under_Construction.html">William Brown</a>
+              </button>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row2-tree1">
+              <button id="p2">
+                <a href="../people/Under_Construction.html"
+                  >William Brown (1786 - )</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree1">
+              <button id="p3">
+                <a href="../people/Under_Construction.html"
+                  >Isaac Brown (1817 - 1895)</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree1">
+              <button id="p4">
+                <a href="../people/John_Brown.html">John Brown (1860 - 1918)</a>
+              </button>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row5-tree1">
+              <button id="p5">
+                <a href="../people/Rachel_Louisa_Brown.html"
+                  >Rachel Brown (1897 - 1967)</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row6-tree1">
+              <button id="p6">
+                <a href="../people/Alice_Vickers.html">
+                  Alice Vickers (1925 - 2016)</a
+                >
+              </button>
+              <button id="p7">
+                <a href="../people/Albert_W_J_Vickers.html">
+                  Albert Vickers (1920 - 1994)</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of the tree section-->
+      <h3 style="text-align: center">🚧 Page Under Construction</h3>
+      <p>This section is currently being updated. Please check back soon.</p>
+    </main>
+    <footer>
+      <span class="footer-left"
+        ><em>&copy; 2025 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <script>
+      // Define all connections here
+      // For doglegs, list each child separately but with same parent
+      const connections = [
+        { container: "tree1", from: "p1", to: "p2", type: "vertical" },
+        { container: "tree1", from: "p2", to: "p3", type: "vertical" },
+        { container: "tree1", from: "p3", to: "p4", type: "vertical" },
+        { container: "tree1", from: "p4", to: "p5", type: "vertical" },
+        {
+          container: "tree1",
+          from: "p5",
+          to: ["p6", "p7"],
+          type: "dogleg",
+        },
+      ];
+    </script>
+    <script src="../lines.js"></script>
+  </body>
+</html>

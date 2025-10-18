@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Updated with new routings 13/07/2025-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,34 +15,34 @@
   <body>
     <!--Start of the Change Log-->
     <div id="hidden-log" style="display: none">
-      01/09/25 Meta details updated.
+      01/09/25 Meta details updated. 20/09/25 Additional information added,
+      follwing the receipt of his military records.
     </div>
     <!--End of the Change Log-->
     <header>Family History</header>
-    <div class="nav-wrapper">
-      <nav>
-        <a href="javascript:history.back()">Previous Page</a>
-      </nav>
-    </div>
+    <button>
+      <a href="javascript:history.back()">Previous Page</a>
+    </button>
     <main style="margin: 40px">
       <h1>Leslie Lawrence</h1>
       <p class="lifespan">1925–1986</p>
       <h2>Photo Gallery</h2>
       <div class="gallery">
         <img
-          src="../Photos/Thumbnails/Dad in Uniform.jpg"
-          alt="Leslie Lawrence"
-          onclick="openLightbox('../Photos/Dad in Uniform.jpg')"
+          class="photo"
+          src="../Photos/Thumbnails/Dad with David March 1985.jpg."
+          alt="Leslie Lawrence with David"
+          data-full="../Photos/Dad with David March 1985.jpg"
         />
-        <img src="../Photos/Thumbnails/Dad with David March 1985.jpg" alt
-        "Leslie Lawrence with David" onclick="openLightbox('../Photos/Dad with
-        David March 1985.jpg')"> <img
-        src="../Photos/Thumbnails/20190810_131550.jpg" alt "Leslie Lawrence"
-        onclick="openLightbox('../Photos/20190810_131550.jpg')">
-        <img
-          src="../Photos/Thumbnails/The_handsome_quartet_enhanced.jpg"
-          onclick="openLightbox('../Photos/The_handsome_quartet_enhanced.jpg')"
-        />
+        <p>
+          There are a number of photographs and Documents that refere to Leslies
+          Army Service, these can be seen
+          <a
+            style="color: #555555"
+            href="../Military/Leslie_Lawrence_Militaria.html"
+            >here.</a
+          >
+        </p>
       </div>
       <div class="section">
         <h2>Overview</h2>
@@ -58,7 +57,7 @@
         <div class="timeline">
           <div class="event"><strong>1925:</strong> Birth in England.</div>
           <div class="event">
-            <strong>1946:</strong> Marriage to Alice Vickers.
+            <strong>12 October 1946:</strong> Marriage to Alice Vickers.
           </div>
           <div class="event"><strong>1952:</strong> Birth of son Martin.</div>
           <div class="event">
@@ -83,7 +82,7 @@
           know. But the marriage did not last for long. In Leslie's early years,
           during school holidays , Leslie would be looked after by Evelyn, See
           Evelyn's
-          <a href="../cwritings/Evelyns writings- part 2 - Early Years.html"
+          <a href="../writings/Evelyns writings- part 2 - Early Years.html"
             >writings</a
           >
           for details.
@@ -97,25 +96,47 @@
         </p>
         <p>
           We know, from documents, that Les enlisted into the army on 28th
-          September 1944, at Hereford, as a Driver Operator; a role for which he
-          trained for and he passed on 26th October 1945, shortly after his 18th
-          birthday. He was demobbed on 14th February 1948, which makes a service
-          length of 3 years and 139 days. He was posted to the 9th Queen’s Royal
-          Lancers “A” Squadron as a Driver Operator as part of the RAC RECCE In
-          January 1945.
+          September 1944, at Hereford, His occupation, at that time was listed
+          as "Pipe Fitter Mate", he trained as a Driver Operator; a role for
+          which he passed on 26th October 1945, shortly after his 18th birthday.
+          He was demobbed on 14th February 1948, which makes a service length of
+          3 years and 139 days. He was posted to the 9th Queen’s Royal Lancers
+          “A” Squadron as a Driver Operator as part of the RAC RECCE In January
+          1945.
         </p>
         <p>
-          His actual role during his period in the army is still being
-          investigated. Unfortunately, we did not get to hear too many of his
-          stories from this time as he was frequently closed down. We do know he
-          spent time in Italy, and that he assisted his colleagues when they
-          were trying to communicate with the local girls, he would often go as
-          a translator to the family homes. That being said, it never really
-          registered that he spoke fluent Italian. there were also stories form
-          his time in Palestine, nothing operational, but stories about having
-          his meal stolen by a bird, or nearly getting court marshalled for
-          loosing his rifle.
+          He would have been awarded the 1939-1945 General Service War Medal
+          plus Palestine clasp
         </p>
+        <br />
+        <h2>Military Time line</h2>
+        <p>
+          <b>28th September 1944</b> - Enlisted Hereford <br />
+          <b>28th January 1946</b> - Posted to CMF (Italy) <br />
+          <b>15th March 1947</b> - Posted to MELF (Egypt and Palastine)Stationed
+          at El Bureij, Palestine April to August 1947<br />
+          <b>7th December 1947</b> - Home<br />
+          <b>24th February 1948</b> - Transferred to reserves<br />
+        </p>
+        <br />
+        <p>
+          His actual role during his period in the army is still being
+          investigated.
+        </p>
+        <br />
+        <p>
+          Unfortunately, we did not get to hear too many of his stories from
+          this time as he was frequently closed down. We do know he spent time
+          in Italy, and that he assisted his colleagues when they were trying to
+          communicate with the local girls, he would often go as a translator to
+          the family homes. That being said, it never really registered that he
+          spoke fluent Italian, which he probably learnt during his time in
+          Italy. there were also stories from his time in Palestine, nothing
+          operational, but stories about having his meal stolen by a bird, or
+          nearly getting court marshalled for loosing his rifle through neglect,
+          in fact he lost 14 days pay for this.
+        </p>
+        <br />
         <h3>What Was the RAC Recce (1945–47)?</h3>
         <p>
           RAC Recce stands for
@@ -272,5 +293,39 @@
         ><em>&copy; 2025 Martin Lawrence | Family History Project</em>
       </span>
     </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Expanded view" />
+    </div>
+
+    <script>
+      // Attach click events to every image in the gallery
+      document.querySelectorAll(".gallery img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const lightbox = document.getElementById("lightbox");
+          const lightboxImg = document.getElementById("lightbox-img");
+          lightboxImg.src = img.dataset.full;
+          lightbox.style.display = "flex";
+          document.body.style.overflow = "hidden"; // ✅ disable background scroll
+        });
+      });
+
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none";
+        document.body.style.overflow = ""; // ✅ re-enable background scroll
+      }
+
+      const lightboxImg = document.getElementById("lightbox-img");
+
+      lightboxImg.addEventListener("click", () => {
+        if (lightboxImg.style.transform === "scale(2)") {
+          lightboxImg.style.transform = "scale(1)";
+          lightboxImg.style.cursor = "zoom-in";
+        } else {
+          lightboxImg.style.transform = "scale(2)";
+          lightboxImg.style.cursor = "zoom-out";
+        }
+      });
+    </script>
   </body>
 </html>

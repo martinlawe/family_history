@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--This template is aimed at keeping all pages the same for all individuals. Sections can be copy/pasted as required, but the sequence should be maintained-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Military history profile of Albert Edward Vickers, part of the Vickers, Brocas, D’Oyly, and Lawrence families."
+    />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="robots" content="noindex, nofollow" tag-id="{Person ID}" />
+    <title>Albert Edward Vickers - Family History</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>Family History</header>
+      <button>
+        <a href="javascript:history.back()">Previous Page</a>
+      </button>
+      <main style="margin: 40px">
+        <h1>Albert Edward Vickers</h1>
+        <h2>Military Document Gallery</h2>
+        <div class="gallery">
+          <img
+            class="document"
+            src="../Photos\military_photos\Thumbnails\Vickers\WW1\InkedPOW_Record_for_Albert_Vickers_LI.jpg"
+            alt="POW Record"
+            data-full="../Photos\military_photos\Vickers\WW1\InkedPOW_Record_for_Albert_Vickers_LI.jpg"
+          />
+          <!--
+          <img class="document"
+          src="../Photos\military_photos\Thumbnails\Vickers\WW1\Photos\military_photos\Thumbnails\Vickers\WW1\InkedPOW
+          Record for Albert Vickers_LI.jpg" alt="POW Record"
+          data-full="../Photos\military_photos\Vickers\WW1\POW_Record_for_Albert_Vickers_2nd_location.JPG
+          />
+
+          <img
+            src="../Photos/military_photos/Thumbnails/Vickers/WW1/POW Record for Albert Vickers.JPG"
+            alt="POW Record"
+            onclick="openLightbox('../Photos\military_photos\Vickers\WW1\POW_Record_for_Albert_Vickers.JPG')"
+          />
+          <img
+            src="../Photos\military_photos\Thumbnails\Vickers\WW1\POW_Record_for_Cassel_Camp.JPG"
+            alt="POW Record"
+            onclick="openLightbox('../Photos\military_photos\Vickers\WW1\POW_Record _for_Crossen_Camp.JPG')"
+          />
+          <img
+            src="../Photos\military_photos\Thumbnails\Vickers\WW1\S2_GBM_WO372_23_29961.jpg"
+            alt="POW Record"
+            onclick="openLightbox('../Photos\military_photos\Vickers\WW1\POW_Record_for_Cassel_Camp.JPG')"
+          />
+          <img
+            src="../Photos/military_photos/Thumbnails/Vickers/WW1/S2_GBM_WO372_23_29961.jpg"
+            alt="POW Record"
+            onclick="openLightbox('../Photos\military_photos\Vickers\WW1\S2_GBM_WO372_23_29961.jpg')"
+          /> -->
+        </div>
+      </main>
+    </div>
+    <footer>
+      <span><em>&copy; 2025 Martin Lawrence | Family History Project</em></span>
+    </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Expanded view" />
+      </div>
+    </div>
+
+    <script>
+      // Attach click events to every image in the gallery
+      document.querySelectorAll(".gallery img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const lightbox = document.getElementById("lightbox");
+          const lightboxImg = document.getElementById("lightbox-img");
+          lightboxImg.src = img.dataset.full;
+          lightbox.style.display = "flex";
+          lightbox.scrollTop = 0;
+
+          document.body.style.overflow = "hidden"; // ✅ disable background scroll
+        });
+      });
+
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none";
+        document.body.style.overflow = ""; // ✅ re-enable background scroll
+      }
+
+      const lightboxImg = document.getElementById("lightbox-img");
+
+      lightboxImg.addEventListener("click", () => {
+        if (lightboxImg.style.transform === "scale(2)") {
+          lightboxImg.style.transform = "scale(1)";
+          lightboxImg.style.cursor = "zoom-in";
+        } else {
+          lightboxImg.style.transform = "scale(2)";
+          lightboxImg.style.cursor = "zoom-out";
+        }
+      });
+    </script>
+  </body>
+</html>

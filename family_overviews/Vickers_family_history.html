@@ -21,58 +21,68 @@
     </div>
     <!--End of the Change Log-->
     <header>Family History</header>
-    <div class="nav-wrapper">
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="Brocas_family_history.html">Brocas Family History</a>
-        <a href="Doyly_family_history.html">D'Oyly Family History</a>
-        <a href="Browns family history.html">Brown's Family History</a>
-        <a href="The Dobson Family History.html">Dobson Family History</a>
-      </nav>
-    </div>
     <main>
+      <div class="main-grid">
+        <div class="column">
+          <button class="parent">
+            <a href="../index.html">Home</a>
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Brocas_family_history.html"
+              >Brocas Family History</a
+            >
+          </button>
+        </div>
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Brown_family_history.html"
+              >Brown Family History</a
+            >
+          </button>
+        </div>
+
+        <div class="column">
+          <button class="parent">
+            <a href="../family_overviews/Dobson_family_history.html"
+              >Dobson Family History</a
+            >
+          </button>
+        </div>
+      </div>
       <div class="trees-wrapper">
         <!-- Tree 1 -->
         <div class="trees-container" id="tree1">
           <svg id="lines-tree1"></svg>
           <div class="generation">
             <div class="row" id="row1-tree1">
-              <a
-                href="../people/Henry_Vickers.html"
-                class="button-link"
-                id="p1"
-              >
-                Henry Vickers (1840)</a
-              >
+              <button id="p1">
+                <a href="../people/Henry_Vickers.html"> Henry Vickers (1840)</a>
+              </button>
             </div>
           </div>
           <div class="generation">
             <div class="row" id="row2-tree1">
-              <a
-                href="../people/Albert_Edward_Vickers.html"
-                class="button-link"
-                id="p2"
-              >
-                Albert Edward Vickers (1890)</a
-              >
+              <button id="p2">
+                <a href="../people/Albert_Edward_Vickers.html">
+                  Albert Edward Vickers (1890)</a
+                >
+              </button>
             </div>
           </div>
           <div class="generation">
             <div class="row" id="row3-tree1">
-              <a
-                href="../people/Albert_W_J_Vickers.html"
-                class="button-link"
-                id="p3"
-              >
-                Albert William Vickers (1920)</a
-              >
-              <a
-                href="../people/Alice_Vickers.html"
-                class="button-link"
-                id="p4"
-              >
-                Alice Rachel Vickers (1925)</a
-              >
+              <button id="p3">
+                <a href="../people/Albert_W_J_Vickers.html">
+                  Albert William Vickers (1920)</a
+                >
+              </button>
+              <button id="p4">
+                <a href="../people/Alice_Vickers.html">
+                  Alice Rachel Vickers (1925)</a
+                >
+              </button>
             </div>
           </div>
         </div>
@@ -346,72 +356,7 @@
 
         svg.appendChild(makePath(`M${x1},${y1} L${x2},${y2}`));
       }
-
-      function drawDogleg(svg, fromEl, toEls) {
-        const fromRect = fromEl.getBoundingClientRect();
-        const box = svg.parentElement.getBoundingClientRect();
-
-        const startX = fromRect.left + fromRect.width / 2 - box.left;
-        const startY = fromRect.bottom - box.top;
-
-        const toRects = toEls.map((el) => el.getBoundingClientRect());
-
-        // run the bus just below parent, small gap
-        const midY = startY + 10;
-
-        const leftX = toRects[0].left + toRects[0].width / 2 - box.left;
-        const rightX =
-          toRects[toRects.length - 1].left +
-          toRects[toRects.length - 1].width / 2 -
-          box.left;
-
-        // vertical from parent
-        svg.appendChild(makePath(`M${startX},${startY} L${startX},${midY}`));
-
-        // horizontal bus
-        svg.appendChild(makePath(`M${leftX},${midY} L${rightX},${midY}`));
-
-        // drops into children
-        toEls.forEach((childEl) => {
-          const cRect = childEl.getBoundingClientRect();
-          const childX = cRect.left + cRect.width / 2 - box.left;
-          const childY = cRect.top - box.top;
-          svg.appendChild(makePath(`M${childX},${midY} L${childX},${childY}`));
-        });
-      }
-
-      function drawAllConnections() {
-        // clear each SVG once
-        const uniqueContainers = [
-          ...new Set(connections.map((c) => c.container)),
-        ];
-        uniqueContainers.forEach((container) => {
-          const svg = document.getElementById(`lines-${container}`);
-          if (svg) svg.innerHTML = "";
-        });
-
-        // draw everything
-        connections.forEach((c) => {
-          const svg = document.getElementById(`lines-${c.container}`);
-          if (!svg) return;
-
-          const fromEl = document.getElementById(c.from);
-          if (!fromEl) return;
-
-          if (c.type === "vertical") {
-            const toEl = document.getElementById(c.to);
-            if (toEl) drawVerticalLine(svg, fromEl, toEl);
-          } else if (c.type === "dogleg") {
-            const toEls = c.to
-              .map((id) => document.getElementById(id))
-              .filter((el) => el);
-            if (toEls.length) drawDogleg(svg, fromEl, toEls);
-          }
-        });
-      }
-
-      window.addEventListener("load", drawAllConnections);
-      window.addEventListener("resize", drawAllConnections);
     </script>
+    <script src="../lines.js"></script>
   </body>
 </html>
