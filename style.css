@@ -12,13 +12,13 @@
   /*Accent */
   --sage-green: #a3b18a;
 }
-html,
+/*html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* ensures the background doesn't scroll under the overlay */
-}
+  overflow: hidden; /* ensures the background doesn't scroll under the overlay 
+} */
 
 /* Heritage Style */
 html,
@@ -261,7 +261,8 @@ img {
   inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
   background: rgba(0, 0, 0, 0.85);
   display: none;
-  overflow: auto;
+  overflow-x: auto; /* allow horizontal scroll for wide images */
+  overflow-y: auto; /* keep vertical scroll */
   z-index: 9999;
 }
 
