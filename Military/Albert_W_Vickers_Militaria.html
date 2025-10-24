@@ -1,33 +1,105 @@
 <!DOCTYPE html>
-<!--This template is aimed at keeping all pages the same for all individuals. Sections can be copy/pasted as required, but the sequence should be maintained-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" tag-id="{Person ID}" />
     <meta
       name="description"
       content="Family history profile of {FullName}, part of the Vickers, Brocas, D’Oyly, and Lawwrence families."
     />
     <meta name="author" content="Martin Lawrence" />
-    <meta name="robots" content="noindex, nofollow" tag-id="{Person ID}" />
-    <title>{FullName} - Family History</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Albert W Vickers - Family History</title>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log" style="display: none">
+      01/09/25 Meta details updated. 20/09/25 Additional information added,
+      follwing the receipt of his military records.
+    </div>
+    <!--End of the Change Log-->
     <div class="main-container">
       <header>Family History</header>
       <button>
         <a href="javascript:history.back()">Previous Page</a>
       </button>
       <main style="margin: 40px">
-        <h1>{FullName}</h1>
+        <h1>Albert W Vickers</h1>
         <p class="lifespan"></p>
-        <h2>Photo Gallery</h2>
-        <div class="gallery"></div>
+        <h2>Military Photo and Document Gallery</h2>
+        <div class="gallery">
+          <!-- Photos -->
+
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Bert in uniform.jpg"
+            alt="Bert in uniform"
+            data-full="../Photos\military_photos\Vickers\Albert)W_Vickers\Bert in uniform.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Bert in Uniform 2.jpg"
+            alt="Bert in Uniform"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Bert in Uniform 2.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\6th December.jpg"
+            alt="6th December"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\6th December.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Bert with colleagues 1.jpg"
+            alt="Bert with Colleagues"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Bert with Colleagues 1.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Bert with colleagues.jpg"
+            alt="Bert with colleagues"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Bert with colleagues.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Bert with colleagues and a big gun.jpg"
+            alt="Bert with colleagues and a big gun"
+            data-full="../Photos/military_photos\Vickers\Albert_W_Vickers\Bert with colleagues and a big gun.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Albert_William_Vickers_Tracer_Card.jpg"
+            alt="Bert Tracer Card"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Albert_William_Vickers_Tracer_Card.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Albert w Vickers Military-1.jpg"
+            alt="Berts Military Document"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Albert w Vickers Military-1.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Albert w Vickers Military-2.jpg"
+            alt="Berts Military Document"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Albert w Vickers Military-2.jpg"
+          />
+          <img
+            class="photo"
+            src="../Photos\military_photos\Thumbnails\Vickers\Albert_W_Vickers\Albert w Vickers Military-3.jpg"
+            alt="Berts Military Document"
+            data-full="../Photos\military_photos\Vickers\Albert_W_Vickers\Albert w Vickers Military-3.jpg"
+          />
+        </div>
       </main>
     </div>
     <footer>
       <span><em>&copy; 2025 Martin Lawrence | Family History Project</em></span>
     </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="Expanded view" />
+    </div>
+    <script src="../images.js"></script>
   </body>
 </html>

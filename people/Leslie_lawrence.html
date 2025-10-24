@@ -30,7 +30,7 @@
       <div class="gallery">
         <img
           class="photo"
-          src="../Photos/Thumbnails/Dad with David March 1985.jpg."
+          src="../Photos/Thumbnails/Dad with David March 1985.jpg"
           alt="Leslie Lawrence with David"
           data-full="../Photos/Dad with David March 1985.jpg"
         />
@@ -294,38 +294,8 @@
       </span>
     </footer>
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-      <img id="lightbox-img" src="" alt="Expanded view" />
+      <img id="lightbox-img" alt="Expanded view" />
     </div>
-
-    <script>
-      // Attach click events to every image in the gallery
-      document.querySelectorAll(".gallery img").forEach((img) => {
-        img.addEventListener("click", () => {
-          const lightbox = document.getElementById("lightbox");
-          const lightboxImg = document.getElementById("lightbox-img");
-          lightboxImg.src = img.dataset.full;
-          lightbox.style.display = "flex";
-          document.body.style.overflow = "hidden"; // ✅ disable background scroll
-        });
-      });
-
-      function closeLightbox() {
-        const lightbox = document.getElementById("lightbox");
-        lightbox.style.display = "none";
-        document.body.style.overflow = ""; // ✅ re-enable background scroll
-      }
-
-      const lightboxImg = document.getElementById("lightbox-img");
-
-      lightboxImg.addEventListener("click", () => {
-        if (lightboxImg.style.transform === "scale(2)") {
-          lightboxImg.style.transform = "scale(1)";
-          lightboxImg.style.cursor = "zoom-in";
-        } else {
-          lightboxImg.style.transform = "scale(2)";
-          lightboxImg.style.cursor = "zoom-out";
-        }
-      });
-    </script>
+    <script src="../images.js"></script>
   </body>
 </html>
