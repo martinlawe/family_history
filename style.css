@@ -411,3 +411,69 @@ figure.document .caption {
   color: #555;
   margin-top: 0.3em;
 }
+
+/* ==================== Mobile-Friendly Styles ==================== */
+
+/* Tablets and smaller screens */
+@media (max-width: 600px) {
+  .main-grid {
+    grid-template-columns: 1fr; /* stack all items vertically */
+  }
+}
+
+
+  #family-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .nested-grid {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 0.5rem;
+  }
+
+  /* Flex rows stack vertically */
+  .row,
+  .sibling-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Container padding slightly reduced */
+  .container {
+    padding: 20px;
+  }
+
+  /* Headings slightly smaller */
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; line-height: 28px; }
+  h3 { font-size: 18px; line-height: 22px; }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  /* Grids become single column */
+  .main-grid,
+  #family-grid,
+  .nested-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* Flex rows stack vertically */
+  .row,
+  .sibling-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Reduce container padding for small screens */
+  .container {
+    padding: 10px;
+  }
+
+  /* Make images and figure elements scale to full width */
+  .gallery img,
+  figure.military-document img,
+  figure.document img {
+    max-width: 10
