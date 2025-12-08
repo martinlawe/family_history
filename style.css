@@ -107,7 +107,7 @@ footer {
   color: var(--white);
   text-align: center;
   padding: 1em;
-  margin-top: 1.5em;
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -421,33 +421,39 @@ figure.document .caption {
   }
 }
 
+#family-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 
-  #family-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+.nested-grid {
+  grid-template-columns: 1fr; /* stack vertically */
+  gap: 0.5rem;
+}
 
-  .nested-grid {
-    grid-template-columns: 1fr; /* stack vertically */
-    gap: 0.5rem;
-  }
+/* Flex rows stack vertically */
+.row,
+.sibling-row {
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-  /* Flex rows stack vertically */
-  .row,
-  .sibling-row {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+/* Container padding slightly reduced */
+.container {
+  padding: 20px;
+}
 
-  /* Container padding slightly reduced */
-  .container {
-    padding: 20px;
-  }
-
-  /* Headings slightly smaller */
-  h1 { font-size: 28px; }
-  h2 { font-size: 22px; line-height: 28px; }
-  h3 { font-size: 18px; line-height: 22px; }
+/* Headings slightly smaller */
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+  line-height: 28px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* Mobile phones */
@@ -472,8 +478,74 @@ figure.document .caption {
     padding: 10px;
   }
 
-  /* Make images and figure elements scale to full width */
+  /* Make images scale to full width */
   .gallery img,
   figure.military-document img,
   figure.document img {
-    max-width: 10
+    max-width: 100%;
+    height: auto;
+  }
+} /* ← THIS WAS MISSING */
+
+/* ================================
+   WAR DIARY TABLE LAYOUT – FULL BORDERS
+   ================================ */
+
+.diary-page {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Table wrapper with a solid outer border */
+.diary-table {
+  width: 100%;
+  border-collapse: collapse; /* Needed for clean vertical lines */
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  border: 2px solid #999; /* OUTER BORDER around table */
+}
+
+/* Header and data cells */
+.diary-table th,
+.diary-table td {
+  border: 1px solid #bbb; /* Vertical AND horizontal column lines */
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+/* Header row styling */
+.diary-table th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #999; /* BIGGER line directly under header */
+}
+
+/* Column widths */
+.diary-table th:nth-child(1),
+.diary-table td:nth-child(1) {
+  width: 8%;
+}
+
+.diary-table th:nth-child(2),
+.diary-table td:nth-child(2) {
+  width: 4%;
+}
+
+.diary-table th:nth-child(3),
+.diary-table td:nth-child(3) {
+  width: 4%;
+}
+
+.diary-table th:nth-child(4),
+.diary-table td:nth-child(4) {
+  width: 76%;
+}
+
+.diary-table th:nth-child(5),
+.diary-table td:nth-child(5) {
+  width: 8%;
+}
