@@ -73,6 +73,12 @@ button {
   gap: 1rem;
   align-items: center;
 }
+#tree1 #row3-tree1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .family-col {
   display: flex;
   flex-direction: column; /* stack parent + children vertically */
@@ -432,10 +438,11 @@ figure.document .caption {
 }
 
 /* Flex rows stack vertically */
-.row,
-.sibling-row {
-  flex-direction: column;
-  gap: 0.5rem;
+@media (max-width: 600px) {
+  .row,
+  .sibling-row {
+    flex-direction: column;
+  }
 }
 
 /* Container padding slightly reduced */
@@ -467,10 +474,11 @@ h3 {
   }
 
   /* Flex rows stack vertically */
-  .row,
-  .sibling-row {
-    flex-direction: column;
-    gap: 0.5rem;
+  @media (max-width: 600px) {
+    .row,
+    .sibling-row {
+      flex-direction: column;
+    }
   }
 
   /* Reduce container padding for small screens */

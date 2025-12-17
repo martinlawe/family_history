@@ -338,30 +338,6 @@
         { container: "tree1", from: "p1", to: "p2", type: "vertical" },
         { container: "tree1", from: "p2", to: ["p3", "p4"], type: "dogleg" },
       ];
-      //function makePath(d) {
-      //  const path = document.createElementNS(
-      //    "http://www.w3.org/2000/svg",
-      //    "path"
-      //  );
-      //  path.setAttribute("d", d);
-      //  path.setAttribute("stroke", "black");
-      //  path.setAttribute("stroke-width", "2");
-      //  path.setAttribute("fill", "none");
-      //  return path;
-      //}
-
-      //function drawVerticalLine(svg, fromEl, toEl) {
-      //  const fromRect = fromEl.getBoundingClientRect();
-      //  const toRect = toEl.getBoundingClientRect();
-      //  const box = svg.parentElement.getBoundingClientRect();
-
-      //  const x1 = fromRect.left + fromRect.width / 2 - box.left;
-      //  const y1 = fromRect.bottom - box.top;
-      //  const x2 = toRect.left + toRect.width / 2 - box.left;
-      //  const y2 = toRect.top - box.top;
-
-      //  svg.appendChild(makePath(`M${x1},${y1} L${x2},${y2}`));
-      //}
     </script>
     <script src="../lines.js"></script>
   </body>
