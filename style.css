@@ -98,6 +98,7 @@ button {
   padding: 0;
   box-sizing: border-box;
 } /* use in all html files */
+/*==================Header and footer section==============*/
 header {
   background: var(--medium-brown);
   color: var(--white);
@@ -136,6 +137,21 @@ footer {
 .footer-right {
   text-align: right;
 }
+.footnotes {
+  font-size: 0.9em;
+  color: var(--dark-grey);
+  margin-top: 40px;
+}
+.footnote-content {
+  display: none;
+  font-style: italic;
+  color: var(--dark-grey);
+}
+.footnote-comment {
+  display: flex;
+  justify-content: space-between;
+} /* Style for SVG paths */
+/*=============Headings===============*/
 h1,
 h2,
 h3 {
@@ -164,10 +180,20 @@ hr {
   border: none;
   border-top: 1px solid var(--light-grey);
 }
+/*===========Containers===============*/
 .main-container {
   min-height: 100vh;
   overflow: auto;
 }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: var(--off-white);
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+/*========txt alignment============*/
 .text-center {
   /* Used in Evelyns writings and Windsor_past_present*/
   text-align: center;
@@ -187,14 +213,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.container {
-  max-width: 1100px;
-  margin: auto;
-  background-color: var(--off-white);
-  padding: 30px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
 .note {
   margin: 0.05em;
   margin-top: 1em;
@@ -206,6 +224,7 @@ a:hover {
   color: var(--dark-grey);
   cursor: not-allowed;
 } /*Images */
+/* ========================== Gallery Thumbnails ========================== */
 img {
   max-width: 100%;
   height: auto;
@@ -219,27 +238,6 @@ img {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   margin: 80px;
 } /* Lightbox styling */
-.lightbox {
-  position: fixed;
-  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
-  background: rgba(0, 0, 0, 0.85);
-  display: none;
-  overflow-x: auto; /* allow horizontal scroll for wide images */
-  overflow-y: auto; /* keep vertical scroll */
-  z-index: 9999;
-}
-.lightbox-content {
-  display: block;
-  padding: 40px 0; /* ✅ space above and below image */
-  text-align: center;
-}
-.lightbox img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  transform-origin: top center;
-} /* ========================== Gallery Thumbnails ========================== */
 .gallery img {
   max-width: 150px;
   margin: 10px;
@@ -264,6 +262,27 @@ img {
   text-align: center;
 }
 #lightbox img {
+  .lightbox {
+    position: fixed;
+    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    overflow-x: auto; /* allow horizontal scroll for wide images */
+    overflow-y: auto; /* keep vertical scroll */
+    z-index: 9999;
+  }
+  .lightbox-content {
+    display: block;
+    padding: 40px 0; /* ✅ space above and below image */
+    text-align: center;
+  }
+  .lightbox img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transform-origin: top center;
+  }
   display: block;
   height: auto;
   margin: 20px auto;
@@ -271,20 +290,6 @@ img {
   transition: all 0.3s ease;
   cursor: zoom-in;
 } /* Footnotes */ /*used in all html files along with all footer classes */
-.footnotes {
-  font-size: 0.9em;
-  color: var(--dark-grey);
-  margin-top: 40px;
-}
-.footnote-content {
-  display: none;
-  font-style: italic;
-  color: var(--dark-grey);
-}
-.footnote-comment {
-  display: flex;
-  justify-content: space-between;
-} /* Style for SVG paths */
 .svg-line {
   fill: none;
   stroke: var(--black);
@@ -448,6 +453,7 @@ figure.document .caption {
 /* Container padding slightly reduced */
 .container {
   padding: 20px;
+  height: auto;
 }
 
 /* Headings slightly smaller */
@@ -465,6 +471,7 @@ h3 {
 
 /* Mobile phones */
 @media (max-width: 480px) {
+  height: auto;
   /* Grids become single column */
   .main-grid,
   #family-grid,
