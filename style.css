@@ -13,9 +13,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x: auto; /* prevent sideways scrollbars only */
-  overflow-y: auto; /* allow vertical scrolling */
+  /* height: 100%;*/
+  overflow-x: hidden; /* default: no sideways scroll */
+  /* overflow-y: auto;*/ /* allow vertical scrolling */
 }
 html.allow-horizontal,
 body.allow-horizontal {
@@ -87,7 +87,6 @@ button {
 }
 .sibling-row {
   margin-top: 1rem;
-  margin-left: center;
   display: flex;
   justify-content: center;
   flex-direction: row; /* put siblings side by side */
@@ -122,11 +121,7 @@ footer {
   border-top: 1px solid #ccc;
   flex-wrap: wrap;
 }
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-} /* Used on all html pages, except index.html */
+
 .footer-left,
 .footer-right {
   flex: 1;
@@ -262,34 +257,33 @@ img {
   text-align: center;
 }
 #lightbox img {
-  .lightbox {
-    position: fixed;
-    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
-    background: rgba(0, 0, 0, 0.85);
-    display: none;
-    overflow-x: auto; /* allow horizontal scroll for wide images */
-    overflow-y: auto; /* keep vertical scroll */
-    z-index: 9999;
-  }
-  .lightbox-content {
-    display: block;
-    padding: 40px 0; /* ✅ space above and below image */
-    text-align: center;
-  }
-  .lightbox img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    transform-origin: top center;
-  }
+  position: fixed;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  overflow-x: auto; /* allow horizontal scroll for wide images */
+  overflow-y: auto; /* keep vertical scroll */
+  z-index: 9999;
+}
+.lightbox-content {
+  /*display: block;*/
+  padding: 40px 0; /* ✅ space above and below image */
+  text-align: center;
+}
+.lightbox img {
   display: block;
+  max-width: 100%;
   height: auto;
   margin: 20px auto;
+  /* transform-origin: top center;*/
   box-shadow: 0 0 10px var(--white);
+}
+/* display: block;
+  height: auto;
+  margin: 20px auto;
   transition: all 0.3s ease;
   cursor: zoom-in;
-} /* Footnotes */ /*used in all html files along with all footer classes */
+}*/ /* Footnotes */ /*used in all html files along with all footer classes */
 .svg-line {
   fill: none;
   stroke: var(--black);
@@ -297,7 +291,7 @@ img {
 } /* Container for the whole layout, relative so absolute children position relative to it */
 #tree-container {
   position: relative;
-  height: 400px; /* Match SVG height */
+  min-height: 400px; /* Match SVG height */
   width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -351,7 +345,7 @@ img {
 .column {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.5rem;
   position: relative;
 }
 svg {
@@ -392,7 +386,7 @@ figure.military-document figcaption {
 }
 
 .document {
-  display: inline-blaock;
+  display: inline-block;
   text-align: center;
   margin: 1em;
 }
@@ -430,16 +424,14 @@ figure.document .caption {
   .main-grid {
     grid-template-columns: 1fr; /* stack all items vertically */
   }
-}
-
-#family-grid {
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.nested-grid {
-  grid-template-columns: 1fr; /* stack vertically */
-  gap: 0.5rem;
+  #family-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .nested-grid {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 0.5rem;
+  }
 }
 
 /* Flex rows stack vertically */
@@ -448,12 +440,10 @@ figure.document .caption {
   .sibling-row {
     flex-direction: column;
   }
-}
-
-/* Container padding slightly reduced */
-.container {
-  padding: 20px;
-  height: auto;
+  .container {
+    padding: 20px;
+    height: auto;
+  }
 }
 
 /* Headings slightly smaller */
@@ -471,7 +461,6 @@ h3 {
 
 /* Mobile phones */
 @media (max-width: 480px) {
-  height: auto;
   /* Grids become single column */
   .main-grid,
   #family-grid,
@@ -479,28 +468,21 @@ h3 {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
-
-  /* Flex rows stack vertically */
-  @media (max-width: 600px) {
-    .row,
-    .sibling-row {
-      flex-direction: column;
-    }
-  }
-
-  /* Reduce container padding for small screens */
   .container {
     padding: 10px;
-  }
-
-  /* Make images scale to full width */
-  .gallery img,
-  figure.military-document img,
-  figure.document img {
-    max-width: 100%;
     height: auto;
   }
-} /* ← THIS WAS MISSING */
+}
+
+/* Reduce container padding for small screens */
+
+/* Make images scale to full width */
+.gallery img,
+figure.military-document img,
+figure.document img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* ================================
    WAR DIARY TABLE LAYOUT – FULL BORDERS
