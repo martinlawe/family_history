@@ -14,10 +14,9 @@ body {
   margin: 0;
   padding: 0;
   /* height: 100%;*/
-  /* overflow-x: hidden; */ /* default: no sideways scroll */
+  overflow-x: hidden; /* default: no sideways scroll */
   /* overflow-y: auto;*/ /* allow vertical scrolling */
 }
-
 html.allow-horizontal,
 body.allow-horizontal {
   overflow-x: auto; /* enable sideways scroll */
@@ -225,9 +224,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 } /* Hover zoom for photos */
 .gallery img.photo:hover {
@@ -419,111 +416,13 @@ figure.document .caption {
   color: #555;
   margin-top: 0.3em;
 }
-.desktop-only {
-  display: block;
-}
 
-.mobile-blocked {
-  display: none;
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  text-align: center;
-  border: 1px solid var(--light-grey);
-  border-radius: 8px;
-  background: var(--off-white);
-  font-style: italic;
-}
-
-/* Mobile behaviour */
-@media (max-width: 600px) {
-  .desktop-only {
-    display: none;
-  }
-
-  .mobile-blocked {
-    display: block;
-  }
-}
-@media (max-width: 900px) {
-  .desktop-only {
-    display: none;
-  }
-
-  .mobile-blocked {
-    display: block;
-  }
-}
-@media (max-width: 480px) {
-  .desktop-only {
-    display: none;
-  }
-
-  .mobile-blocked {
-    display: block;
-  }
-}
-/*===============================
-TEMPORARY MODIFICATIONS
-================================= */
-
-/* ======================================
-FAMILY TREES - MOBILE ADJUSTMENTS
-====================================== */
-/*=====================================
-MOBILE ADJUSTMENT FOR max-width:480px
-=======================================*/
-
-@media (max-width: 480px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Grids become single column */
-  .main-grid,
-  #family-grid,
-  .nested-grid {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
-  .container {
-    padding: 10px;
-    height: auto;
-  }
-}
-@media (max-width: 480px) {
-  body,
-  main,
-  section {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .trees-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-@media (max-width: 480px) {
-  .trees-wrapper {
-    overflow-x: auto;
-    scroll-padding-left: 0;
-  }
-}
-
-/*=====================================
-   MOBILE ADJUSTMENTS FOR max-width:600px
-   =======================================*/
+/* ==================== Mobile-Friendly Styles ==================== */
 
 /* Tablets and smaller screens */
 @media (max-width: 600px) {
   .main-grid {
     grid-template-columns: 1fr; /* stack all items vertically */
-    margin-left: 1rem;
   }
   #family-grid {
     grid-template-columns: 1fr;
@@ -534,6 +433,8 @@ MOBILE ADJUSTMENT FOR max-width:480px
     gap: 0.5rem;
   }
 }
+
+/* Flex rows stack vertically */
 @media (max-width: 600px) {
   .row,
   .sibling-row {
@@ -544,90 +445,7 @@ MOBILE ADJUSTMENT FOR max-width:480px
     height: auto;
   }
 }
-/* Flex rows stack vertically */
-@media (max-width: 600px) {
-  /* Stack all trees vertically */
-  .tree-container {
-    display: flex;
-    flex-direction: column; /* STACK instead of side-by-side */
-    gap: 1.5rem; /* space between trees */
-    align-items: stretch; /* make trees fill width */
-    overflow-x: hidden; /* prevent horizontal scroll on container */
-  }
-  /* Each tree wrapper fills full width */
-  @media (max-width: 600px) {
-    .trees-wrapper {
-      /* flex-direction: column;
-      align-items: center;
-      gap: 40px;
-        width: 100%;*/
-      overflow-x: auto;
-      overflow-y: visible;
-      -webkit-overflow-scrolling: touch;
-    }
-  }
-  @media (max-width: 600px) {
-    .grid-layout {
-      gap: 3px;
-    }
 
-    .grid-layout button {
-      padding: 6px;
-      font-size: 0.85rem;
-    }
-  }
-
-  /* Make SVG scale inside tree */
-  .trees-container svg {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 600px) {
-  /* Mobile: hide SVG connector lines to avoid overlap */
-  .trees-container svg {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .tree-container svg {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .tree-container {
-    justify-content: flex-start;
-  }
-
-  .trees-wrapper {
-    justify-content: flex-start;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/*=====================================
-MOBILE ADJUSTMENTS FOR max-width:900px
-=======================================*/
-
-/* Tablets */
-@media (max-width: 900px) {
-  .main-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Each tree container fills wrapper width */
-@media (max-width: 900px) {
-  .trees-container {
-    width: max-content;
-    min-width: max-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    margin: 0; /* avoid hidden offsets */
-  }
-}
 /* Headings slightly smaller */
 h1 {
   font-size: 28px;
@@ -642,13 +460,17 @@ h3 {
 }
 
 /* Mobile phones */
-@media (max-width: 900px) {
-  .trees-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    justify-content: flex-start; /* 🔑 critical */
+@media (max-width: 480px) {
+  /* Grids become single column */
+  .main-grid,
+  #family-grid,
+  .nested-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .container {
+    padding: 10px;
+    height: auto;
   }
 }
 
