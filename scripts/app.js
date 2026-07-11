@@ -1,4 +1,4 @@
-fetch("/data/flat_data/family.ged")
+fetch("data/flat_data/family.ged")
   .then((response) => response.text())
   .then((text) => {
     const { people, families } = parseGedcom(text);
