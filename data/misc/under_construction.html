@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" id="P078" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <title>Under Construction</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh; /* full viewport height */
+        display: flex;
+        justify-content: center; /* horizontal centring */
+        align-items: center; /* vertical centring */
+        background: #f9f9f9;
+        font-family: Arial, sans-serif;
+        position: relative; /* needed for absolute nav positioning */
+      }
+      .construction {
+        font-size: 6rem; /* make icon large */
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        .construction {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="column return-button">
+      <button
+        type="button"
+        onclick="history.back()"
+        class="family-button under_construction-button"
+      >
+        Previous Page
+      </button>
+
+      <a href="/Index.html" class="family-button under_construction-button">
+        Home
+      </a>
+    </div>
+    <main>
+      <br /><br /><br />
+      <div class="construction">
+        🚧<br />
+        <p>Page Under Construction</p>
+      </div>
+    </main>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="Expanded view" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

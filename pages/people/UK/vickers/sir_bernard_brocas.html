@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Brocas" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" content="P072" />
+    <meta name="RootsMagic_person_id" content="1213" />
+    <meta name="gold-template" content="v1.0" />
+    <meta name="last_updated" content="09/06/2026" />
+    <title>Bernard Brocas - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_update" content="18/06/2026 " />
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log">
+      01/09/25 Meta details updated. 11/05/26 - moved to UK/vickers structure -
+      periods.js implemented - image paths corrected 23/05/26 - Button links
+      updated to new colour theme. 26/06/2026 - Updated to latest structure and
+      links corrected.
+    </div>
+    <!--End of the Change Log-->
+    <header class="header_uk">Family History</header>
+    <div class="main-container">
+      <nav class="page-navigation">
+        <button class="family-button uk-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button uk-button">
+          <a href="/index.html">Home</a>
+        </button>
+      </nav>
+      <main class="page-content">
+        <h1 class="h1_uk">Sir Bernard Brocas</h1>
+        <p class="lifespan">1324 - 1395</p>
+
+        <div class="section">
+          <h2 class="h2_uk">Overview</h2>
+          <div id="periods"></div>
+
+          <script src="/scripts/periods.js"></script>
+
+          <script>
+            renderPeriods("periods", ["late_middle", "medieval"]);
+          </script>
+          <br />
+          <p>Notes</p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Marriage and Children</h2>
+          <p>Married Agness Vavasour.</p>
+          <p>Known child (or Children): Bernard Brocas.</p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Timeline</h2>
+          <div class="timeline">
+            <div class="event">
+              <strong>{Birth Date}:</strong> Birth in {Birth Place}.
+            </div>
+            <div class="event">
+              <strong>{Marriage Date}:</strong>Marriage to (Spouse} in {Marriage
+              Place}.
+            </div>
+            <div class="event">
+              <strong>{Death Date}:</strong>Death in {Death Place}.
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Historical Context</h2>
+          <p>Notes.</p>
+        </div>
+      </main>
+    </div>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

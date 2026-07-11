@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Lawrence" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" content="P077" />
+    <meta name="RootsMagic_person_id" content="0154" />
+    <meta name="gold-template" content="v1.0" />
+    <meta name="last_updated" content="09/06/2026" />
+    <title>Thomas Emmons - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_updated" content="16/06/2026" />
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log" style="display: none">
+      01/09/25 Meta details updated. 17/06/2026 Styling updated to current
+      scheme, links updated as necessary. 25/06/2026 - Updated to latest
+      structure, links corrected.
+    </div>
+    <!--End of the Change Log-->
+    <header class="header_uk">Family History</header>
+    <nav class="page-navigation">
+      <button class="family-button uk-button" onclick="history.back()">
+        Previous Page
+      </button>
+      <button class="family-button uk-button">
+        <a href="/index.html">Home</a>
+      </button>
+    </nav>
+    <main style="margin: 40px">
+      <h1 class="h1_uk">Thomas Emmons Laurence</h1>
+      <p class="lifespan">Mar 1845 �</p>
+      <h2 class="h2_uk">Photo Gallery</h2>
+      <div class="gallery"></div>
+      <div class="section">
+        <h2 class="h2_uk">Overview</h2>
+        <div id="periods"></div>
+
+        <script src="/scripts/periods.js"></script>
+
+        <script>
+          renderPeriods("periods", ["industrial", "georgian"]);
+        </script>
+        <br />
+        <p>Notes</p>
+      </div>
+      <div class="section">
+        <h2 class="h2_uk">Marriage and Children</h2>
+        <p>Married Millicent Templeman Gray.</p>
+        <p>Known child (or Children):</p>
+      </div>
+      <div class="section">
+        <h2 class="h2_uk">Timeline</h2>
+        <div class="timeline">
+          <div class="event">
+            <strong>{Birth Date}:</strong> Birth in {Birth Place}.
+          </div>
+          <div class="event">
+            <strong>{Marriage Date}:</strong>Marriage to (Spouse} in {Marriage
+            Place}.
+          </div>
+          <div class="event">
+            <strong>{Death Date}:</strong>Death in {Death Place}.
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="h2_uk">Historical Context</h2>
+        <p>Notes.</p>
+      </div>
+    </main>
+
+    <footer class="footer_uk">
+      <span><em>&copy; 2026 Martin Lawrence | Family History Project</em></span>
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

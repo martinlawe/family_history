@@ -7,135 +7,42 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="robots" content="noindex, nofollow" id="G001" />
     <title>"Family History"</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/people.css" />
+    <link rel="stylesheet" href="styles/trees.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!--There are a number of updates that are needed, throughout the files that make up this history.
-        As a reminder of things that need to be completed, I intend to note them here, within this comment section.
-        1. complete the addition of the meta tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> this should always precede the Robot tag. - Completed
-        2. update the line creation sections, so that the lines are created by the JavaScript file.
-        3. ensure that all photo's and documents are created using the same html function. This will follow the Figure tags with figcaptions.
-        4. create any additional files.
-        -->
+    <!--Status: css updated-->
+    <!--Status: Paths verified-->
+    <!--Status: In Progress-->
+    <!--Status: Updating button links-->
+    <!--Status: Comment- Under Construction entries need to be reviewed, and new files created. -->
+    <!--Start of the Change Log-->
+    <div id="hidden-log">
+      11/05/26 - moved to UK/vickers structure - periods.js implemented - image
+      paths corrected 23/05/26 - updated button links. 27/06/2026 - Updated to
+      latest structure, links corrected.
+    </div>
+    <!--End of the Change Log-->
     <header>Family History</header>
-    <main>
-      <div class="main-grid" style="margin: 20px">
-        <div class="column">
-          <button class="parent">General</button>
-          <div class="grid-layout">
-            <button style="grid-column: 1; grid-row: 1">
-              <a href="commentary/Windsor_past_present.html"
-                >Windsor Past and Present</a
-              >
-            </button>
-            <button style="grid-column: 1; grid-row: 2">
-              <a href="commentary/suffolk_history_1830_to_1839.html"
-                >Suffolk History</a
-              >
-            </button>
-            <button style="grid-column: 1; grid-row: 3">
-              <a href="Military/Militaria.html">Militaria</a>
-            </button>
-            <button style="grid-column: 2; grid-row: 1">
-              <a href="commentary/early_middle_ages.html">Early Middle Ages</a>
-            </button>
-            <button style="grid-column: 2; grid-row: 2">
-              <a href="commentary/high_middle_ages.html">High Middle Ages</a>
-            </button>
-            <button style="grid-column: 3; grid-row: 1">
-              <a href="commentary/Civil War and Commonwealth Period.html">
-                Civil War Period
-              </a>
-            </button>
-            <button style="grid-column: 3; grid-row: 2">
-              <a href="commentary/industrial_and_revolutionary_age.html"
-                >Industrial Ages</a
-              >
-            </button>
-            <button style="grid-column: 2; grid-row: 3">
-              <a href="commentary/Medieval Period.html">Medieval Period</a>
-            </button>
-            <button style="grid-column: 3; grid-row: 3">
-              <a href="commentary/contemporary_period.html"
-                >Contemporary Period</a
-              >
-            </button>
-          </div>
-        </div>
-        <div class="column">
-          <button class="parent">Vickers Family</button>
-          <div class="grid-layout">
-            <button style="grid-column: 1; grid-row: 1">
-              <a href="family_overviews/Vickers_family_history.html">Vickers</a>
-            </button>
-            <button style="grid-column: 1; grid-row: 2">
-              <a href="people/Under_Construction.html">Gibbons</a>
-            </button>
-            <button style="grid-column: 1; grid-row: 4">
-              <a href="family_overviews/Doyly_family_history.html">D'Oyly</a>
-            </button>
-            <button style="grid-column: L1; grid-row: 5">
-              <a href="family_overviews/Puttenham_family_history.html"
-                >Puttenham</a
-              >
-            </button>
-            <button style="grid-column: 2; grid-row: 4">
-              <a href="family_overviews/Brocas_family_history.html">Brocas</a>
-            </button>
-            <button style="grid-column: 3; grid-row: 1">
-              <a href="family_overviews/Brown_family_history.html">Brown</a>
-            </button>
-            <button style="grid-column: 3; grid-row: 2">
-              <a href="people/Under_Construction.html">Weston</a>
-            </button>
-            <button style="grid-column: 1; grid-row: 3">
-              <a href="people/Under_Construction.html">Saunders</a>
-            </button>
-          </div>
-        </div>
-        <div class="column">
-          <button class="parent">Lawrence Family</button>
-          <div class="grid-layout">
-            <button style="grid-column: 1; grid-row: 1">
-              <a href="family_overviews/Lawrence_family_history.html"
-                >Lawrence</a
-              >
-            </button>
-            <button style="grid-column: 2; grid-row: 1">
-              <a href="people/Under_Construction.html">Archer</a>
-            </button>
-            <button style="grid-column: 2; grid-row: 2">
-              <a href="family_overviews/Fowler_family_history.html">Fowler</a>
-            </button>
-            <button style="grid-column: 1; grid-row: 2">
-              <a href="people/Under_Construction.html">Emmons</a>
-            </button>
-          </div>
-        </div>
-        <div class="column">
-          <button class="parent">O'Keeffe Family</button>
-          <div class="grid-layout">
-            <button style="grid-column: 1; grid-row: 1">
-              <a href="family_overviews/O'keeffe_family_history.html"
-                >O'keeffe</a
-              >
-            </button>
-            <button style="grid-column: 2; grid-row: 2">
-              <a href="family_overviews/Archer_family_history_ie.html"
-                >Archer</a
-              >
-            </button>
-            <button style="grid-column: 2; grid-row: 1">
-              <a href="family_overviews/Lawless_family_history.html">Lawless</a>
-            </button>
+    <main class="page-content">
+      <!--<div class="main-grid" style="margin: 20px">-->
+      <!--Status:in progress-->
 
-            <button style="grid-column: 1; grid-row: 2">
-              <a href="family_overviews/Kennedy_family_history.html">Kennedy</a>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div style="margin: 40px">
+      <div id="familyGrid"></div>
+
+      <script src="scripts/families.js"></script>
+
+      <script>
+        renderGroupedFamilies();
+      </script>
+
+      <div class="page-content">
         <p class="note">
           This family history project began with the goal of preserving our
           shared past — not just names and dates, but the stories, decisions,
@@ -148,19 +55,19 @@
           site aims to bring them all together in one place.
         </p>
         <p class="note">
-          By clicking on a button, above, you will be taken to that family
-          history. The top row of buttons, the large ones, group the families
-          together. The next row, which are clickable, are the main families
-          within that group. the buttons stacked below are the main families for
-          which information is available. Some buttons will take you to an
-          "Under Construction" page, which means that the detail for that
-          particular family, is not available, currently. The buttons an the
-          left, give some General Historical Period information, again some may
-          take you to an "Under Construction" page, as further information is
-          gathered.
+          This page provides a view of the family names that we have data for,
+          by clicking on a button, you will be taken to that family history,
+          some may take you to an "Under Construction" page, as further
+          information is gathered.
         </p>
-      </div>
-      <div style="margin: 20px">
+        <p class="note">
+          Throughout this site, the theme colour will change in accordance to
+          the family group that you are looking at, so for the UK families the
+          colour will be <span class="highlight_uk"> blue</span>, for the Irish
+          family group it will be <span class="highlight_ie">green</span>,and
+          for the American family, which does not appear readily, the colour
+          will be <span class="highlight_us">maroon</span>.
+        </p>
         <p class="note">
           <strong>Privacy Notice:</strong> For privacy reasons, the website does
           not include details of living individuals.
@@ -168,7 +75,7 @@
       </div>
     </main>
     <footer>
-      <span class="footer-left"><em>&copy; 2025 - Martin Lawrence</em></span>
+      <span class="footer-left"><em>&copy; 2026 - Martin Lawrence</em></span>
       <em><span class="footer-right" id="version-info"></span></em>
     </footer>
 
@@ -204,8 +111,8 @@
       2.04     |08-12-25  |War Diaries added to Militaria.              |   Pushed to git
       2.05     |23-12-25  |Various files updated, mainly correcting Id's |  Pushed to git
       2.06     |13-01-26  |CSS file updated for Mobile devices          |   Pushed to git
-      3.00     |19-01-26  |Major update - styling updated to cater for mobile devices, All devices now included.
-                                                                        |   Pushed to git
+      3.00     |19-01-26  |Major update - styling updated to cater for mobile devices, All devices now included.                   |   Pushed to git
+      4.00     |11-07-26  |Files restructured, css and line js files updated, families and periods added. Gold standard Template added for individuals new repository created in git.                           |  Pushed to git
     </script>
 
     <script>

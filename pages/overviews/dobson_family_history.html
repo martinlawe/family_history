@@ -1,0 +1,158 @@
+<!doctype html>
+<!--Updated with new routings 13/07/2025-->
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Dobson Family history part of the Vickers, Brocas, D’Oyly, and Lawrence families."
+    />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="family" content="F005" />
+    <title>Dobson - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="Completed" />
+    <meta name="page_status_last_update" content="14/06/2026 " />
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log">
+      23/08/25 - New file created using the latest script for line creation.
+      Tree still to be create 12/06/2026 - Styling updated and line creation
+      updated. 27/06/2026 - Updated to latest Structure, links corrected and
+      tree recreated.
+    </div>
+    <!--End of the Change Log-->
+    <header class="header_uk">Family History</header>
+    <main class="page-content">
+      <div class="main-grid">
+        <nav class="page-navigation">
+          <button class="family-button uk-button" onclick="history.back()">
+            Previous Page
+          </button>
+          <button class="family-button uk-button">
+            <a href="/index.html">Home</a>
+          </button>
+        </nav>
+        <div class="column">
+          <a
+            class="family-button uk-button"
+            href="/pages/overviews/vickers_family_history.html"
+            >Vickers Family History</a
+          >
+        </div>
+        <div class="column">
+          <a
+            class="family-button uk-button"
+            href="/pages/overviews/brown_family_history.html"
+            >Brown Family History</a
+          >
+        </div>
+        <div class="column">
+          <a
+            class="family-button uk-button"
+            href="/data/misc/Under_Construction.html"
+            >Beard Family History</a
+          >
+        </div>
+      </div>
+      <!--Start of the tree section-->
+      <div class="trees-wrapper">
+        <div class="trees-container" id="tree1">
+          <svg id="lines-tree1"></svg>
+          <div class="generation">
+            <div class="row" id="row1-tree1">
+              <a
+                id="p1"
+                class="family-button uk-button"
+                href="/pages/people/UK/vickers/henry_vickers.html"
+                >Henry Vickers</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row2-tree1">
+              <a
+                id="p2"
+                class="family-button uk-button"
+                href="/pages/people/UK/vickers/vickers_alice_eliza.html"
+                >Alice Eliza Vickers</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree1">
+              <a
+                id="p3"
+                class="family-button uk-button"
+                href="/pages/people/UK/dobson/Alice_Maud_M._Beard.html"
+                >Alice Maud M Beard</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree1">
+              <a
+                id="p4"
+                class="family-button uk-button"
+                href="/pages/people/UK/dobson/Alice_Dobson.html"
+                >Alice Dobson</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer_uk">
+      <span
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em>
+      </span>
+    </footer>
+    <script src="/scripts/tree-renderer.js"></script>
+    <script>
+      const connections = [
+        // Vertical connections within column 1
+        {
+          fromContainer: "tree1",
+          from: "p1",
+          toContainer: "tree1",
+          to: "p2",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p2",
+          toContainer: "tree1",
+          to: "p3",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p3",
+          toContainer: "tree1",
+          to: "p4",
+          type: "vertical",
+        },
+      ];
+      initTree(connections);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+:root {
+  --background: #fbf6dd;
+  --main-header: #723c12;
+  --main-footer: #723c12;
+  --UK-family: #4b5d67;
+  --IE-family: #567a56;
+  --US-family: #641111;
+  --military: #6b5b3a;
+  --white: #ffffff;
+  --off-white: #fdfcf7;
+  --black: #1f1f1f;
+  --dark-grey: #555555;
+  --light-grey: #cccccc;
+  --medium-brown: #7c5c44;
+  --light-brown: #bfa98e;
+  --sage-green: #a3b18a;
+  --under-construction: #e2f932;
+}
+html,
+body {
+  margin: 0;
+  background: var(--background);
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* default: no sideways scroll */
+  overflow-y: auto; /* allow vertical scrolling */
+}
+.page-content {
+  margin: 40px;
+}
+
+html.allow-horizontal,
+body.allow-horizontal {
+  overflow-x: auto; /* enable sideways scroll */
+}
+header {
+  background: var(--main-header);
+  color: var(--white);
+  padding: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0px;
+}
+.header_uk {
+  background: var(--UK-family);
+}
+.header_ie {
+  background: var(--IE-family);
+}
+.header_us {
+  background: var(--US-family);
+}
+.header_mil {
+  background: var(--military);
+}
+footer {
+  margin-left: 0;
+  margin-right: 0;
+  background: var(--main-footer);
+  color: var(--white);
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+.footer_uk {
+  background: var(--UK-family);
+}
+.footer_ie {
+  background: var(--IE-family);
+}
+.footer_us {
+  background: var(--US-family);
+}
+.footer_mil {
+  background: var(--military);
+}
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+.footer-left {
+  text-align: left;
+}
+.footer-right {
+  text-align: right;
+}
+.footnotes {
+  font-size: 0.9em;
+  color: var(--dark-grey);
+  margin-top: 40px;
+}
+.footnote-content {
+  display: none;
+  font-style: italic;
+  color: var(--dark-grey);
+}
+.footnote-ref {
+  color: var(--dark-grey);
+}
+.footnote-comment {
+  display: flex;
+  justify-content: space-between;
+} /* Style for SVG paths */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-bottom: 1em;
+}
+hr {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px solid var(--light-grey);
+}
+h1,
+h2,
+h3 {
+  color: var(--medium-brown);
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+}
+.h3_main {
+  text-align: center;
+}
+.h1_uk,
+.h2_uk,
+.h3_uk,
+.h4_uk {
+  color: #4b5d67;
+}
+.h1_ie,
+.h2_ie,
+.h3_ie,
+.h4_ie {
+  color: #567a56;
+}
+.h1_mil,
+.h2_mil,
+.h3_mil,
+.h4_mil {
+  color: var(--military);
+}
+
+.h2_ward {
+  text-align: center;
+  color: var(--military);
+  margin: 50px;
+} /*  Header for War Diaries */
+
+.family-group h3 {
+  text-align: center;
+}
+.highlight_uk {
+  color: var(--UK-family);
+  font-style: normal;
+}
+.highlight_ie {
+  color: var(--IE-family);
+  font-style: normal;
+}
+.highlight_us {
+  color: var(--US-family);
+  font-style: normal;
+}
+.text-center {
+  /* Used in Evelyns writings and Windsor_past_present*/
+  text-align: center;
+}
+.section-title {
+  /* used in Evelyns Early Years and Evelyns writings - part 1 */
+  text-decoration: underline;
+}
+.lifespan {
+  font-size: 1.1em;
+  color: var(--dark-grey);
+}
+.button-link {
+  color: #f9f9f9;
+}
+.gene-link {
+  color: #f9f9f9;
+}
+
+.content-link {
+  color: var (var(--light-grey));
+}
+
+.period-link {
+  color: #666666;
+  font-style: italic;
+}
+
+a {
+  color: var(--off-white);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.note {
+  margin: 0.05em;
+  margin-top: 1em;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--black);
+}
+.disabled {
+  color: var(--dark-grey);
+  cursor: not-allowed;
+}
+
+.figcaption {
+  text-align: center;
+}

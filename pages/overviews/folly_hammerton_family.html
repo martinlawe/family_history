@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Folly Family history part of the Vickers family."
+    />
+    <meta name="family" id="F00x" />
+    <meta name="author" content="Martin Lawrence" />
+    <title>Brocas Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="Completed" />
+    <meta name="page_status_last_update" content="14/06/2026 " />
+  </head>
+  <body>
+    <header class="header_uk">Family History</header>
+
+    <main class="page-content">
+      <div class="main-grid">
+        <nav class="page-navigation">
+          <button class="family-button uk-button" onclick="history.back()">
+            Previous Page
+          </button>
+          <button class="family-button uk-button">
+            <a href="/index.html">Home</a>
+          </button>
+        </nav>
+      </div>
+      <div class="trees-wrapper">
+        <!--<div class="trees-container">-->
+        <div class="trees-container" id="tree1">
+          <div class="generation">
+            <div class="row" id="row1-tree1">
+              <a id="p1" class="family-button uk-button" href="">
+                Robert Hammerton 1640 -
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row2-tree1">
+              <a id="p2" class="family-button uk-button" href="">
+                Robert Hammerton 1667 -
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree1">
+              <a id="p3" class="family-button uk-button" href="">
+                Rebecca Hammerton 1715 -
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree1">
+              <a id="p4" class="family-button uk-button" href="">
+                Richard Folly - 1738
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row5-tree1">
+              <a id="p5" class="family-button uk-button" href="">
+                Elizabeth Folly - 1766
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row6-tree1">
+              <a id="p6" class="family-button uk-button" href="">
+                Sarah Gibbons - 1805
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row7-tree1">
+              <a id="p12" class="family-button uk-button" href="">
+                Henry Vickers - 1840
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row8-tree1">
+              <a id="p13" class="family-button uk-button" href="">
+                Albert Vickers 1890 - 1953
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="trees-container" id="tree2">
+          <div class="generation">
+            <div class="row" id="row1-tree2">
+              <a id="p7" class="family-button uk-button" href="">Unknown</a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row2-tree2">
+              <a id="p8" class="family-button uk-button" href="">Unknown </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree2">
+              <a id="p9" class="family-button uk-button" href="">
+                Thomas Hammerton 1715 -
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree2">
+              <a id="p10" class="family-button uk-button" href="">
+                Eleanor Hammerton 1715 -
+              </a>
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row5-tree2">
+              <a id="p11" class="family-button uk-button" href="">
+                Elizabeth Folly - 1766 -
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <script src="/scripts/tree-renderer.js"></script>
+
+    <script>
+      const connections = [
+        {
+          fromContainer: "tree1",
+          from: "p1",
+          toContainer: "tree1",
+          to: "p2",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p2",
+          toContainer: "tree1",
+          to: "p3",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p3",
+          toContainer: "tree1",
+          to: "p4",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p4",
+          toContainer: "tree1",
+          to: "p5",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p5",
+          toContainer: "tree1",
+          to: "p6",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p7",
+          toContainer: "tree2",
+          to: "p8",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p8",
+          toContainer: "tree2",
+          to: "p9",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p9",
+          toContainer: "tree2",
+          to: "p10",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p10",
+          toContainer: "tree2",
+          to: "p11",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p6",
+          toContainer: "tree1",
+          to: "p12",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p12",
+          toContainer: "tree1",
+          to: "p13",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p11",
+          toContainer: "tree1",
+          to: "p6",
+          type: "dogleg",
+        },
+      ];
+      initTree(connections);
+    </script>
+  </body>
+</html>

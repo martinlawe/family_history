@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Archer Family history part of the Lawrence family."
+    />
+    <meta name="family" content="F014" />
+    <meta name="author" content="Martin Lawrence" />
+    <title>Archer Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="Completed" />
+    <meta name="page_status_last_update" content="14/06/2026 " />
+  </head>
+  <body>
+    <!--start of change log-->
+    <div id="hidden-log">
+      13/05/26 - moved to new structure based on family location. Also updated
+      styling to include new colour theme. new Java Scripts. 27/06/2026 -
+      Updated to latest Structure, links corrected and tree recreated.
+    </div>
+    <!--end of change log-->
+    <header class="header_uk">Family History</header>
+    <main>
+      <div class="main-grid">
+        <nav class="page-navigation">
+          <button class="family-button uk-button" onclick="history.back()">
+            Previous Page
+          </button>
+          <button class="family-button uk-button">
+            <a href="/index.html">Home</a>
+          </button>
+        </nav>
+        <div class="column">
+          <div class="parent">
+            <a class="family-button uk-button" href="fowler_family_history.html"
+              >Fowler Family History</a
+            >
+          </div>
+        </div>
+        <div class="column">
+          <div class="parent">
+            <a
+              class="family-button uk-button"
+              href="lawrence_family_history.html"
+              >Lawrence Family History</a
+            >
+          </div>
+        </div>
+        <div class="column">
+          <div class="parent">
+            <a class="family-button uk-button" href="spires_family_history.html"
+              >Spires Family History</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="trees-wrapper">
+        <div class="trees-contaner">
+          <div class="trees-container" id="tree1">
+            <svg id="lines-tree1"></svg>
+            <div class="generation">
+              <div class="row" id="row1-tree1">
+                <a
+                  id="p1"
+                  class="family-button uk-button"
+                  href="/pages/people/UK/lawrence/matilda_fowler.html"
+                  >Matilda Fowler</a
+                >
+              </div>
+            </div>
+            <div class="generation">
+              <div class="row" id="row2-tree1">
+                <a
+                  id="p2"
+                  class="family-button uk-button"
+                  href="/pages/people/UK/lawrence/emily_archer.html"
+                  >Emily Archer</a
+                >
+              </div>
+            </div>
+            <div class="generation">
+              <div class="row" id="row3-tree1">
+                <a
+                  id="p3"
+                  class="family-button uk-button"
+                  href="/pages/people/UK/lawrence/evelyn_lawrence.html"
+                  >Evelyn Lawrence</a
+                >
+                <a
+                  id="p4"
+                  class="family-button uk-button"
+                  href="/pages/people/UK/lawrence/margaret_lawrence.html"
+                  >Margaret Lawrence</a
+                >
+                <a
+                  id="p5"
+                  class="family-button uk-button"
+                  href="/pages/people/UK/lawrence/leslie_lawrence.html"
+                  >Leslie Lawrence</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        This part of the family becomes quite confusing, I'll explain- Matilda
+        Fowler had two daughters Minnie and Emily, both by the same father, but
+        outside of wedlock, Matilda, with the two girls, moved to Windsor, where
+        she met and married Thomas Archer. Thomas adopted the two girls, hence
+        the name change to Archer. According to the 1891 census report, both
+        girls had the surname Fowler
+      </p>
+      <p>
+        Due to the adoption, I have not traced the Archer family back any
+        further. Nor have I investigated Thomas any further.
+      </p>
+    </main>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <script src="/scripts/tree-renderer.js"></script>
+    <script>
+      const connections = [
+        {
+          fromContainer: "tree1",
+          from: "p1",
+          toContainer: "tree1",
+          to: "p2",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p2",
+          toContainer: "tree1",
+          to: "p3",
+          type: "dogleg",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p2",
+          toContainer: "tree1",
+          to: "p4",
+          type: "dogleg",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p2",
+          toContainer: "tree1",
+          to: "p5",
+          type: "dogleg",
+        },
+      ];
+      initTree(connections);
+    </script>
+  </body>
+</html>

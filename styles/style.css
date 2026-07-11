@@ -1,0 +1,907 @@
+/*:root {
+  --background: #fbf6dd;
+  --main-header: #723c12;
+  --main-footer: #723c12;
+  --UK-family: #4b5d67;
+  --IE-family: #567a56;
+  --US-family: #641111;
+  --military: #6b5b3a;
+  --white: #ffffff;
+  --off-white: #fdfcf7;
+  --black: #1f1f1f;
+  --dark-grey: #555555;
+  --light-grey: #cccccc;
+  --medium-brown: #7c5c44;
+  --light-brown: #bfa98e;
+  --sage-green: #a3b18a;
+  --under-construction: #e2f932;
+}*/
+/* ==================================================
+1. VARIABLES
+================================================== */
+
+/* ==================================================
+2. BASE / GLOBAL RESET
+================================================== */
+/*html,
+body {
+  margin: 0;
+  background: var(--background);
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* default: no sideways scroll 
+  overflow-y: auto; /* allow vertical scrolling 
+}
+.page-content {
+  margin: 40px;
+}
+
+html.allow-horizontal,
+body.allow-horizontal {
+  overflow-x: auto; /* enable sideways scroll 
+}
+header {
+  background: var(--main-header);
+  color: var(--white);
+  padding: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0px;
+}
+.header_uk {
+  background: var(--UK-family);
+}
+.header_ie {
+  background: var(--IE-family);
+}
+.header_us {
+  background: var(--US-family);
+}
+.header_mil {
+  background: var(--military);
+}
+footer {
+  margin-left: 0;
+  margin-right: 0;
+  background: var(--main-footer);
+  color: var(--white);
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+.footer_uk {
+  background: var(--UK-family);
+}
+.footer_ie {
+  background: var(--IE-family);
+}
+.footer_us {
+  background: var(--US-family);
+}
+.footer_mil {
+  background: var(--military);
+}
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+.footer-left {
+  text-align: left;
+}
+.footer-right {
+  text-align: right;
+}
+.footnotes {
+  font-size: 0.9em;
+  color: var(--dark-grey);
+  margin-top: 40px;
+}
+.footnote-content {
+  display: none;
+  font-style: italic;
+  color: var(--dark-grey);
+}
+.footnote-comment {
+  display: flex;
+  justify-content: space-between;
+} /* Style for SVG paths 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-bottom: 1em;
+}
+hr {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px solid var(--light-grey);
+}
+*/
+/* ==================================================
+3. TYPOGRAPHY
+================================================== */
+/*h1,
+h2,
+h3 {
+  color: var(--medium-brown);
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+}
+.h3_main {
+  text-align: center;
+}
+.h1_uk,
+.h2_uk,
+.h3_uk,
+.h4_uk {
+  color: #4b5d67;
+}
+.h1_ie,
+.h2_ie,
+.h3_ie,
+.h4_ie {
+  color: #567a56;
+}
+.h1_mil,
+.h2_mil,
+.h3_mil,
+.h4_mil {
+  color: var(--military);
+}
+
+.h2_ward {
+  text-align: center;
+  color: var(--military);
+  margin: 50px;
+} /*  Header for War Diaries */
+/*
+.family-group h3 {
+  text-align: center;
+}
+.highlight_uk {
+  color: var(--UK-family);
+  font-style: normal;
+}
+.highlight_ie {
+  color: var(--IE-family);
+  font-style: normal;
+}
+.highlight_us {
+  color: var(--US-family);
+  font-style: normal;
+}
+.text-center {
+  /* Used in Evelyns writings and Windsor_past_present
+  text-align: center;
+}
+.section-title {
+  /* used in Evelyns Early Years and Evelyns writings - part 1 
+  text-decoration: underline;
+}
+.lifespan {
+  font-size: 1.1em;
+  color: var(--dark-grey);
+}
+.button-link {
+  color: #f9f9f9;
+}
+.gene-link {
+  color: #f9f9f9;
+}
+
+.content-link {
+  color: red;
+}
+
+.period-link {
+  color: #666666;
+  font-style: italic;
+}
+
+a {
+  color: var(--off-white);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.note {
+  margin: 0.05em;
+  margin-top: 1em;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--black);
+}
+.disabled {
+  color: var(--dark-grey);
+  cursor: not-allowed;
+} */
+
+/* ==================================================
+4. LAYOUT SYSTEM (GRID / FLEX)
+================================================== */
+/*.main-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 main columns 
+  gap: 1rem;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+gap: 5px; /* space between cells 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+.family-group {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.family-subgrid {
+  margin-left: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 side by side 
+  gap: 0.5rem;
+}
+.nested-column {
+  display: flex;
+  flex-direction: column; /* stack buttons vertically 
+  gap: 0.25rem;
+}
+.children {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column; /* default = vertical stack 
+  gap: 1rem;
+  align-items: center;
+}
+.family-col {
+  display: flex;
+  flex-direction: column; /* stack parent + children vertically */
+align-items: center; /* center everything horizontally */
+gap: 1rem; /* space between elements 
+}
+.sibling-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* put siblings side by side 
+  gap: 1rem;
+}
+.main-container {
+  min-height: 100vh;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: var(--off-white);
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+#hidden-log {
+  display: none;
+}
+#tree1 #row3-tree1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#tree1 #row3-tree1-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1px;
+}
+#familyGrid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: flex-start;
+}
+*/
+/* ==================================================
+5. TREE SYSTEM (IMPORTANT)
+================================================== */
+/*.trees-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 100px;
+}
+
+.connections {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.trees-container {
+  position: relative;
+  padding: 20px;
+  border: none; /* 1px solid #ccc; 
+  border-radius: 12px;
+  background: var(--background);
+}
+
+.trees-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+.generation {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.person {
+  padding: 10px 16px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 6px;
+  background: var(--off-white);
+  position: relative;
+  z-index: 1; /* keep above lines 
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  align-items: stretch;
+}
+svg {
+  position: absolute;
+  color: var(--medium-brown);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}*/
+
+/* ==================================================
+  6. COMPONENTS (BUTTONS / CARDS / DOCUMENTS)
+  ================================================== */
+/*.family-button {
+  position: relative;
+  z-index: 2;
+}
+
+.return-button {
+  width: fit-content;
+  align-self: flex-start;
+}
+button,
+.period-button,
+.family-button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 16px;
+  font-size: 1em;
+  border: 1px solid var(--light-brown);
+  background-color: var(--medium-brown);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Garamond", serif;
+  font-weight: bold;
+  text-align: center;
+}
+.under_construction-button {
+  background-color: var(--under-construction);
+}
+.construction {
+  font-size: 6rem; /* make icon large 
+  text-align: center;
+}
+.uk-button {
+  background-color: var(--UK-family);
+}
+.ie-button {
+  background-color: var(--IE-family);
+}
+.us-button {
+  background-color: var(--US-family);
+}
+.mil-button {
+  background-color: var(--military);
+}*/
+/* ==================================================
+  7. PAGE-SPECIFIC IDs
+  ================================================== */
+
+/* ==================================================
+   8. LIGHTBOX / GALLERY / MEDIA
+================================================== */
+/*img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+} /* Hover zoom for photos *
+
+.gallery img.photo:hover {
+  transform: scale(var(--zoom, 2.5));
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin: 80px;
+} /* Lightbox styling *
+
+.gallery img {
+  max-width: 150px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid var(--light-grey);
+  transition: border 0.2s;
+}
+.gallery img:hover {
+  border-color: var(--light-grey);
+}
+.svg-line {
+  fill: none;
+  stroke: var(--black);
+  stroke-width: 2;
+}
+
+.lightbox-content {
+  /*display: block;*/
+padding: 40px 0; /* ✅ space above and below image *
+  text-align: center;
+}
+.lightbox img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  /* transform-origin: top center;*
+  box-shadow: 0 0 10px var(--white);
+}
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--background);
+  z-index: 1000;
+  overflow-x: auto; /* enable sideways scroll */
+overflow-y: auto; /* enable vertical scroll *
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: center;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: relative;
+  z-index: 1001;
+}
+.gallery img,
+figure.military-document img,
+figure.document img {
+  max-width: 100%;
+  height: auto;
+}
+*/
+/* ==================================================
+   9. MOBILE OVERRIDES
+================================================== */
+/*.desktop-only {
+  display: block;
+}
+
+.mobile-blocked {
+  display: none;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  background: var(--off-white);
+  font-style: italic;
+}
+.period-link {
+  color: #555555;
+  text-decoration: none;
+}
+
+.period-link:hover {
+  text-decoration: underline;
+}
+
+.military-link {
+  color: var(--military);
+  /*  color: #7c5c44;  *
+  text-decoration: none;
+}
+
+/* Mobile behaviour *
+@media (max-width: 600px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-blocked {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-blocked {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-blocked {
+    display: block;
+  }
+}
+*/
+/*=====================================
+MOBILE ADJUSTMENT FOR max-width:480px
+=======================================*/
+/*
+@media (max-width: 480px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Grids become single column *
+  .main-grid,
+  #family-grid,
+  .nested-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .container {
+    padding: 10px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  body,
+  main,
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .trees-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .trees-wrapper {
+    overflow-x: auto;
+    scroll-padding-left: 0;
+  }
+}
+*/
+/*=====================================
+   MOBILE ADJUSTMENTS FOR max-width:600px
+   =======================================*/
+
+/* Tablets and smaller screens *
+@media (max-width: 600px) {
+  .main-grid {
+    grid-template-columns: 1fr; /* stack all items vertically *
+    margin-left: 1rem;
+  }
+  #family-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .nested-grid {
+    grid-template-columns: 1fr; /* stack vertically *
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .row,
+  .sibling-row {
+    flex-direction: column;
+  }
+  .container {
+    padding: 20px;
+    height: auto;
+  }
+}
+/* Flex rows stack vertically *
+@media (max-width: 600px) {
+  /* Stack all trees vertically *
+  .trees-container {
+    display: flex;
+    flex-direction: column; /* STACK instead of side-by-side *
+    gap: 1.5rem; /* space between trees */
+    align-items: stretch; /* make trees fill width *
+    overflow-x: hidden; /* prevent horizontal scroll on container *
+  }
+  /* Each tree wrapper fills full width *
+  @media (max-width: 600px) {
+    .trees-wrapper {
+      /* flex-direction: column;
+      align-items: center;
+      gap: 40px;
+        width: 100%;*
+      overflow-x: auto;
+      overflow-y: visible;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 600px) {
+    .grid-layout {
+      gap: 3px;
+    }
+
+    .grid-layout button {
+      padding: 6px;
+      font-size: 0.85rem;
+    }
+  }
+
+  /* Make SVG scale inside tree *
+  .trees-container svg {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  /* Mobile: hide SVG connector lines to avoid overlap *
+  .trees-container svg {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .trees-container svg {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .trees-container {
+    justify-content: flex-start;
+  }
+
+  .trees-wrapper {
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+*/
+/*=====================================
+MOBILE ADJUSTMENTS FOR max-width:900px
+=======================================*/
+
+/* Tablets *
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Each tree container fills wrapper width *
+@media (max-width: 900px) {
+  .trees-container {
+    width: max-content;
+    min-width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 0; /* avoid hidden offsets *
+  }
+}
+/* Headings slightly smaller *
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+  line-height: 28px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Mobile phones *
+@media (max-width: 900px) {
+  .trees-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: flex-start; /* 🔑 critical *
+  }
+}
+*/
+/*============== Military =================*/
+/*figure.military-document {
+  display: inline-block; /* keeps figures side by side *
+  margin: 0.5em;
+  vertical-align: top;
+  text-align: center; /* centres image + caption */
+  max-width: 250px; /* matches your typical image width *
+}
+
+figure.military-document img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 100%; /* image fills figure width *
+  height: auto;
+}
+
+figure.military-document figcaption {
+  display: block; /* full width of figure *
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #555;
+  text-align: center; /* centres text *
+  white-space: normal; /* allow wrapping *
+  overflow-wrap: break-word; /* wraps long words if necessary *
+}
+
+.document {
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+}
+.document img {
+  display: block;
+  margin: 40 auto;
+  border-radius: 6px;
+}
+.document .caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.3em;
+}
+figure.document {
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+}
+
+figure.document img {
+  display: block;
+  margin: 40 auto;
+  border-radius: 6px;
+}
+figure.document .caption {
+  font-size: 0.9em;
+  color: #555;
+}*/
+/* ================================
+     WAR DIARY TABLE LAYOUT – FULL BORDERS
+     ================================ */
+/*
+.diary-page {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Table wrapper with a solid outer border *
+.diary-table {
+  width: 100%;
+  border-collapse: collapse; /* Needed for clean vertical lines *
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  border: 2px solid #999; /* OUTER BORDER around table */
+}
+
+/* Header and data cells *
+.diary-table th,
+.diary-table td {
+  border: 1px solid #bbb; /* Vertical AND horizontal column lines *
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+/* Header row styling *
+.diary-table th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #999; /* BIGGER line directly under header *
+}
+
+/* Column widths *
+.diary-table th:nth-child(1),
+.diary-table td:nth-child(1) {
+  width: 8%;
+}
+
+.diary-table th:nth-child(2),
+.diary-table td:nth-child(2) {
+  width: 4%;
+}
+
+.diary-table th:nth-child(3),
+.diary-table td:nth-child(3) {
+  width: 4%;
+}
+
+.diary-table th:nth-child(4),
+.diary-table td:nth-child(4) {
+  width: 76%;
+}
+
+.diary-table th:nth-child(5),
+.diary-table td:nth-child(5) {
+  width: 8%;
+}
+*/

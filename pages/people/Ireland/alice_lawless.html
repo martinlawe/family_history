@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Lawless" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" content="P005" />
+    <meta name="RootsMagic_person_id" content="0018" />
+    <meta name="gold-template" content="v1.0" />
+    <meta name="last_updated" content="09/06/2026" />
+    <title>Alice Lawless - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_update" content="24/06/2026 " />
+  </head>
+  <body>
+    <div id="hidden-log">
+      01/09/25 Meta details updated. 08/05/26 file tidied up, and scripting
+      corrected. 09/06/26 meta data standardised Styling updated and links
+      corrected. Also checked against the gold template. 24-06-2026 - New file
+      Structure introduced, All links updated to this new structure
+    </div>
+    <div class="main-container">
+      <header class="header_ie">Family History</header>
+      <nav class="page-navigation">
+        <button class="family-button ie-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button ie-button">
+          <a href="/index.html">Home</a>
+        </button>
+      </nav>
+      <main class="page-content">
+        <h1 class="h1_ie">Alice Lawless</h1>
+        <p class="lifespan">27 Aug 1927 – 9 May 2007</p>
+        <h2 class="h2_ie">Photo Gallery</h2>
+        <div class="gallery">
+          <figure>
+            <img
+              src="/assets/thumbnails/people/okeefe/TN_alice_lawless.jpg"
+              class="photo"
+              style="--zoom: 1.5"
+              alt="Alice Lawless"
+              data-full="/assets/photos/people/okeefe/alice_lawless.jpg"
+            />
+            <figcaption>Alice O'keefe (nee Lawless)</figcaption>
+          </figure>
+        </div>
+        <div class="section">
+          <h2 class="h2_ie">Overview</h2>
+          <div id="periods"></div>
+          <script src="/scripts/periods.js"></script>
+          <script>
+            renderPeriods("periods", [
+              "free_state",
+              "postwar",
+              "late_20_cent",
+              "contemporary",
+            ]);
+          </script>
+          <br />
+          <p>
+            Alice was the eldest child of Michael Lawless and Lizzie Archer,
+            living in Killeen, Inistioge, County kilkenny.
+          </p>
+        </div>
+        <div class="section">
+          <br />
+          <h2 class="h2_ie">Marriage and Children</h2>
+          <p>
+            Married Patrick Keeffe. October 1950 in Eltham, Middlesex, England
+          </p>
+          <p>
+            Known child (or Children): Mary O'Keeffe 1951-, Elizabeth Anne
+            O'Keeffe 1952-, Bernadette O'Keeffe 1957-, John O'Keeffe 1959-.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2_ie">Timeline</h2>
+          <div class="timeline">
+            <div class="event">
+              <strong>27 Aug 1927:</strong> Birth in Inistioge, Thomastown,
+              Kilkenny.
+            </div>
+            <div class="event">
+              <strong>1951</strong> Birth of Daughter Mary
+            </div>
+            <div class="event">
+              <strong>1952</strong> Birth of Daughter Elizabeth (Betty)
+            </div>
+            <div class="event">
+              <strong> 1957</strong> Birth of Daughter Bernadette
+            </div>
+            <div class="event"><strong>1959</strong> Birth of Son John</div>
+            <div class="event">
+              <strong>28 Oct 1950:</strong> Marriage to Patrick Keeffe in Eltham
+              (age 23).
+            </div>
+            <div class="event">
+              <strong>9 May 2007:</strong> Death in Slough, Berkshire, England
+              (age 79).
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="h2_ie">Notes</h2>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="h2_ie">Historical Context</h2>
+          <p>Notes.</p>
+        </div>
+      </main>
+    </div>
+    <footer class="footer_ie">
+      <span class="footer-left">
+        <em>&copy;2026 Martin Lawrence | Family History Project</em>
+      </span>
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

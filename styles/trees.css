@@ -1,0 +1,166 @@
+/*=============================================================================
+    This style sheet contains the rules for Grids and Trees
+  =============================================================================*/
+
+.main-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 main columns */
+  gap: 1rem;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+  gap: 5px; /* space between cells */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+.family-group {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.family-subgrid {
+  margin-left: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 side by side */
+  gap: 0.5rem;
+}
+.nested-column {
+  display: flex;
+  flex-direction: column; /* stack buttons vertically */
+  gap: 0.25rem;
+}
+.children {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column; /* default = vertical stack */
+  gap: 1rem;
+  align-items: center;
+}
+.family-col {
+  display: flex;
+  flex-direction: column; /* stack parent + children vertically */
+  align-items: center; /* center everything horizontally */
+  gap: 1rem; /* space between elements */
+}
+.sibling-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* put siblings side by side */
+  gap: 1rem;
+}
+.main-container {
+  min-height: 100vh;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: var(--off-white);
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+#hidden-log {
+  display: none;
+}
+#tree1 #row3-tree1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#tree1 #row3-tree1-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1px;
+}
+#familyGrid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: flex-start;
+}
+
+/* ==================================================
+5. TREE SYSTEM (IMPORTANT)
+================================================== */
+.trees-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 100px;
+}
+
+.connections {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.trees-container {
+  position: relative;
+  padding: 20px;
+  border: none; /* 1px solid #ccc; */
+  border-radius: 12px;
+  background: var(--background);
+}
+
+.trees-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+.generation {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.person {
+  padding: 10px 16px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 6px;
+  background: var(--off-white);
+  position: relative;
+  z-index: 1; /* keep above lines */
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  align-items: stretch;
+}
+svg {
+  position: absolute;
+  color: var(--medium-brown);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

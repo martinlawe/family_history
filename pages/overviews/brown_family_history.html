@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Brown" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="family" content="F004" />
+    <!--still need to sort out the under construction piece-->
+    <title>The Brown Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="Completed" />
+    <meta name="page_status_last_update" content="14/06/2026 " />
+  </head>
+  <body>
+    <!-- start of change log for this file-->
+    <div id="hidden-log">
+      21/08/2025 - file format changed - tree structure updated in line with
+      other history files. Also tree completed to include the whole of the Brown
+      family. 30/05/26 - Styling updated and links corrected. 27/06/2026 -
+      Updated to latest Structure, links corrected and tree recreated.
+    </div>
+    <!--End of Change Log -->
+    <header class="header_uk">Family History</header>
+    <nav class="page-navigation">
+      <button class="family-button uk-button" onclick="history.back()">
+        Previous Page
+      </button>
+      <button class="family-button uk-button">
+        <a href="/index.html">Home</a>
+      </button>
+    </nav>
+    <main class="page-content">
+      <div class="main-grid">
+        <div class="column">
+          <a
+            class="family-button uk-button"
+            href="/pages/overviews/vickers_family_history.html"
+          >
+            Vickers Family History
+          </a>
+        </div>
+        <div class="column">
+          <a
+            class="family-button uk-button"
+            href="/pages/overviews/dobson_family_history.html"
+            >Dobson Family History</a
+          >
+        </div>
+        <div class="column">
+          <a
+            class="family-button uk-button"
+            href="/data/misc/under_construction.html"
+            >Weston Family History</a
+          >
+        </div>
+      </div>
+      <!--Start of the tree section-->
+      <div class="trees-wrapper">
+        <div class="trees-container" id="tree1">
+          <div class="generation">
+            <div class="row" id="row1-tree1">
+              <a
+                id="p1"
+                class="family-button uk-button"
+                href="/data/misc/under_construction.html"
+                >William Brown</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row2-tree1">
+              <a
+                id="p2"
+                class="family-button uk-button"
+                href="/pages/people/uk/brown/william_brown.html"
+                >William Brown (1786 - )</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row3-tree1">
+              <a
+                id="p3"
+                class="family-button uk-button"
+                href="/pages/people/uk/brown/isaac_brown.html"
+                >Isaac Brown (1817 - 1895)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree1">
+              <a
+                id="p4"
+                class="family-button uk-button"
+                href="/pages/people/UK/brown/john_brown.html"
+                >John Brown (1860 - 1918)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row5-tree1">
+              <a
+                id="p5"
+                class="family-button uk-button"
+                href="/pages/people/UK/brown/rachel_louisa_Brown.html"
+                >Rachel Brown (1897 - 1967)</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row6-tree1">
+              <a
+                id="p7"
+                class="family-button uk-button"
+                href="/pages/people/UK/vickers/albert_w_j_vickers.html"
+              >
+                Albert William Vickers (1920 - 1994)</a
+              >
+
+              <a
+                id="p6"
+                class="family-button uk-button"
+                href="/pages/people/UK/vickers/alice_vickers.html"
+              >
+                Alice Vickers (1925 - 2016)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of the tree section-->
+      <h3 style="text-align: center">🚧 Page Under Construction</h3>
+      <p>This section is currently being updated. Please check back soon.</p>
+    </main>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <script src="/scripts/tree-renderer.js"></script>
+    <script>
+      const connections = [
+        {
+          fromContainer: "tree1",
+          from: "p1",
+          toContainer: "tree1",
+          to: "p2",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p2",
+          toContainer: "tree1",
+          to: "p3",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p3",
+          toContainer: "tree1",
+          to: "p4",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p4",
+          toContainer: "tree1",
+          to: "p5",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p5",
+          toContainer: "tree1",
+          to: "p6",
+          type: "dogleg",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p5",
+          toContainer: "tree1",
+          to: "p7",
+          type: "dogleg",
+        },
+      ];
+      initTree(connections);
+    </script>
+  </body>
+</html>

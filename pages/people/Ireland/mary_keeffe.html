@@ -1,0 +1,117 @@
+<!doctype html>
+<!--Updated with new routings 13/07/2025-->
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="O'keeffe" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" id="P048" />
+    <meta name="RootsMagic_person_id" content="0016" />
+    <meta name="gold-template" content="v1.0" />
+    <title>Mary Keeffe - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_update" content="14/06/2026 " />
+  </head>
+  <body>
+    <!--Status: Pending-->
+    <!--Start of the Change Log-->
+    <div id="hidden-log">
+      01/09/25 Meta details updated. 24-06-2026 - New file Structure introduced,
+      All links updated to this new structure
+    </div>
+    <!--End of the Change Log-->
+    <header class="header-ie">Family History</header>
+    <nav class="page-navigation">
+      <button class="family-button ie-button" onclick="history.back()">
+        Previous Page
+      </button>
+      <button class="family-button ie-button">
+        <a href="/index.html">Home</a>
+      </button>
+    </nav>
+    <main style="margin: 40px">
+      <h1 class="h1_ie">Mary Keeffe</h1>
+      <p class="lifespan">1 Dec 1924 – 3 Sep 2016</p>
+      <h2 class="h2_ie">Photo Gallery</h2>
+      <div class="gallery">
+        <figure>
+          <img
+            src="/assets/thumbnails/people/okeefe/TN_mary_chaloner.jpg"
+            class="photo"
+            style="--zoom: 1.5"
+            alt="Alice Lawless"
+            data-full="/assets/photos/people/okeefe/Mary Chaloner.jpg"
+          />
+          <figcaption>Mary Chaloner (nee O'keefe)</figcaption>
+        </figure>
+      </div>
+      <div class="section">
+        <h2 class="h2_ie">Overview</h2>
+        <div id="periods"></div>
+        <script src="/scripts/periods.js"></script>
+        <script>
+          renderPeriods("periods", [
+            "free_state",
+            "postwar",
+            "late_20_cent",
+            "contemporary",
+          ]);
+        </script>
+        <br />
+        <p>Notes.</p>
+      </div>
+      <div class="section">
+        <h2>Marriage and Children</h2>
+        <p>Married Peter Chalonor.</p>
+        <p>Known child (or Children): .</p>
+      </div>
+      <div class="section">
+        <h2 class="h2_ie">Timeline</h2>
+        <div class="timeline">
+          <div class="event">
+            <strong>1 Dec 1924:</strong> Birth in Thomastown, Kilkenny, Ireland.
+          </div>
+          <div class="event">
+            <strong>:</strong> Marriage to Peter Chalonor in .
+          </div>
+          <div class="event">
+            <strong>3 Sep 2016:</strong> Death in Thomastown, Kilkenny, Ireland
+            (age 91).
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="h2_ie">Historical Context</h2>
+        <p>Notes.</p>
+      </div>
+    </main>
+    <footer class="footer_ie">
+      <span
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em>
+      </span>
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+figure.military-document {
+  display: inline-block; /* keeps figures side by side */
+  margin: 0.5em;
+  vertical-align: top;
+  text-align: center; /* centres image + caption */
+  max-width: 250px; /* matches your typical image width */
+}
+
+figure.military-document img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 100%; /* image fills figure width */
+  height: auto;
+  text-align: center;
+}
+
+figure.military-document figcaption {
+  display: block; /* full width of figure */
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #555;
+  text-align: center; /* centres text */
+  white-space: normal; /* allow wrapping */
+  overflow-wrap: break-word; /* wraps long words if necessary */
+}
+
+.document {
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+}
+.document img {
+  display: block;
+  margin: 40 auto;
+  border-radius: 6px;
+}
+.document .caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.3em;
+}
+figure.document {
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+}
+
+figure.document img {
+  display: block;
+  margin: 40 auto;
+  border-radius: 6px;
+}
+figure.document .caption {
+  font-size: 0.9em;
+  color: #555;
+}
+/* ================================
+     WAR DIARY TABLE LAYOUT – FULL BORDERS
+     ================================ */
+
+.diary-page {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Table wrapper with a solid outer border */
+.diary-table {
+  width: 100%;
+  border-collapse: collapse; /* Needed for clean vertical lines */
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  border: 2px solid #999; /* OUTER BORDER around table */
+}
+
+/* Header and data cells */
+.diary-table th,
+.diary-table td {
+  border: 1px solid #bbb; /* Vertical AND horizontal column lines */
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+/* Header row styling */
+.diary-table th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #999; /* BIGGER line directly under header */
+}
+
+/* Column widths */
+.diary-table th:nth-child(1),
+.diary-table td:nth-child(1) {
+  width: 8%;
+}
+
+.diary-table th:nth-child(2),
+.diary-table td:nth-child(2) {
+  width: 4%;
+}
+
+.diary-table th:nth-child(3),
+.diary-table td:nth-child(3) {
+  width: 4%;
+}
+
+.diary-table th:nth-child(4),
+.diary-table td:nth-child(4) {
+  width: 76%;
+}
+
+.diary-table th:nth-child(5),
+.diary-table td:nth-child(5) {
+  width: 8%;
+}

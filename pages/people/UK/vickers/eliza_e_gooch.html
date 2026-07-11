@@ -1,0 +1,113 @@
+<!doctype html>
+<!--Updated with new routings 13/07/2025-->
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Vickers" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" content="P029" />
+    <meta name="RootsMagic_person_id" content="0092" />
+    <meta name="gold-template" content="v1.0" />
+    <meta name="last_updated" content="09/06/2026" />
+    <title>Eliza E Gooch - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_update" content="18/06/2026 " />
+  </head>
+  <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log" style="display: none">
+      01/09/25 Meta details updated. 11/05/26 - moved to UK/vickers structure -
+      periods.js implemented - image paths corrected 18/06/2026 - New Styling
+      applied to file, links updated. 26/06/2026 - Updated to latest structure,
+      links corrected.
+    </div>
+    <div class="main-container">
+      <header class="header_uk">Family History</header>
+      <nav class="page-navigation">
+        <button class="family-button uk-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button uk-button">
+          <a href="/index.html">Home</a>
+        </button>
+      </nav>
+      <main class="page-content">
+        <h1 class="h1_uk">Eliza E. Gooch</h1>
+        <p class="lifespan">bet 1 Jan 1847 and 1 Jan 1848 – 1 Mar 1911</p>
+        <div class="section">
+          <h2 class="h2_uk">Overview</h2>
+          <div id="periods"></div>
+
+          <script src="/scripts/periods.js"></script>
+
+          <script>
+            renderPeriods("periods", ["industrial", "victorian", "edwardian"]);
+          </script>
+          <br />
+          <p>Notes.</p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Marriage and Children</h2>
+          <p>Married Henry Vickers.</p>
+          <p>
+            Known child (or Children): Henry George Vickers 1867-1928, Alice
+            Eliza Vickers 1868-1921, Georgina Mary Vickers 1869-, George Vickers
+            1870-1870, William Alfred Vickers 1870-1871, Charles Vickers
+            1872-1923, James Vickers 1878-1916, Ellen Vickers 1880-, Arthur
+            Ernest Vickers 1883-, Albert Edward Vickers 1890-1953.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Timeline</h2>
+          <div class="timeline">
+            <div class="event">
+              <strong>bet 1 Jan 1847 and 1 Jan 1848:</strong> Birth in Slough,
+              Berkshire, England.
+            </div>
+            <div class="event">
+              <strong>bet 1 Sep 1865 and 30 Sep 1865:</strong> Marriage to Henry
+              Vickers in Windsor, Berkshire, England, United Kingdom (between
+              age 18 and 18).
+            </div>
+            <div class="event">
+              <strong>1 Mar 1911:</strong> Death in Windsor, Berkshire, England,
+              United Kingdom (age 64).
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Historical Context</h2>
+          <p>Notes.</p>
+        </div>
+      </main>
+    </div>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

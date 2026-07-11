@@ -1,0 +1,158 @@
+<!doctype html>
+<!--updated with new routings 13/07/2025-->
+<html lang="en">
+  <head>
+    <!--  ============================================================================================  -->
+    <!--                                      Core Page Metadata                                        -->
+    <!--  ============================================================================================  -->
+    <!--                                       Always required                                          -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Archer" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" content="P024" />
+    <meta name="RootsMagic_person_id" content="0122" />
+    <meta name="gold-template" content="v1.0" />
+    <meta name="last_updated" content="09/06/2026" />
+    <title>Emily Archer - Family History</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_updated" content="16/06/2026" />
+  </head>
+  <body>
+    <!--Status: completed-->
+    <!--Status: Links Verified-->
+    <!--Start of the Change Log-->
+    <div id="hidden-log">
+      01/09/25 Meta details updated. 13/05/26 - moved to UK/vickers structure -
+      periods.js implemented - image paths corrected 25/06/2026 - Updated to
+      latest structure, links corrected.
+    </div>
+    <!--End of the Change Log-->
+    <div class="main-container">
+      <header class="header_uk">Family History</header>
+      <nav class="page-navigation">
+        <button class="family-button uk-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button uk-button">
+          <a href="/index.html">Home</a>
+        </button>
+      </nav>
+      <main class="page-content">
+        <h1 class="h1_uk">Emily Archer</h1>
+        <p class="lifespan">18 Jan 1890 – 14 Sep 1978</p>
+        <h2 class="h2_uk">Photo Gallery</h2>
+        <div class="gallery">
+          <figure class="document">
+            <img
+              src="/assets/thumbnails/people/archer(UK)/TN_emily_archer(2).jpg"
+              style="--zoom: 1"
+              alt="Emily Archer"
+              data-full="/assets/photos/people/archer(UK)/Emily Archer (2).jpg"
+            />
+            <figcaption>Emily Archer</figcaption>
+          </figure>
+          <figure class="document">
+            <img
+              src="/assets/thumbnails/people/archer(UK)/TN_emily_archer(3).jpg"
+              style="--zoom: 1"
+              alt="Emily Archer"
+              data-full="/assets/photos/people/archer(UK)/Emily Archer (3).jpg"
+            />
+            <figcaption>Emily Archer</figcaption>
+          </figure>
+          <figure class="document">
+            <img
+              src="/assets/thumbnails/people/archer(UK)/TN_emily_kitty_and_alf.jpg"
+              style="--zoom: 1"
+              alt="Emily Kitty and Alf"
+              data-full="/assets/photos/people/archer(UK)/Emily Kitty and Alf.jpg"
+            />
+            <figcaption>Emily Kitty and Alf</figcaption>
+          </figure>
+        </div>
+        <br />
+        <div class="section">
+          <h2 class="h2_uk">Overview</h2>
+          <div id="periods"></div>
+
+          <script src="/scripts/periods.js"></script>
+
+          <script>
+            renderPeriods("periods", [
+              "industrial",
+              "victorian",
+              "edwardian",
+              "ww1",
+              "interwar",
+              "ww2",
+              "postwar",
+              "late_20_cent",
+            ]);
+          </script>
+          <br />
+          <p>Notes.</p>
+          <p>
+            Emily was "Married" to Walter Lawrence with whom she had three
+            children, that was until early 1925 when it is believed that Emily
+            found out about Walter's other family in the USA, Emily then
+            pregnant with Leslie, moved to Windsor.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Marriage and Children</h2>
+          <p>Married Arthur John Weeks.</p>
+          <p>
+            Known child (or Children): Evelyn Lawrence 1919-2023, Margaret
+            Lawrence 1922-2011, Leslie Lawrence-Archer 1925-1986.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Timeline</h2>
+          <div class="timeline">
+            <!-- events concerning the "marriage" to Walter Lawrence have been left out on purpose, as they could potentially cause additional problems with the structure. It maybe at a later date that this information is added. For clarification, Walter was already married with a family, including a grandson, in Connecticut USA.-->
+            <div class="event">
+              <strong>18 Jan 1890:</strong> Birth in 2 Sydney Place, Windsor,
+              Berkshire, Windsor, Berkshire, England, United Kingdom.
+            </div>
+            <div class="event">
+              <strong>6 Oct 1928:</strong> Marriage to Arthur John Weeks in
+              Windsor, Berkshire, England, United Kingdom (age 38).
+            </div>
+            <div class="event">
+              <strong>14 Sep 1978:</strong> Death in Windsor, Berkshire,
+              England, United Kingdom (age 88).
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Historical Context</h2>
+          <p>Notes.</p>
+        </div>
+      </main>
+    </div>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>

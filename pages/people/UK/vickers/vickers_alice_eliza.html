@@ -1,0 +1,108 @@
+<!doctype html>
+<!--This template is aimed at keeping all pages the same for all individuals. Sections can be copy/pasted as required, but the sequence should be maintained-->
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile/display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <!-- Search engine behaviour -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="family_branch" content="Vickers" />
+    <meta name="author" content="Martin Lawrence" />
+    <meta name="person_id" content="P092" />
+    <meta name="RootsMagic_person_id" content="0093" />
+    <meta name="gold-template" content="v1.0" />
+    <meta name="last_updated" content="09/06/2026" />
+    <!-- Page title -->
+    <title>Alice Eliza Vickers - Family History</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/people.css" />
+    <link rel="stylesheet" href="/styles/trees.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!--  ============================================================================================  -->
+    <!--                                          Page details                                          -->
+    <!--  ============================================================================================  -->
+    <!--                                          Update frequently                                     -->
+    <meta name="page_status" content="completed" />
+    <meta name="page_status_last_update" content="18/06/2026 " />
+  </head>
+  13/05/26 - moved to UK/vickers structure - periods.js implemented - image
+  paths corrected. 26/06/2026 - Updated to latest structure and links corrected.
+  <body>
+    <div class="main-container">
+      <header class="header_uk">Family History</header>
+      <nav class="page-navigation">
+        <button class="family-button uk-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button uk-button">
+          <a href="/index.html">Home</a>
+        </button>
+      </nav>
+      <main class="page-content">
+        <h1 class="h1_uk">Alice Eliza Vickers</h1>
+        <p class="lifespan">1862 - 1921</p>
+        <br />
+        <div class="section">
+          <h2 class="h2_uk">Overview</h2>
+          <div id="periods"></div>
+
+          <script src="/scripts/periods.js"></script>
+
+          <script>
+            renderPeriods("periods", [
+              "industrial",
+              "victorian",
+              "edwardian",
+              "ww1",
+              "interwar",
+            ]);
+          </script>
+          <br />
+          <p>Notes</p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Marriage and Children</h2>
+          <p>Married William Beard in 1887.</p>
+          <p>
+            Known Children: William H, Alice Maud E, Joseph,Albert Edward, Mabel
+            Elizabeth, Constance R, Edith Ellen, Violet Jane
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Timeline</h2>
+          <div class="timeline">
+            <div class="event"><strong>1868:</strong> Birth in Windsor.</div>
+            <div class="event">
+              <strong>1887:</strong>Marriage to William beard in Windsor.
+            </div>
+            <div class="event"><strong>1921:</strong>Death in Windsor.</div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="h2_uk">Historical Context</h2>
+          <p>
+            Notes.Alice Eliza Vickers was the elder sister to Albert Edward
+            Vickers
+          </p>
+        </div>
+      </main>
+    </div>
+    <footer class="footer_uk">
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>
