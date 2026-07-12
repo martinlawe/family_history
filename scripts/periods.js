@@ -2,14 +2,14 @@
 const allPeriods = {
   Windsor: {
     name: "Windsor Past and Present",
-    file: "Windsor_past_present.html",
+    file: "../content/commentary/Windsor_past_present.html",
     category: "UK",
     startYear: null,
     endYear: null,
   },
   early_middle: {
     name: "Early Middle Ages",
-    file: "early_middle_ages.html",
+    file: "../content/commentary/early_middle_ages.html",
     category: "UK",
     startYear: 476,
     endYear: 1000,
@@ -17,7 +17,7 @@ const allPeriods = {
 
   high_middle: {
     name: "High Middle Ages",
-    file: "high_middle_ages.html",
+    file: "../content/commentary/high_middle_ages.html",
     category: "UK",
     startYear: 1000,
     endYear: 1300,
@@ -25,7 +25,7 @@ const allPeriods = {
 
   anglo_saxon: {
     name: "Late Anglo-Saxon & Norman Period",
-    file: "late_anglo-saxon_&_norman_period.html",
+    file: "../content/commentary/late_anglo-saxon_&_norman_period.html",
     category: "UK",
     startYear: 1040,
     endYear: 1154,
@@ -33,7 +33,7 @@ const allPeriods = {
 
   medieval: {
     name: "Medieval Period",
-    file: "medieval_period.html",
+    file: "../content/commentary/medieval_period.html",
     category: "UK",
     startYear: 1066,
     endYear: 1485,
@@ -41,7 +41,7 @@ const allPeriods = {
 
   late_middle: {
     name: "Late Middle Ages",
-    file: "late_middle_ages.html",
+    file: "../content/commentary/late_middle_ages.html",
     category: "UK",
     startYear: 1300,
     endYear: 1500,
@@ -49,7 +49,7 @@ const allPeriods = {
 
   early_modern: {
     name: "Early Middle Period",
-    file: "early_middle_period.html",
+    file: "../content/commentary/early_middle_period.html",
     category: "UK",
     startYear: 1500,
     endYear: 1800,
@@ -65,7 +65,7 @@ const allPeriods = {
 
   restor: {
     name: "Restoration and Enlightenment Period",
-    file: "restoration_and_enlightenment_period.html",
+    file: "../content/commentary/restoration_and_enlightenment_period.html",
     category: "UK",
     startYear: 1660,
     endYear: 1750,
@@ -73,7 +73,7 @@ const allPeriods = {
 
   georgian: {
     name: "Georgian Period",
-    file: "georgian_period.html",
+    file: "../content/commentary/georgian_period.html",
     category: "UK",
     startYear: 1714,
     endYear: 1837,
@@ -81,7 +81,7 @@ const allPeriods = {
 
   tudor: {
     name: "Tudor and Early Stuart Period",
-    file: "tudor_and_early_stuart_period.html",
+    file: "../content/commentary/tudor_and_early_stuart_period.html",
     category: "UK",
     startYear: 1485,
     endYear: 1714,
@@ -89,7 +89,7 @@ const allPeriods = {
 
   industrial: {
     name: "Industrial and Revolutionary Age",
-    file: "industrial_and_revolutionary_age.html",
+    file: "../content/commentary/industrial_and_revolutionary_age.html",
     category: "UK",
     startYear: 1800,
     endYear: 1914,
@@ -97,7 +97,7 @@ const allPeriods = {
 
   victorian: {
     name: "Victorian Period",
-    file: "victorian_period.html",
+    file: "../content/commentary/victorian_period.html",
     category: "UK",
     startYear: 1837,
     endYear: 1901,
@@ -105,7 +105,7 @@ const allPeriods = {
 
   edwardian: {
     name: "Edwardian Period",
-    file: "edwardian_period.html",
+    file: "../content/commentary/edwardian_period.html",
     category: "UK",
     startYear: 1901,
     endYear: 1914,
@@ -113,7 +113,7 @@ const allPeriods = {
 
   ww1: {
     name: "First World War Period",
-    file: "first_world_war_period.html",
+    file: "../content/commentary/first_world_war_period.html",
     category: "UK",
     startYear: 1914,
     endYear: 1918,
@@ -121,7 +121,7 @@ const allPeriods = {
 
   interwar: {
     name: "Interwar Period",
-    file: "interwar_period.html",
+    file: "../content/commentary/interwar_period.html",
     category: "UK",
     startYear: 1918,
     endYear: 1939,
@@ -129,7 +129,7 @@ const allPeriods = {
 
   ww2: {
     name: "Second World War Period",
-    file: "second_world_war_period.html",
+    file: "../content/commentary/second_world_war_period.html",
     category: "UK",
     startYear: 1939,
     endYear: 1945,
@@ -137,7 +137,7 @@ const allPeriods = {
 
   postwar: {
     name: "Post War Period",
-    file: "post_war_period.html",
+    file: "../content/commentary/post_war_period.html",
     category: "UK",
     startYear: 1945,
     endYear: 1970,
@@ -145,14 +145,14 @@ const allPeriods = {
 
   late_20_cent: {
     name: "Late 20th Century Period",
-    file: "late_20th_century_period.html",
+    file: "../content/commentary/late_20th_century_period.html",
     category: "UK",
     startYear: 1970,
     endYear: 1999,
   },
   contemporary: {
     name: "Contemporary Period",
-    file: "contemporary_period.html",
+    file: "../content/commentary/contemporary_period.html",
     category: "UK",
     startYear: 2000,
     endYear: null,
@@ -160,7 +160,7 @@ const allPeriods = {
 
   suffolk: {
     name: "Suffolk History 1830 - 1839",
-    file: "suffolk_history_1830_to_1839.html",
+    file: "../content/commentary/suffolk_history_1830_to_1839.html",
     category: "UK",
     startYear: 1830,
     endYear: 1839,
@@ -170,7 +170,7 @@ const allPeriods = {
 
   AoU: {
     name: "Act of Union",
-    file: "Ireland_Act_of_Union.html",
+    file: "../content/commentary/Ireland_Act_of_Union.html",
     category: "IE",
     startYear: 1801,
     endYear: 1845,
@@ -178,7 +178,7 @@ const allPeriods = {
 
   tiger: {
     name: "Celtic Tiger and Crash",
-    file: "celtic_tiger_and_crash.html",
+    file: "../content/commentary/celtic_tiger_and_crash.html",
     category: "IE",
     startYear: 1998,
     endYear: 2010,
@@ -186,7 +186,7 @@ const allPeriods = {
 
   ie_contemporary: {
     name: "Contemporary Ireland",
-    file: "Ireland_Contemporary_Ireland.html",
+    file: "../content/commentary/Ireland_Contemporary_Ireland.html",
     category: "IE",
     startYear: 2010,
     endYear: null,
@@ -194,7 +194,7 @@ const allPeriods = {
 
   eu_m: {
     name: "EU Membership and Modernisation",
-    file: "Ireland_EU_Membership_and_Modernisation.html",
+    file: "../content/commentary/Ireland_EU_Membership_and_Modernisation.html",
     category: "IE",
     startYear: 1973,
     endYear: 1998,
@@ -202,15 +202,15 @@ const allPeriods = {
 
   ie_post_war: {
     name: "Post War and Social Change",
-    file: "Ireland_Post_War_and_Social_Change.html",
+    file: "../content/commentary/Ireland_Post_War_and_Social_Change.html",
     category: "IE",
-    StartYear: 1950,
+    startYear: 1950,
     endYear: 1973,
   },
 
   revolution: {
     name: "Revolutionary Period",
-    file: "Ireland_Revolutionary_Period.html",
+    file: "../content/commentary/Ireland_Revolutionary_Period.html",
     category: "IE",
     startYear: 1916,
     endYear: 1923,
@@ -218,7 +218,7 @@ const allPeriods = {
 
   free_state: {
     name: "The Free State and Early Republic",
-    file: "Ireland_The_Free_State_and_Early_Republic.html",
+    file: "../content/commentary/Ireland_The_Free_State_and_Early_Republic.html",
     category: "IE",
     startYear: 1923,
     endYear: 1949,
@@ -226,7 +226,7 @@ const allPeriods = {
 
   famine: {
     name: "The Great Famine",
-    file: "Ireland_The_Great_Famine.html",
+    file: "../content/commentary/Ireland_The_Great_Famine.html",
     category: "IE",
     startYear: 1845,
     endYear: 1870,
@@ -236,7 +236,7 @@ const allPeriods = {
 
   antebellum: {
     name: "Antebellum Period 1850 - 1861",
-    file: "antebellum_period.html",
+    file: "../content/commentary/antebellum_period.html",
     category: "US",
     startYear: 1850,
     endYear: 1861,
@@ -244,7 +244,7 @@ const allPeriods = {
 
   us_civil_war: {
     name: "USA Civil War Period 1861 - 1865",
-    file: "us_civil_war_period.html",
+    file: "../content/commentary/us_civil_war_period.html",
     category: "US",
     startYear: 1861,
     endYear: 1865,
@@ -252,7 +252,7 @@ const allPeriods = {
 
   reconstruction: {
     name: "Reconstruction Period 1865 - 1877",
-    file: "reconstruction_period.html",
+    file: "../content/commentary/reconstruction_period.html",
     category: "US",
     startYear: 1865,
     endYear: 1877,
@@ -260,7 +260,7 @@ const allPeriods = {
 
   gilded_age: {
     name: "Gilded Age 1877 - 1900",
-    file: "gilded_age.html",
+    file: "../content/commentary/gilded_age.html",
     category: "US",
     startYear: 1877,
     endYear: 1900,
@@ -268,7 +268,7 @@ const allPeriods = {
 
   progressive_era: {
     name: "Progressive Era 1900 - 1917",
-    file: "progressive_era.html",
+    file: "../content/commentary/progressive_era.html",
     category: "US",
     startYear: 1900,
     endYear: 1917,
@@ -276,7 +276,7 @@ const allPeriods = {
 
   ww1_period: {
     name: "World War 1 Period 1917 - 1918",
-    file: "ww1_period.html",
+    file: "../content/commentary/ww1_period.html",
     category: "US",
     startYear: 1917,
     endYear: 1918,
@@ -284,7 +284,7 @@ const allPeriods = {
 
   interwar_period: {
     name: "US Interwar Period 1919 - 1941",
-    file: "interwar_period_us.html",
+    file: "../content/commentary/interwar_period_us.html",
     category: "US",
     startYear: 1919,
     endYear: 1941,
@@ -292,7 +292,7 @@ const allPeriods = {
 
   ww2_period: {
     name: "Second World War Period 1941 - 1945",
-    file: "ww2_period.html",
+    file: "../content/commentary/ww2_period.html",
     category: "US",
     startYear: 1941,
     endYear: 1945,
@@ -300,7 +300,7 @@ const allPeriods = {
 
   post_war: {
     name: "Post War America 1945 - 1960",
-    file: "post_war.html",
+    file: "../content/commentary/post_war.html",
     category: "US",
     startYear: 1945,
     endYear: 1960,
@@ -308,7 +308,7 @@ const allPeriods = {
 
   modern_period: {
     name: "Civil Rights and Modern America 1960–1980",
-    file: "modern_period.html",
+    file: "../content/commentary/modern_period.html",
     category: "US",
     startYear: 1960,
     endYear: 1980,
@@ -316,7 +316,7 @@ const allPeriods = {
 
   us_contemporary: {
     name: "Contemporary America 1980 - present",
-    file: "contemporary.html",
+    file: "../content/commentary/contemporary.html",
     category: "US",
     startYear: 1980,
     endYear: null,
