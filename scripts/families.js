@@ -1,7 +1,7 @@
 const allFamilies = {
   archer_ie: {
     name: "Archer Family",
-    file: "Archer_family_history_ie.html",
+    file: "archer_family_history_ie.html",
     category: "ie",
     family_group: "O'Keeffe",
     groupOrder: "4",
@@ -41,7 +41,7 @@ const allFamilies = {
   },
   fowler: {
     name: "Fowler Family",
-    file: "Fowler_family_history.html",
+    file: "fowler_family_history.html",
     category: "uk",
     family_group: "Lawrence",
     groupOrder: "3",
@@ -49,7 +49,7 @@ const allFamilies = {
   },
   kennedy: {
     name: "Kennedy Family",
-    file: "Kennedy_family_history.html",
+    file: "kennedy_family_history.html",
     category: "ie",
     family_group: "O'Keeffe",
     groupOrder: "4",
@@ -57,7 +57,7 @@ const allFamilies = {
   },
   lawless: {
     name: "Lawless Family",
-    file: "Lawless_family_history.html",
+    file: "lawless_family_history.html",
     category: "ie",
     family_group: "O'Keeffe",
     groupOrder: "4",
@@ -73,7 +73,7 @@ const allFamilies = {
   },
   okeefe: {
     name: "O'Keeffe Family",
-    file: "O'Keeffe_family_history.html",
+    file: "o'Keeffe_family_history.html",
     category: "ie",
     family_group: "O'Keeffe",
     groupOrder: "4",
@@ -81,7 +81,7 @@ const allFamilies = {
   },
   puttenham: {
     name: "Puttenham Family",
-    file: "Puttenham_family_history.html",
+    file: "puttenham_family_history.html",
     category: "uk",
     family_group: "Vickers",
     groupOrder: "1",
