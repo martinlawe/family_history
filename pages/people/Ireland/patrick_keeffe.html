@@ -54,6 +54,9 @@
       </nav>
       <main class="page-content">
         <h1 class="h1_ie">Patrick Keeffe</h1>
+        <script>
+          const commentaryPath = "../../../content/commentary/";
+        </script>
         <p class="lifespan">4 Feb 1922 � 12 Oct 2006</p>
         <h2 class="h2_ie">Photo Gallery</h2>
         <div class="gallery">
@@ -72,12 +75,11 @@
           <div id="periods"></div>
           <script src="../../../scripts/periods.js"></script>
           <script>
-            renderPeriods("periods", [
-              "free_state",
-              "postwar",
-              "late_20_cent",
-              "contemporary",
-            ]);
+            renderPeriods(
+              "periods",
+              ["free_state", "postwar", "late_20_cent", "contemporary"],
+              commentaryPath,
+            );
           </script>
           <br />
           <p>Notes</p>

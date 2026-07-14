@@ -56,20 +56,26 @@
         <!--There are no available photographs of Alfred Benoit-->
         <div class="section">
           <h2 class="h2_us">Overview</h2>
+          <script>
+            const commentaryPath = "../../../content/commentary/";
+          </script>
           <div id="periods"></div>
-
           <script src="../../../scripts/periods.js"></script>
 
           <script>
-            renderPeriods("periods", [
-              "progressive_era",
-              "ww1_period",
-              "interwar_period",
-              "ww2_period",
-              "post_war",
-              "modern_period",
-              "us_contemporary",
-            ]);
+            renderPeriods(
+              "periods",
+              [
+                "progressive_era",
+                "ww1_period",
+                "interwar_period",
+                "ww2_period",
+                "post_war",
+                "modern_period",
+                "us_contemporary",
+              ],
+              commentaryPath,
+            );
           </script>
           <p>Notes</p>
         </div>

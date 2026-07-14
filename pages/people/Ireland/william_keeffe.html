@@ -47,6 +47,9 @@
     </nav>
     <main class="page-content">
       <h1 class="h1_ie">William Keeffe</h1>
+      <script>
+        const commentaryPath = "../../../content/commentary/";
+      </script>
       <p class="lifespan">1919 – 15 Sep 1955</p>
       <h2 class="h2_ie">Photo Gallery</h2>
       <div class="gallery"></div>
@@ -55,7 +58,7 @@
         <div id="periods"></div>
         <script src="../../../scripts/periods.js"></script>
         <script>
-          renderPeriods("periods", ["free_state", "postwar"]);
+          renderPeriods("periods", ["free_state", "postwar"], commentaryPath);
         </script>
         <br />
         <p>Notes.</p>

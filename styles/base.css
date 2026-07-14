@@ -207,7 +207,7 @@ h3 {
 }
 
 .content-link {
-  color: var (var(--light-grey));
+  color: var(--military);
 }
 
 .period-link {

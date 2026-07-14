@@ -56,12 +56,18 @@
         <p class="lifespan">bet 1 Jan 1847 and 1 Jan 1848 – 1 Mar 1911</p>
         <div class="section">
           <h2 class="h2_uk">Overview</h2>
+          <script>
+            const commentaryPath = "../../../../content/commentary/";
+          </script>
           <div id="periods"></div>
-
           <script src="../../../../scripts/periods.js"></script>
 
           <script>
-            renderPeriods("periods", ["industrial", "victorian", "edwardian"]);
+            renderPeriods(
+              "periods",
+              ["industrial", "victorian", "edwardian"],
+              commentaryPath,
+            );
           </script>
           <br />
           <p>Notes.</p>

@@ -55,12 +55,18 @@
       <p class="lifespan">3 Jun 1805 – Sep 1876</p>
       <div class="section">
         <h2 class="h2_uk">Overview</h2>
+        <script>
+          const commentaryPath = "../../../../content/commentary/";
+        </script>
         <div id="periods"></div>
-
         <script src="../../../../scripts/periods.js"></script>
 
         <script>
-          renderPeriods("periods", ["georgian", "industrial", "victorian"]);
+          renderPeriods(
+            "periods",
+            ["georgian", "industrial", "victorian"],
+            commentaryPath,
+          );
         </script>
         <br />
         <p>Notes.</p>

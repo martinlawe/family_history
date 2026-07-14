@@ -56,12 +56,18 @@
       <p class="lifespan">1824 – bet 1 Mar 1905 and 31 Mar 1905</p>
       <div class="section">
         <h2 class="h2_uk">Overview</h2>
+        <script>
+          const commentaryPath = "../../../../content/commentary/";
+        </script>
         <div id="periods"></div>
-
         <script src="../../../../scripts/periods.js"></script>
 
         <script>
-          renderPeriods("periods", ["industrial", "victorian", "edwardian"]);
+          renderPeriods(
+            "periods",
+            ["industrial", "victorian", "edwardian"],
+            commentaryPath,
+          );
         </script>
         <br />
         <p>Notes.</p>

@@ -53,18 +53,18 @@
         <br />
         <div class="section">
           <h2 class="h2_uk">Overview</h2>
+          <script>
+            const commentaryPath = "../../../../content/commentary/";
+          </script>
           <div id="periods"></div>
-
           <script src="../../../../scripts/periods.js"></script>
 
           <script>
-            renderPeriods("periods", [
-              "industrial",
-              "victorian",
-              "edwardian",
-              "ww1",
-              "interwar",
-            ]);
+            renderPeriods(
+              "periods",
+              ["industrial", "victorian", "edwardian", "ww1", "interwar"],
+              commentaryPath,
+            );
           </script>
           <br />
           <p>Notes</p>

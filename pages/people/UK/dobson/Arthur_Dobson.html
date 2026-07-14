@@ -56,12 +56,14 @@
         <div class="gallery"></div>
         <br />
         <div class="section">
+          <script>
+            const commentaryPath = "../../../../content/commentary/";
+          </script>
           <div id="periods"></div>
-
           <script src="../../../../scripts/periods.js"></script>
 
           <script>
-            renderPeriods("periods", ["interwar"]);
+            renderPeriods("periods", ["interwar"], commentaryPath);
           </script>
           <br />
           <h2 class="h2_uk">Overview</h2>

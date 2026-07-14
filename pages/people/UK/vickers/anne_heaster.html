@@ -56,12 +56,14 @@
         <p class="lifespan">1669 –</p>
         <h2 class="h2_uk">Overview</h2>
         <div class="section">
+          <script>
+            const commentaryPath = "../../../../content/commentary/";
+          </script>
           <div id="periods"></div>
-
           <script src="../../../../scripts/periods.js"></script>
 
           <script>
-            renderPeriods("periods", ["tudor"]);
+            renderPeriods("periods", ["tudor"], commentaryPath);
           </script>
           <br />
           <p>Notes.</p>

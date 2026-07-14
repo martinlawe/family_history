@@ -58,12 +58,14 @@
       <br />
       <div class="section">
         <h2 class="h2_uk">Overview</h2>
+        <script>
+          const commentaryPath = "../../../../content/commentary/";
+        </script>
         <div id="periods"></div>
-
         <script src="../../../../scripts/periods.js"></script>
 
         <script>
-          renderPeriods("periods", ["late_middle", "medieval"]);
+          renderPeriods("periods", ["late_middle", "medieval"], commentaryPath);
         </script>
         <br />
         <p>Notes.</p>

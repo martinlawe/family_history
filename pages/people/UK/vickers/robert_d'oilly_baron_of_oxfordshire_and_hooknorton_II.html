@@ -60,16 +60,18 @@
         </h1>
         <p class="lifespan">1065 – 1142</p>
         <div class="section">
+          <script>
+            const commentaryPath = "../../../../content/commentary/";
+          </script>
           <div id="periods"></div>
-
           <script src="../../../../scripts/periods.js"></script>
 
           <script>
-            renderPeriods("periods", [
-              "high_middle",
-              "anglo_saxon",
-              "medieval",
-            ]);
+            renderPeriods(
+              "periods",
+              ["high_middle", "anglo_saxon", "medieval"],
+              commentaryPath,
+            );
           </script>
           <br />
           <h2 class="h2_uk">Overview</h2>

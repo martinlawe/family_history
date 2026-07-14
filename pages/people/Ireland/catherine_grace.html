@@ -55,10 +55,17 @@
       <p class="lifespan">bet 1 Jan 1856 and 1 Jan 1857 – 28 Sep 1935</p>
       <div class="section">
         <h2 class="h2_ie">Overview</h2>
+        <script>
+          const commentaryPath = "../../../content/commentary/";
+        </script>
         <div id="periods"></div>
         <script src="../../../scripts/periods.js"></script>
         <script>
-          renderPeriods("periods", ["famine", "revolution", "free_state"]);
+          renderPeriods(
+            "periods",
+            ["famine", "revolution", "free_state"],
+            commentaryPath,
+          );
         </script>
         <br />
         <p>Notes.</p>

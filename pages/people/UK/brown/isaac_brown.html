@@ -57,21 +57,26 @@
         <div class="gallery"></div>
         <div class="section">
           <h2 class="h2_uk">Overview</h2>
-          <div id="periods"></div>
-
-          <script src="../../../../scripts/periods.js"></script>
-
           <script>
-            renderPeriods("periods", [
-              "industrial",
-              "victorian",
-              "edwardian",
-              "ww1",
-              "interwar",
-              "ww2",
-              "postwar",
-              "late_20_cent",
-            ]);
+            const commentaryPath = "../../../../content/commentary/";
+          </script>
+          <div id="periods"></div>
+          <script src="../../../../scripts/periods.js"></script>
+          <script>
+            renderPeriods(
+              "periods",
+              [
+                "industrial",
+                "victorian",
+                "edwardian",
+                "ww1",
+                "interwar",
+                "ww2",
+                "postwar",
+                "late_20_cent",
+              ],
+              commentaryPath,
+            );
           </script>
           <br />
           <p>Notes</p>
