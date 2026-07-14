@@ -216,7 +216,7 @@ h3 {
 }
 
 a {
-  color: var(--off-white);
+  color: red;
   text-decoration: none;
 }
 a:hover {
