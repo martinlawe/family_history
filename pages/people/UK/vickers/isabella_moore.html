@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile/display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <!-- Search engine behaviour -->
+    <meta name="robots" content="noindex, nofollow" id="{Index-project id}" />
+    <!-- Description -->
+    <meta
+      name="description"
+      content="Family history profile of {FullName}, part of the Vickers, Brocas, D’Oyly, and Lawrence families."
+    />
+    <!-- Author/project -->
+    <meta name="author" content="Martin Lawrence" />
+    <!-- Theme/browser colour -->
+    <meta name="theme-color" content="#f9f9f9" />
+    <!-- Page title -->
+    <title>{FullName} - Family History</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../../styles/base.css" />
+    <link rel="stylesheet" href="../../../../styles/buttons.css" />
+    <link rel="stylesheet" href="../../../../styles/gallery.css" />
+    <link rel="stylesheet" href="../../../../styles/layout.css" />
+    <link rel="stylesheet" href="../../../../styles/people.css" />
+    <link rel="stylesheet" href="../../../../styles/trees.css" />
+    <link rel="stylesheet" href="../../../../styles/responsive.css" />
+  </head>
+  13/05/26 - moved to UK/vickers structure - periods.js implemented - image
+  paths corrected
+  <body>
+    <div class="main-container">
+      <header>Family History</header>
+      <nav class="page-navigation">
+        <button class="family-button uk-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button uk-button">
+          <a class="home-button" href="../../../../index.html">Home</a>
+        </button>
+      </nav>
+      <main class="page-content">
+        <h1>Isabella Moore</h1>
+        <p class="lifespan">1448 to 1478</p>
+        <h2>Photo Gallery</h2>
+        <div class="gallery"></div>
+        <br />
+        <div id="periods"></div>
+
+        <script src="/scripts/periods.js"></script>
+
+        <script>
+          renderPeriods("periods", ["medieval", "late_middle"]);
+        </script>
+        <br />
+        <div class="section">
+          <h2>Overview</h2>
+          <p>Notes</p>
+        </div>
+        <div class="section">
+          <h2>Marriage and Children</h2>
+          <p>Married John Doyle in 1475.</p>
+          <p>Known Child: Thomas John D'Oyly</p>
+        </div>
+        <div class="section">
+          <h2>Timeline</h2>
+          <div class="timeline">
+            <div class="event">
+              <strong>{Birth Date}:1448</strong>
+            </div>
+            <div class="event">
+              <strong>{Marriage Date}:1475</strong> Marriage to John Doyle.
+            </div>
+            <div class="event">
+              <strong>{Death Date}:1478</strong>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Historical Context</h2>
+          <p>Notes.</p>
+          <p>
+            Isabella Moore married John D'Oyly. The surviving genealogical
+            records attribute several children to this marriage, including
+            William D'Oyly, who continued the family line. Some dates associated
+            with this generation remain uncertain and require further
+            investigation.
+          </p>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <span class="footer-left"
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
+      >
+    </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="Expanded view" />
+    </div>
+    <script src="/scripts/images.js"></script>
+  </body>
+</html>
