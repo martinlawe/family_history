@@ -46,7 +46,7 @@
         Previous Page
       </button>
       <button class="family-button ie-button">
-        <a href="../../../index.html">Home</a>
+        <a class="home-button" href="../../../index.html">Home</a>
       </button>
     </nav>
     <main style="margin: 40px">
@@ -73,12 +73,11 @@
         <div id="periods"></div>
         <script src="../../../scripts/periods.js"></script>
         <script>
-          renderPeriods("periods", [
-            "free_state",
-            "postwar",
-            "late_20_cent",
-            "contemporary",
-          ],commentaryPath);
+          renderPeriods(
+            "periods",
+            ["free_state", "postwar", "late_20_cent", "contemporary"],
+            commentaryPath,
+          );
         </script>
         <br />
         <p>Notes.</p>

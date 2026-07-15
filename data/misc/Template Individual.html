@@ -35,7 +35,14 @@
   <body>
     <div class="main-container">
       <header>Family History</header>
-      <button onclick="history.back()">Previous Page</button>
+      <nav class="page-navigation">
+        <button class="family-button uk-button" onclick="history.back()">
+          Previous Page
+        </button>
+        <button class="family-button uk-button">
+          <a class="home-button" href="/index.html">Home</a>
+        </button>
+      </nav>
       <main class="page-content">
         <h1>{FullName}</h1>
         <p class="lifespan"></p>
@@ -90,7 +97,7 @@
     </div>
     <footer>
       <span class="footer-left"
-        ><em>&copy; 2025 Martin Lawrence | Family History Project</em></span
+        ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
       >
     </footer>
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">

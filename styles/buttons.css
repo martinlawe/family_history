@@ -10,6 +10,10 @@
   width: fit-content;
   align-self: flex-start;
 }
+.home-button {
+  color: #ffffff;
+}
+
 button,
 .period-button,
 .family-button {
