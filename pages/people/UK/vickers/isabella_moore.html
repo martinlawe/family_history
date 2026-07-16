@@ -12,14 +12,12 @@
     <!-- Description -->
     <meta
       name="description"
-      content="Family history profile of {FullName}, part of the Vickers, Brocas, D’Oyly, and Lawrence families."
+      content="Family history profile of Isabella Moore, part of the Vickers, Brocas, D’Oyly, and Lawrence families."
     />
     <!-- Author/project -->
     <meta name="author" content="Martin Lawrence" />
-    <!-- Theme/browser colour -->
-    <meta name="theme-color" content="#f9f9f9" />
     <!-- Page title -->
-    <title>{FullName} - Family History</title>
+    <title>Isabella Moore - Family History</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../../../../styles/base.css" />
     <link rel="stylesheet" href="../../../../styles/buttons.css" />
@@ -29,11 +27,14 @@
     <link rel="stylesheet" href="../../../../styles/trees.css" />
     <link rel="stylesheet" href="../../../../styles/responsive.css" />
   </head>
-  13/05/26 - moved to UK/vickers structure - periods.js implemented - image
-  paths corrected
   <body>
+    <!--Start of the Change Log-->
+    <div id="hidden-log">
+      13/05/26 - moved to UK/vickers structure - periods.js implemented - image
+      paths corrected
+    </div>
     <div class="main-container">
-      <header>Family History</header>
+      <header class="header_uk">Family History</header>
       <nav class="page-navigation">
         <button class="family-button uk-button" onclick="history.back()">
           Previous Page
@@ -43,30 +44,30 @@
         </button>
       </nav>
       <main class="page-content">
-        <h1>Isabella Moore</h1>
+        <h1 class="h1_uk">Isabella Moore</h1>
         <p class="lifespan">1448 to 1478</p>
-        <h2>Photo Gallery</h2>
+        <h2 class="h2_uk">Photo Gallery</h2>
         <div class="gallery"></div>
         <br />
         <div id="periods"></div>
 
-        <script src="/scripts/periods.js"></script>
+        <script src="../../../../scripts/periods.js"></script>
 
         <script>
           renderPeriods("periods", ["medieval", "late_middle"]);
         </script>
         <br />
         <div class="section">
-          <h2>Overview</h2>
+          <h2 class="h2_uk">Overview</h2>
           <p>Notes</p>
         </div>
         <div class="section">
-          <h2>Marriage and Children</h2>
+          <h2 class="h2_uk">Marriage and Children</h2>
           <p>Married John Doyle in 1475.</p>
           <p>Known Child: Thomas John D'Oyly</p>
         </div>
         <div class="section">
-          <h2>Timeline</h2>
+          <h2 class="h2_uk">Timeline</h2>
           <div class="timeline">
             <div class="event">
               <strong>{Birth Date}:1448</strong>
@@ -80,7 +81,7 @@
           </div>
         </div>
         <div class="section">
-          <h2>Historical Context</h2>
+          <h2 class="h2_uk">Historical Context</h2>
           <p>Notes.</p>
           <p>
             Isabella Moore married John D'Oyly. The surviving genealogical
@@ -92,7 +93,7 @@
         </div>
       </main>
     </div>
-    <footer>
+    <footer class="footer_uk">
       <span class="footer-left"
         ><em>&copy; 2026 Martin Lawrence | Family History Project</em></span
       >
