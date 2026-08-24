@@ -37,7 +37,8 @@
     <div id="hidden-log">
       23/08/25 - New file created using the latest script for line creation.
       31/05/26 - styling updated and links corrected. 27/06/2026 - Updated to
-      latests structure, links corrected and tree re-created
+      latests structure, links corrected and tree re-created 23/-8/2026 Richard
+      Lawless added.
     </div>
     <!--End of the Change Log-->
     <header class="header_ie">Family History</header>
@@ -81,7 +82,7 @@
         </div>
       </div>
       <!--Start of Tree building-->
-      <div class="trees-wrapper">
+      <div class="trees-wrapper" style="margin-left: 150px">
         <!-- Tree  1 -->
         <div class="trees-container" id="tree1">
           <div class="generation">
@@ -89,8 +90,8 @@
               <a
                 id="p1"
                 class="family-button ie-button"
-                href="../../pages/people/Ireland/joseph_lawless.html"
-                >Joseph Lawless</a
+                href="../../pages/people/Ireland/richard_lawless.html"
+                >Richard Lawless</a
               >
             </div>
           </div>
@@ -99,8 +100,8 @@
               <a
                 id="p2"
                 class="family-button ie-button"
-                href="../../pages/people/Ireland/michael_lawless.html"
-                >Michael Lawless</a
+                href="../../pages/people/Ireland/joseph_lawless.html"
+                >Joseph Lawless</a
               >
             </div>
           </div>
@@ -109,14 +110,60 @@
               <a
                 id="p3"
                 class="family-button ie-button"
+                href="../../pages/people/Ireland/michael_lawless.html"
+                >Michael Lawless</a
+              >
+            </div>
+          </div>
+          <div class="generation">
+            <div class="row" id="row4-tree1">
+              <a
+                id="p4"
+                class="family-button ie-button"
                 href="../../pages/people/Ireland/alice_lawless.html"
                 >Alice Lawless</a
               >
             </div>
           </div>
         </div>
-      </div>
 
+        <div class="trees-wrapper">
+          <!-- Tree  2 -->
+          <div class="trees-container" id="tree2">
+            <div class="generation">
+              <div class="row" id="row1-tree2">
+                <a
+                  id="p5"
+                  class="family-button ie-button"
+                  href="../../pages/people/Ireland/richard_knox.html"
+                  >Richard Knox</a
+                >
+              </div>
+            </div>
+            <div class="generation">
+              <div class="row" id="row2-tree2">
+                <a
+                  id="p6"
+                  class="family-button ie-button"
+                  href="../../pages/people/Ireland/johanna_knox.html"
+                  >Johanna Knox</a
+                >
+              </div>
+            </div>
+            <div class="generation">
+              <div class="row" id="row3-tree2">
+                <a
+                  id="p7"
+                  class="family-button ie-button"
+                  href="../../pages/people/Ireland/lizzie_archer.html"
+                  >Elizabeth (Lizzie) Archer</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
       <h3 class="h2_ie">📁 Documented Family Members</h3>
       <p>Above are the known family members</p>
       <p>
@@ -201,7 +248,7 @@
       <p>
         The Lawless family is still being researched, so this page will
         inevitably be updated at some point.
-      </p>
+      </p>-->
     </main>
     <footer class="footer_ie">
       <span class="footer-left"
@@ -224,6 +271,35 @@
           toContainer: "tree1",
           to: "p3",
           type: "vertical",
+        },
+        {
+          fromContainer: "tree1",
+          from: "p3",
+          toContainer: "tree1",
+          to: "p4",
+          type: "vertical",
+        },
+
+        {
+          fromContainer: "tree2",
+          from: "p5",
+          toContainer: "tree2",
+          to: "p6",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p6",
+          toContainer: "tree2",
+          to: "p7",
+          type: "vertical",
+        },
+        {
+          fromContainer: "tree2",
+          from: "p7",
+          toContainer: "tree1",
+          to: "p4",
+          type: "dogleg",
         },
       ];
       initTree(connections);

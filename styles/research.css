@@ -1,0 +1,15 @@
+.latin {
+  font-style: italic;
+  margin: 0.75rem 0;
+  padding-left: 0.25rem;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+main ul {
+  margin: 1em 0 1em 2em;
+  padding-left: 1em;
+}
+
+main li {
+  margin-bottom: 0.5em;
+}
