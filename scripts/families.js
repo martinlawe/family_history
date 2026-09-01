@@ -73,7 +73,7 @@ const allFamilies = {
   },
   okeefe: {
     name: "O'Keeffe Family",
-    file: "o'Keeffe_family_history.html",
+    file: "o'keeffe_family_history.html",
     category: "ie",
     family_group: "O'Keeffe",
     groupOrder: "4",
